@@ -79,8 +79,12 @@
                 "y": 555
             },
             "1d67r": {
-                "x": 524,
-                "y": 489
+                "x": 605,
+                "y": 617
+            },
+            "bo322d": {
+                "x": 606,
+                "y": 491
             }
         }
     },
@@ -137,7 +141,7 @@
         {
             "id": "yye68s",
             "name": "url",
-            "color": "table-header-green",
+            "color": "table-header-purple",
             "softDelete": false,
             "timeStamp": true
         },
@@ -145,6 +149,13 @@
             "id": "1d67r",
             "name": "same_as",
             "color": "table-header-dark-blue",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "bo322d",
+            "name": "thing",
+            "color": "table-header-green",
             "softDelete": false,
             "timeStamp": true
         }
@@ -263,6 +274,29 @@
                     "on": {
                         "id": "",
                         "name": ""
+                    }
+                }
+            },
+            {
+                "id": "g0lfsp",
+                "name": "thing_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "3m7cdr",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "bo322d",
+                        "name": "thing"
                     }
                 }
             }
@@ -384,25 +418,25 @@
                 }
             },
             {
-                "id": "8bqlvs",
-                "name": "url",
-                "type": "string",
+                "id": "m5lp4",
+                "name": "thing_id",
+                "type": "bigInteger",
                 "length": "",
                 "defValue": "",
                 "comment": "",
                 "autoInc": false,
-                "nullable": false,
+                "nullable": true,
                 "unique": false,
-                "index": false,
-                "unsigned": false,
+                "index": true,
+                "unsigned": true,
                 "foreignKey": {
                     "references": {
-                        "id": "",
-                        "name": ""
+                        "id": "3m7cdr",
+                        "name": "id"
                     },
                     "on": {
-                        "id": "",
-                        "name": ""
+                        "id": "bo322d",
+                        "name": "thing"
                     }
                 }
             }
@@ -836,7 +870,7 @@
             },
             {
                 "id": "6e4oyg",
-                "name": "organization_id",
+                "name": "thing_id",
                 "type": "bigInteger",
                 "length": "",
                 "defValue": "",
@@ -848,12 +882,12 @@
                 "unsigned": true,
                 "foreignKey": {
                     "references": {
-                        "id": "ull9k",
+                        "id": "3m7cdr",
                         "name": "id"
                     },
                     "on": {
-                        "id": "mure2o",
-                        "name": "organization"
+                        "id": "bo322d",
+                        "name": "thing"
                     }
                 }
             },
@@ -877,6 +911,31 @@
                     "on": {
                         "id": "yye68s",
                         "name": "url"
+                    }
+                }
+            }
+        ],
+        "bo322d": [
+            {
+                "id": "3m7cdr",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
                     }
                 }
             }
@@ -935,16 +994,6 @@
         },
         {
             "source": {
-                "columnId": "6e4oyg",
-                "tableId": "1d67r"
-            },
-            "target": {
-                "columnId": "ull9k",
-                "tableId": "mure2o"
-            }
-        },
-        {
-            "source": {
                 "columnId": "qbnc",
                 "tableId": "1d67r"
             },
@@ -961,6 +1010,36 @@
             "target": {
                 "columnId": "utpnb5",
                 "tableId": "yye68s"
+            }
+        },
+        {
+            "source": {
+                "columnId": "6e4oyg",
+                "tableId": "1d67r"
+            },
+            "target": {
+                "columnId": "3m7cdr",
+                "tableId": "bo322d"
+            }
+        },
+        {
+            "source": {
+                "columnId": "g0lfsp",
+                "tableId": "uwgi9o"
+            },
+            "target": {
+                "columnId": "3m7cdr",
+                "tableId": "bo322d"
+            }
+        },
+        {
+            "source": {
+                "columnId": "m5lp4",
+                "tableId": "mure2o"
+            },
+            "target": {
+                "columnId": "3m7cdr",
+                "tableId": "bo322d"
             }
         }
     ]

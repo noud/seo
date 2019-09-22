@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Sep 22, 2019 at 02:17 AM
+-- Generation Time: Sep 22, 2019 at 05:01 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -67,25 +67,25 @@ INSERT INTO `founders` (`id`, `organization_id`, `founder_id`, `created_at`, `up
 -- Dumping data for table `organization`
 --
 
-INSERT INTO `organization` (`id`, `url_id`, `name`, `logo`, `telephone`, `created_at`, `updated_at`) VALUES
-(1, 1, 'DUODEKA Coöperatie U.A.', 'http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png', '132032264', NULL, NULL),
-(2, 0, 'Mr. Winston', '', '', NULL, NULL);
+INSERT INTO `organization` (`id`, `url_id`, `name`, `logo`, `telephone`, `thing_id`, `created_at`, `updated_at`) VALUES
+(1, 1, 'DUODEKA Coöperatie U.A.', 'http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png', '132032264', 1, NULL, NULL),
+(2, 0, 'Mr. Winston', '', '', NULL, NULL, NULL);
 
 --
 -- Dumping data for table `person`
 --
 
-INSERT INTO `person` (`id`, `given_name`, `family_name`, `email`, `telephone`, `created_at`, `updated_at`) VALUES
-(1, 'Koen', 'Lavrijssen', 'koen@duodeka.nl', '622783833', NULL, NULL),
-(2, 'Rik', 'van de Looi', 'rik@doodeka.nl', '620992844', NULL, NULL),
-(3, 'Daan', 'Schoofs', 'daan@duodeka.nl', '653586900', NULL, NULL),
-(4, 'Dion', 'Duimel', 'dion@duodeka.nl', '644810461', NULL, NULL),
-(5, 'David', 'Schulpen', 'david@duodeka.nl', '', NULL, NULL),
-(6, 'Emiel', 'Popelier', 'emiel@duodeka.nl', '651269639', NULL, NULL),
-(7, 'Joey', 'Maas', 'joey@duodeka.nl', '643720659', NULL, NULL),
-(8, 'Sven', 'Zahharov', 'sven@duodeka.nl', '613782844', NULL, NULL),
-(9, 'Thijs', 'de Jong', 'thijs@mrwinston.nl', '644870767', NULL, NULL),
-(10, 'Wesley', 'van Bergen', 'wesley@mrwinston.nl', '642577524', NULL, NULL);
+INSERT INTO `person` (`id`, `given_name`, `family_name`, `email`, `telephone`, `thing_id`, `created_at`, `updated_at`) VALUES
+(1, 'Koen', 'Lavrijssen', 'koen@duodeka.nl', '622783833', 2, NULL, NULL),
+(2, 'Rik', 'van de Looi', 'rik@doodeka.nl', '620992844', 3, NULL, NULL),
+(3, 'Daan', 'Schoofs', 'daan@duodeka.nl', '653586900', 4, NULL, NULL),
+(4, 'Dion', 'Duimel', 'dion@duodeka.nl', '644810461', 5, NULL, NULL),
+(5, 'David', 'Schulpen', 'david@duodeka.nl', '', 6, NULL, NULL),
+(6, 'Emiel', 'Popelier', 'emiel@duodeka.nl', '651269639', 7, NULL, NULL),
+(7, 'Joey', 'Maas', 'joey@duodeka.nl', '643720659', NULL, NULL, NULL),
+(8, 'Sven', 'Zahharov', 'sven@duodeka.nl', '613782844', 8, NULL, NULL),
+(9, 'Thijs', 'de Jong', 'thijs@mrwinston.nl', '644870767', 9, NULL, NULL),
+(10, 'Wesley', 'van Bergen', 'wesley@mrwinston.nl', '642577524', 10, NULL, NULL);
 
 --
 -- Dumping data for table `role`
@@ -105,10 +105,35 @@ INSERT INTO `role` (`id`, `person_id`, `roleable_id`, `roleable_type`, `created_
 -- Dumping data for table `same_as`
 --
 
-INSERT INTO `same_as` (`id`, `organization_id`, `url_id`, `created_at`, `updated_at`) VALUES
+INSERT INTO `same_as` (`id`, `thing_id`, `url_id`, `created_at`, `updated_at`) VALUES
 (1, 1, 2, NULL, NULL),
 (2, 1, 3, NULL, NULL),
-(3, 1, 4, NULL, NULL);
+(3, 1, 4, NULL, NULL),
+(4, 2, 5, NULL, NULL),
+(5, 3, 6, NULL, NULL),
+(6, 4, 7, NULL, NULL),
+(7, 5, 8, NULL, NULL),
+(8, 6, 9, NULL, NULL),
+(9, 7, 10, NULL, NULL),
+(10, 8, 11, NULL, NULL),
+(11, 9, 12, NULL, NULL),
+(12, 10, 13, NULL, NULL);
+
+--
+-- Dumping data for table `thing`
+--
+
+INSERT INTO `thing` (`id`, `created_at`, `updated_at`) VALUES
+(1, NULL, NULL),
+(2, NULL, NULL),
+(3, NULL, NULL),
+(4, NULL, NULL),
+(5, NULL, NULL),
+(6, NULL, NULL),
+(7, NULL, NULL),
+(8, NULL, NULL),
+(9, NULL, NULL),
+(10, NULL, NULL);
 
 --
 -- Dumping data for table `url`
@@ -118,7 +143,16 @@ INSERT INTO `url` (`id`, `protocol`, `host`, `port`, `uri`, `created_at`, `updat
 (1, 'https', 'duodeka.nl', NULL, NULL, NULL, NULL),
 (2, 'https', 'www.facebook.com', NULL, 'duodeka', NULL, NULL),
 (3, 'https', 'www.instagram.com', NULL, 'duodeka', NULL, NULL),
-(4, 'https', 'www.linkedin.com', NULL, 'company/duodeka', NULL, NULL);
+(4, 'https', 'www.linkedin.com', NULL, 'company/duodeka', NULL, NULL),
+(5, 'https', 'www.linkedin.com', NULL, 'in/klavrijssen', NULL, NULL),
+(6, 'https', 'www.linkedin.com', NULL, 'in/rik-van-de-looi', NULL, NULL),
+(7, 'https', 'www.linkedin.com', NULL, 'in/daanschoofs', NULL, NULL),
+(8, 'https', 'www.linkedin.com', NULL, 'in/dion-duimel', NULL, NULL),
+(9, 'https', 'www.linkedin.com', NULL, 'in/david-schulpen', NULL, NULL),
+(10, 'https', 'www.linkedin.com', NULL, 'in/emiel-popelier-870732177', NULL, NULL),
+(11, 'https', 'www.linkedin.com', NULL, 'in/sven-zahharov-a82507158', NULL, NULL),
+(12, 'https', 'www.linkedin.com', NULL, 'in/thijsdejong1995', NULL, NULL),
+(13, 'https', 'www.linkedin.com', NULL, 'in/wesleyvanbergen', NULL, NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -14,7 +14,7 @@ Go to
 http://schema-org.localhost/schema
 ```
 
-Import Schema 'database/schema/schema-org.txt'. Generate Database Migrations and extract them to 'database/migrations/'.
+Import Schema 'database/schema/schema.txt'. Generate Database Migrations and extract them to 'database/migrations/'.
 
 ## [Migrations](https://laravel.com/docs/master/migrations) to [SQL](https://en.wikipedia.org/wiki/SQL)
 
@@ -45,7 +45,7 @@ The output can be validated at [Google Structured Data Testing Tool](https://sea
 
 ## [Schema.org](https://schema.org) [Types](https://schema.org/docs/full.html) used
 
-- Thing
+- [Thing](https://schema.org/Thing)
     - [Organization](https://schema.org/Organization)
     - [Person](https://schema.org/Person)
     - Intangible

@@ -3,11 +3,13 @@
 namespace App\Models;
 
 use App\Models\Traits\JsonLd;
+use App\Models\Traits\sameAs;
 use Spatie\SchemaOrg\Schema;
 
 class Organization extends \App\Models\Base\Organization
 {
 	use JsonLd;
+	use sameAs;
 	
 	protected $fillable = [
 		'name',
@@ -17,12 +19,6 @@ class Organization extends \App\Models\Base\Organization
 
 	public function getSchemaOrgSchemaAttribute()
 	{
-		$organizationSameAs = $this->same_as()->get();
-		$sameAs = [];
-		foreach ($organizationSameAs as $organizationSameA) {
-			$sameAs[] = $organizationSameA->url->name;
-		}
-		
 		$organizationEmployees = $this->employees()->get();
 		$employees = [];
 		foreach ($organizationEmployees as $organizationEmployee) {
@@ -39,7 +35,7 @@ class Organization extends \App\Models\Base\Organization
 
 		$organization = Schema::Organization()
 			->setProperty('url', isset($urlName) ? $urlName : null)
-			->sameAs($sameAs)
+			->sameAs($this->getSchemaOrgsameAs())
 			->setProperty('@id', isset($urlName) ? $urlName . '#organization' : null)
 			->name($this->name)
 			->setProperty('logo', $this->logo ? $this->logo : null)
@@ -63,10 +59,5 @@ class Organization extends \App\Models\Base\Organization
 	public function founders()
 	{
 		return $this->hasMany(\App\Models\Founder::class);
-	}
-
-	public function same_as()
-	{
-		return $this->hasMany(\App\Models\SameA::class);
 	}
 }

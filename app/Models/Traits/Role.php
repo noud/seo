@@ -2,9 +2,6 @@
 
 namespace App\Models\Traits;
 
-/**
- * Class UserAttribute.
- */
 trait Role
 {
     public function role()

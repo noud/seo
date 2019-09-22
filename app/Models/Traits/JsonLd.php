@@ -2,9 +2,6 @@
 
 namespace App\Models\Traits;
 
-/**
- * Class UserAttribute.
- */
 trait JsonLd
 {
     private $jsonLd = [];

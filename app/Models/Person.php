@@ -3,11 +3,13 @@
 namespace App\Models;
 
 use App\Models\Traits\JsonLd;
+use App\Models\Traits\sameAs;
 use Spatie\SchemaOrg\Schema;
 
 class Person extends \App\Models\Base\Person
 {
 	use JsonLd;
+	use sameAs;
 	
 	protected $fillable = [
 		'given_name',
@@ -23,6 +25,7 @@ class Person extends \App\Models\Base\Person
 			->familyName($this->family_name)
 			->email($this->email)
 			->telephone($this->telephone)
+			->sameAs($this->getSchemaOrgsameAs())
 		;
 		return $person;
 	}
