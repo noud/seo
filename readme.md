@@ -1,3 +1,4 @@
+## [Google structured data](https://developers.google.com/search/docs/guides/search-gallery)
 ## [Schema.org](https://schema.org)
 
 This was inspired by this question and answer: [Schema.org + Laravel = way too complicated?
@@ -29,7 +30,7 @@ php artisan code:models
 
 ## Client
 
-Import data and see
+Import data and see the output
 
 ```
 mysql -u <user> -p <dbname> < database/data/schema-org.sql
@@ -39,6 +40,9 @@ chrome view-source:http://schema-org.localhost/organization/1/founders/Koen/sche
 chrome view-source:http://schema-org.localhost/organization/1/employees/Koen/schema_org
 chrome view-source:http://schema-org.localhost/organization/2/employees/Koen/schema_org
 ```
+
+The output can be validated at [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
+
 ## [Schema.org](https://schema.org) [Types](https://schema.org/docs/full.html) used
 
 - Thing
