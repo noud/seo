@@ -39,7 +39,7 @@ chrome view-source:http://schema-org.localhost/organization/1/founders/Koen/sche
 chrome view-source:http://schema-org.localhost/organization/1/employees/Koen/schema_org
 chrome view-source:http://schema-org.localhost/organization/2/employees/Koen/schema_org
 ```
-## [Schema.org](https://schema.org) Types used
+## [Schema.org](https://schema.org) [Types](https://schema.org/docs/full.html) used
 
 - Thing
     - [Organization](https://schema.org/Organization)
