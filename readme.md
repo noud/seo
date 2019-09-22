@@ -39,12 +39,16 @@ chrome view-source:http://schema-org.localhost/organization/1/founders/Koen/sche
 chrome view-source:http://schema-org.localhost/organization/1/employees/Koen/schema_org
 chrome view-source:http://schema-org.localhost/organization/2/employees/Koen/schema_org
 ```
-## Types used
+## [Schema.org](https://schema.org) Types used
 
-- [Organization](https://schema.org/Organization)
-- [Person](https://schema.org/Person)
-- [Role](https://schema.org/Role)
-- [URL](https://schema.org/URL)
+- Thing
+    - [Organization](https://schema.org/Organization)
+    - [Person](https://schema.org/Person)
+    - Intangible
+        - [Role](https://schema.org/Role)
+- Data Types
+    - Text
+        - [URL](https://schema.org/URL)
 
 ## Entity-Relationship Diagram
 
