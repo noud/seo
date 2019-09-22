@@ -6,7 +6,7 @@ This was inspired by this question and answer: [Schema.org + Laravel = way too c
 
 Start this app.
 
-## Schema to [Migrations](https://laravel.com/docs/master/migrations)
+## Schema to [Laravel Migrations](https://laravel.com/docs/master/migrations)
 
 Go to
 
@@ -16,7 +16,7 @@ http://schema-org.localhost/schema
 
 Import Schema 'database/schema/schema.txt'. Generate Database Migrations and extract them to 'database/migrations/'.
 
-## [Migrations](https://laravel.com/docs/master/migrations) to [SQL](https://en.wikipedia.org/wiki/SQL)
+## [Laravel Migrations](https://laravel.com/docs/master/migrations) to [SQL](https://en.wikipedia.org/wiki/SQL)
 
 ```
 php artisan migrate
