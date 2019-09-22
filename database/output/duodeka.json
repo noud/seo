@@ -1,0 +1,79 @@
+
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://duodeka.nl/",
+    "sameAs": [
+        "https://www.facebook.com/duodeka",
+        "https://www.instagram.com/duodeka",
+        "https://www.linkedin.com/company/duodeka"
+    ],
+    "@id": "https://duodeka.nl/#organization",
+    "name": "DUODEKA Co\u00f6peratie U.A.",
+    "logo": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png",
+    "telephone": "132032264",
+    "employees": [
+        {
+            "@type": "Person",
+            "givenName": "Koen",
+            "familyName": "Lavrijssen",
+            "email": "koen@duodeka.nl",
+            "telephone": "622783833",
+            "sameAs": [
+                "https://www.linkedin.com/in/klavrijssen"
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Rik",
+            "familyName": "van de Looi",
+            "email": "rik@doodeka.nl",
+            "telephone": "620992844",
+            "sameAs": [
+                "https://www.linkedin.com/in/rik-van-de-looi"
+            ]
+        }
+    ],
+    "founders": [
+        {
+            "@type": "Person",
+            "givenName": "Koen",
+            "familyName": "Lavrijssen",
+            "email": "koen@duodeka.nl",
+            "telephone": "622783833",
+            "sameAs": [
+                "https://www.linkedin.com/in/klavrijssen"
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Rik",
+            "familyName": "van de Looi",
+            "email": "rik@doodeka.nl",
+            "telephone": "620992844",
+            "sameAs": [
+                "https://www.linkedin.com/in/rik-van-de-looi"
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Daan",
+            "familyName": "Schoofs",
+            "email": "daan@duodeka.nl",
+            "telephone": "653586900",
+            "sameAs": [
+                "https://www.linkedin.com/in/daanschoofs"
+            ]
+        },
+        {
+            "@type": "Person",
+            "givenName": "Dion",
+            "familyName": "Duimel",
+            "email": "dion@duodeka.nl",
+            "telephone": "644810461",
+            "sameAs": [
+                "https://www.linkedin.com/in/dion-duimel"
+            ]
+        }
+    ]
+}
