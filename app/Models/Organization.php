@@ -34,7 +34,7 @@ class Organization extends \App\Models\Base\Organization
 		foreach ($organizationFounders as $organizationFounder) {
 			$founders[] = $organizationFounder->role->person->schema_org_schema;
 		}
-//dd($this->url);
+
 		$urlName = $this->url ? $this->url->name : null;
 
 		$organization = Schema::Organization()
