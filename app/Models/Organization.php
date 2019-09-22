@@ -19,12 +19,12 @@ class Organization extends \App\Models\Base\Organization
 
 	public function getSchemaOrgSchemaAttribute()
 	{
-		$urlName = $this->url ? $this->url->name : null;
+		$url = $this->url ? $this->url->name : null;
 
 		$organization = Schema::Organization()
-			->setProperty('url', isset($urlName) ? $urlName : null)
+			->setProperty('url', isset($url) ? $url : null)
 			->sameAs($this->getSchemaOrgsameAs())
-			->setProperty('@id', isset($urlName) ? $urlName . '#organization' : null)
+			->setProperty('@id', isset($url) ? $url . '#organization' : null)
 			->name($this->name)
 			->setProperty('logo', $this->logo ? $this->logo : null)
 			->setProperty('telephone', $this->telephone ? $this->telephone : null)
