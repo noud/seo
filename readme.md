@@ -54,7 +54,7 @@ The output can be validated at [Google Structured Data Testing Tool](https://sea
     - Text
         - [URL](https://schema.org/URL)
 
-## Entity-Relationship Diagram
+## [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
 
 ![Schema.org Entity-Relationship Diagram](./docs/erd.png?raw=true "Schema.org Entity-Relationship Diagram")
 
