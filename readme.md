@@ -36,6 +36,8 @@ mysql -u <user> -p <dbname> < database/data/schema-org.sql
 chrome view-source:http://schema-org.localhost/organization/1/schema_org
 chrome view-source:http://schema-org.localhost/organization/2/schema_org
 chrome view-source:http://schema-org.localhost/organization/1/founders/Koen/schema_org
+chrome view-source:http://schema-org.localhost/organization/1/employees/Koen/schema_org
+chrome view-source:http://schema-org.localhost/organization/2/employees/Koen/schema_org
 ```
 
 ## Entity-Relationship Diagram
