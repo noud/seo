@@ -19,18 +19,6 @@ class Organization extends \App\Models\Base\Organization
 
 	public function getSchemaOrgSchemaAttribute()
 	{
-		$organizationEmployees = $this->employees()->get();
-		$employees = [];
-		foreach ($organizationEmployees as $organizationEmployee) {
-			$employees[] = $organizationEmployee->role->person->schema_org_schema;
-		}
-
-		$organizationFounders = $this->founders()->get();
-		$founders = [];
-		foreach ($organizationFounders as $organizationFounder) {
-			$founders[] = $organizationFounder->role->person->schema_org_schema;
-		}
-
 		$urlName = $this->url ? $this->url->name : null;
 
 		$organization = Schema::Organization()
@@ -40,10 +28,20 @@ class Organization extends \App\Models\Base\Organization
 			->name($this->name)
 			->setProperty('logo', $this->logo ? $this->logo : null)
 			->setProperty('telephone', $this->telephone ? $this->telephone : null)
-			->employees($employees ? $employees : null)
-			->founders($founders ? $founders : null)
+			->employees($this->getSchemaOrgPersonsHavingRole('employees'))
+			->founders($this->getSchemaOrgPersonsHavingRole('founders'))
 		;
 		return $organization;
+	}
+
+	public function getSchemaOrgPersonsHavingRole(string $role)
+	{
+		$organizationPersonsHavingRole = $this->$role()->get();
+		$persons = null;
+		foreach ($organizationPersonsHavingRole as $organizationPersonHavingRole) {
+			$persons[] = $organizationPersonHavingRole->role->person->schema_org_schema;
+		}
+		return $persons;
 	}
 
 	public function getSchemaOrgSchema()
