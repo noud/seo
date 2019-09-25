@@ -63,8 +63,8 @@
                 "y": 161
             },
             "xldyf": {
-                "x": 615,
-                "y": 95
+                "x": 630,
+                "y": 94
             },
             "oxwau": {
                 "x": 619,
@@ -75,16 +75,16 @@
                 "y": 345
             },
             "yye68s": {
-                "x": 165,
-                "y": 555
+                "x": 908,
+                "y": 528
             },
             "1d67r": {
-                "x": 605,
-                "y": 617
+                "x": 607,
+                "y": 633
             },
             "bo322d": {
-                "x": 606,
-                "y": 491
+                "x": 608,
+                "y": 457
             }
         }
     },
@@ -314,52 +314,6 @@
                 "unique": true,
                 "index": true,
                 "unsigned": true,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "1ggtf",
-                "name": "url_id",
-                "type": "bigInteger",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": false,
-                "unique": false,
-                "index": true,
-                "unsigned": true,
-                "foreignKey": {
-                    "references": {
-                        "id": "utpnb5",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "yye68s",
-                        "name": "url"
-                    }
-                }
-            },
-            {
-                "id": "cngl2",
-                "name": "name",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": false,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
                 "foreignKey": {
                     "references": {
                         "id": "",
@@ -938,6 +892,52 @@
                         "name": ""
                     }
                 }
+            },
+            {
+                "id": "280e0p",
+                "name": "name",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "gfexzs",
+                "name": "url_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "utpnb5",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "yye68s",
+                        "name": "url"
+                    }
+                }
             }
         ]
     },
@@ -1004,16 +1004,6 @@
         },
         {
             "source": {
-                "columnId": "1ggtf",
-                "tableId": "mure2o"
-            },
-            "target": {
-                "columnId": "utpnb5",
-                "tableId": "yye68s"
-            }
-        },
-        {
-            "source": {
                 "columnId": "6e4oyg",
                 "tableId": "1d67r"
             },
@@ -1040,6 +1030,16 @@
             "target": {
                 "columnId": "3m7cdr",
                 "tableId": "bo322d"
+            }
+        },
+        {
+            "source": {
+                "columnId": "gfexzs",
+                "tableId": "bo322d"
+            },
+            "target": {
+                "columnId": "utpnb5",
+                "tableId": "yye68s"
             }
         }
     ]
