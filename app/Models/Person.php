@@ -22,7 +22,10 @@ class Person extends \App\Models\Base\Person
 
 	public function getSchemaOrgSchemaAttribute()
 	{
+		$additional_name = $this->additional_name ? $this->additional_name : null;
+
 		$person = Schema::Person()
+			->additionalName($additional_name)
 			->givenName($this->given_name)
 			->familyName($this->family_name)
 			->email($this->email)

@@ -219,6 +219,29 @@
                 }
             },
             {
+                "id": "fspmy",
+                "name": "additional_name",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
                 "id": "q56vpr",
                 "name": "address_id",
                 "type": "bigInteger",

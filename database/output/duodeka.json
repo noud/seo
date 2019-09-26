@@ -43,8 +43,9 @@
         },
         {
             "@type": "Person",
+            "additionalName": "van de",
             "givenName": "Rik",
-            "familyName": "van de Looi",
+            "familyName": "Looi",
             "email": "rik@doodeka.nl",
             "telephone": "+31 6 2099 2844",
             "sameAs": [
@@ -65,8 +66,9 @@
         },
         {
             "@type": "Person",
+            "additionalName": "van de",
             "givenName": "Rik",
-            "familyName": "van de Looi",
+            "familyName": "Looi",
             "email": "rik@doodeka.nl",
             "telephone": "+31 6 2099 2844",
             "sameAs": [

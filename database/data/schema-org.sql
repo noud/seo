@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Sep 26, 2019 at 07:51 PM
+-- Generation Time: Sep 26, 2019 at 08:22 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -75,17 +75,17 @@ INSERT INTO `organization` (`id`, `address_id`, `email`, `location_id`, `logo`, 
 -- Dumping data for table `person`
 --
 
-INSERT INTO `person` (`id`, `address_id`, `email`, `family_name`, `given_name`, `telephone`, `thing_id`, `created_at`, `updated_at`) VALUES
-(1, 0, 'koen@duodeka.nl', 'Lavrijssen', 'Koen', '622783833', 2, NULL, NULL),
-(2, 0, 'rik@doodeka.nl', 'van de Looi', 'Rik', '620992844', 3, NULL, NULL),
-(3, 0, 'daan@duodeka.nl', 'Schoofs', 'Daan', '653586900', 4, NULL, NULL),
-(4, 0, 'dion@duodeka.nl', 'Duimel', 'Dion', '644810461', 5, NULL, NULL),
-(5, 0, 'david@duodeka.nl', 'Schulpen', 'David', '', 6, NULL, NULL),
-(6, 0, 'emiel@duodeka.nl', 'Popelier', 'Emiel', '651269639', 7, NULL, NULL),
-(7, 0, 'joey@duodeka.nl', 'Maas', 'Joey', '643720659', NULL, NULL, NULL),
-(8, 0, 'sven@duodeka.nl', 'Zahharov', 'Sven', '613782844', 8, NULL, NULL),
-(9, 0, 'thijs@mrwinston.nl', 'de Jong', 'Thijs', '644870767', 9, NULL, NULL),
-(10, 0, 'wesley@mrwinston.nl', 'van Bergen', 'Wesley', '642577524', 10, NULL, NULL);
+INSERT INTO `person` (`id`, `additional_name`, `address_id`, `email`, `family_name`, `given_name`, `telephone`, `thing_id`, `created_at`, `updated_at`) VALUES
+(1, '', 0, 'koen@duodeka.nl', 'Lavrijssen', 'Koen', '622783833', 2, NULL, NULL),
+(2, 'van de', 0, 'rik@doodeka.nl', 'Looi', 'Rik', '620992844', 3, NULL, NULL),
+(3, '', 0, 'daan@duodeka.nl', 'Schoofs', 'Daan', '653586900', 4, NULL, NULL),
+(4, '', 0, 'dion@duodeka.nl', 'Duimel', 'Dion', '644810461', 5, NULL, NULL),
+(5, '', 0, 'david@duodeka.nl', 'Schulpen', 'David', '', 6, NULL, NULL),
+(6, '', 0, 'emiel@duodeka.nl', 'Popelier', 'Emiel', '651269639', 7, NULL, NULL),
+(7, '', 0, 'joey@duodeka.nl', 'Maas', 'Joey', '643720659', NULL, NULL, NULL),
+(8, '', 0, 'sven@duodeka.nl', 'Zahharov', 'Sven', '613782844', 8, NULL, NULL),
+(9, 'de', 0, 'thijs@mrwinston.nl', 'Jong', 'Thijs', '644870767', 9, NULL, NULL),
+(10, 'van', 0, 'wesley@mrwinston.nl', 'Bergen', 'Wesley', '642577524', 10, NULL, NULL);
 
 --
 -- Dumping data for table `place`
