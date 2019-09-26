@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Sep 26, 2019 at 08:22 PM
+-- Generation Time: Sep 26, 2019 at 11:05 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -67,9 +67,9 @@ INSERT INTO `founders` (`id`, `organization_id`, `founder_id`, `created_at`, `up
 -- Dumping data for table `organization`
 --
 
-INSERT INTO `organization` (`id`, `address_id`, `email`, `location_id`, `logo`, `telephone`, `thing_id`, `created_at`, `updated_at`) VALUES
-(1, 1, 'info@duodeka.nl', 1, 'http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png', '132032264', 1, NULL, NULL),
-(2, 0, NULL, 0, '', '', 11, NULL, NULL);
+INSERT INTO `organization` (`id`, `address_id`, `email`, `legal_name`, `location_id`, `logo`, `telephone`, `thing_id`, `created_at`, `updated_at`) VALUES
+(1, 1, 'info@duodeka.nl', 'DUODEKA Coöperatie U.A.', 1, 'http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png', '132032264', 1, NULL, NULL),
+(2, 0, NULL, '', 0, '', '', 11, NULL, NULL);
 
 --
 -- Dumping data for table `person`
@@ -137,18 +137,18 @@ INSERT INTO `same_as` (`id`, `thing_id`, `url_id`, `created_at`, `updated_at`) V
 -- Dumping data for table `thing`
 --
 
-INSERT INTO `thing` (`id`, `name`, `url_id`, `created_at`, `updated_at`) VALUES
-(1, 'DUODEKA Coöperatie U.A.', 1, NULL, NULL),
-(2, '', NULL, NULL, NULL),
-(3, '', NULL, NULL, NULL),
-(4, '', NULL, NULL, NULL),
-(5, '', NULL, NULL, NULL),
-(6, '', NULL, NULL, NULL),
-(7, '', NULL, NULL, NULL),
-(8, '', NULL, NULL, NULL),
-(9, '', NULL, NULL, NULL),
-(10, '', NULL, NULL, NULL),
-(11, 'Mr. Winston', NULL, NULL, NULL);
+INSERT INTO `thing` (`id`, `alternate_name`, `name`, `url_id`, `created_at`, `updated_at`) VALUES
+(1, 'XII', 'DUODEKA', 1, NULL, NULL),
+(2, '', '', NULL, NULL, NULL),
+(3, '', '', NULL, NULL, NULL),
+(4, '', '', NULL, NULL, NULL),
+(5, '', '', NULL, NULL, NULL),
+(6, '', '', NULL, NULL, NULL),
+(7, '', '', NULL, NULL, NULL),
+(8, '', '', NULL, NULL, NULL),
+(9, '', '', NULL, NULL, NULL),
+(10, '', '', NULL, NULL, NULL),
+(11, '', 'Mr. Winston', NULL, NULL, NULL);
 
 --
 -- Dumping data for table `url`

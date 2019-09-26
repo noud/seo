@@ -24,24 +24,30 @@ class Organization extends \App\Models\Base\Organization
 	public function getSchemaOrgSchemaAttribute()
 	{
 		$email = $this->email ? $this->email : null;
-		$url = $this->thing && $this->thing->url && $this->thing->url->name ? $this->thing->url->name : null;
+		$legal_name = $this->legal_name ? $this->legal_name : null;
 		$logo = $this->logo ? $this->logo : null;
-		$telephone = $this->telephone ? $this->telephone : null;
-		$postalAddressSchema = $this->postal_address ? $this->postal_address->schema_org_schema : null;
 		$placeSchema = $this->place ? $this->place->schema_org_schema : null;
+		$postalAddressSchema = $this->postal_address ? $this->postal_address->schema_org_schema : null;
+		$telephone = $this->telephone ? $this->telephone : null;
+		// Thing
+		$alternate_name = $this->thing && $this->thing->alternate_name ? $this->thing->alternate_name : null;
+		$url = $this->thing && $this->thing->url && $this->thing->url->name ? $this->thing->url->name : null;
 
 		$organization = Schema::Organization()
-			->address($postalAddressSchema)
-			->location($placeSchema)
-			->email($email)
-			->setProperty('url', $url)
-			->setProperty('sameAs', $this->getSchemaOrgsameAs())
 			->setProperty('@id', isset($url) ? $url . '/#organization' : null)
-			->name($this->thing->name)
-			->logo($logo)
-			->telephone($telephone)
+			->address($postalAddressSchema)
+			->email($email)
 			->employees($this->getSchemaOrgPersonsHavingRole('employees'))
 			->founders($this->getSchemaOrgPersonsHavingRole('founders'))
+			->legalName($legal_name)
+			->location($placeSchema)
+			->logo($logo)
+			->telephone($telephone)
+			// Thing
+			->setProperty('alternateName', $alternate_name)
+			->name($this->thing->name)
+			->setProperty('sameAs', $this->getSchemaOrgsameAs())
+			->setProperty('url', $url)
 		;
 		return $organization;
 	}

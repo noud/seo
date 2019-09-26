@@ -2,6 +2,7 @@
 {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://duodeka.nl/#organization",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "Tivolistraat 50-52",
@@ -9,6 +10,74 @@
         "addressLocality": "Tilburg",
         "addressCountry": "NL"
     },
+    "email": "info@duodeka.nl",
+    "employees": [
+        {
+            "@type": "Person",
+            "email": "koen@duodeka.nl",
+            "familyName": "Lavrijssen",
+            "givenName": "Koen",
+            "telephone": "+31 6 2278 3833",
+            "sameAs": [
+                "https://www.linkedin.com/in/klavrijssen"
+            ]
+        },
+        {
+            "@type": "Person",
+            "additionalName": "van de",
+            "email": "rik@doodeka.nl",
+            "familyName": "Looi",
+            "givenName": "Rik",
+            "telephone": "+31 6 2099 2844",
+            "sameAs": [
+                "https://www.linkedin.com/in/rik-van-de-looi"
+            ]
+        }
+    ],
+    "founders": [
+        {
+            "@type": "Person",
+            "email": "koen@duodeka.nl",
+            "familyName": "Lavrijssen",
+            "givenName": "Koen",
+            "telephone": "+31 6 2278 3833",
+            "sameAs": [
+                "https://www.linkedin.com/in/klavrijssen"
+            ]
+        },
+        {
+            "@type": "Person",
+            "additionalName": "van de",
+            "email": "rik@doodeka.nl",
+            "familyName": "Looi",
+            "givenName": "Rik",
+            "telephone": "+31 6 2099 2844",
+            "sameAs": [
+                "https://www.linkedin.com/in/rik-van-de-looi"
+            ]
+        },
+        {
+            "@type": "Person",
+            "email": "daan@duodeka.nl",
+            "familyName": "Schoofs",
+            "givenName": "Daan",
+            "telephone": "+31 6 5358 6900",
+            "sameAs": [
+                "https://www.linkedin.com/in/daanschoofs"
+            ]
+        },
+        {
+            "@type": "Person",
+            "email": "dion@duodeka.nl",
+            "familyName": "Duimel",
+            "givenName": "Dion",
+            "telephone": "+31 6 4481 0461",
+            "sameAs": [
+                "https://www.linkedin.com/in/dion-duimel"
+            ]
+        }
+    ],
+    "legalName": "DUODEKA Co\u00f6peratie U.A.",
     "location": {
         "@type": "Place",
         "address": {
@@ -19,81 +88,14 @@
             "addressCountry": "NL"
         }
     },
-    "email": "info@duodeka.nl",
-    "url": "https://duodeka.nl",
+    "logo": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png",
+    "telephone": "+31 13 203 2264",
+    "alternateName": "XII",
+    "name": "DUODEKA",
     "sameAs": [
         "https://www.facebook.com/duodeka",
         "https://www.instagram.com/duodeka",
         "https://www.linkedin.com/company/duodeka"
     ],
-    "@id": "https://duodeka.nl/#organization",
-    "name": "DUODEKA Co\u00f6peratie U.A.",
-    "logo": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png",
-    "telephone": "+31 13 203 2264",
-    "employees": [
-        {
-            "@type": "Person",
-            "givenName": "Koen",
-            "familyName": "Lavrijssen",
-            "email": "koen@duodeka.nl",
-            "telephone": "+31 6 2278 3833",
-            "sameAs": [
-                "https://www.linkedin.com/in/klavrijssen"
-            ]
-        },
-        {
-            "@type": "Person",
-            "additionalName": "van de",
-            "givenName": "Rik",
-            "familyName": "Looi",
-            "email": "rik@doodeka.nl",
-            "telephone": "+31 6 2099 2844",
-            "sameAs": [
-                "https://www.linkedin.com/in/rik-van-de-looi"
-            ]
-        }
-    ],
-    "founders": [
-        {
-            "@type": "Person",
-            "givenName": "Koen",
-            "familyName": "Lavrijssen",
-            "email": "koen@duodeka.nl",
-            "telephone": "+31 6 2278 3833",
-            "sameAs": [
-                "https://www.linkedin.com/in/klavrijssen"
-            ]
-        },
-        {
-            "@type": "Person",
-            "additionalName": "van de",
-            "givenName": "Rik",
-            "familyName": "Looi",
-            "email": "rik@doodeka.nl",
-            "telephone": "+31 6 2099 2844",
-            "sameAs": [
-                "https://www.linkedin.com/in/rik-van-de-looi"
-            ]
-        },
-        {
-            "@type": "Person",
-            "givenName": "Daan",
-            "familyName": "Schoofs",
-            "email": "daan@duodeka.nl",
-            "telephone": "+31 6 5358 6900",
-            "sameAs": [
-                "https://www.linkedin.com/in/daanschoofs"
-            ]
-        },
-        {
-            "@type": "Person",
-            "givenName": "Dion",
-            "familyName": "Duimel",
-            "email": "dion@duodeka.nl",
-            "telephone": "+31 6 4481 0461",
-            "sameAs": [
-                "https://www.linkedin.com/in/dion-duimel"
-            ]
-        }
-    ]
+    "url": "https://duodeka.nl"
 }

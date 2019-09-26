@@ -26,10 +26,11 @@ class Person extends \App\Models\Base\Person
 
 		$person = Schema::Person()
 			->additionalName($additional_name)
-			->givenName($this->given_name)
-			->familyName($this->family_name)
 			->email($this->email)
+			->familyName($this->family_name)
+			->givenName($this->given_name)
 			->telephone($this->telephone)
+			// Thing
 			->sameAs($this->getSchemaOrgsameAs())
 		;
 		return $person;

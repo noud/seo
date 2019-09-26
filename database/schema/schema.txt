@@ -51,8 +51,8 @@
                 "y": 335
             },
             "mure2o": {
-                "x": 247,
-                "y": 129
+                "x": 251,
+                "y": 83
             },
             "idoqfc": {
                 "x": 1143,
@@ -436,6 +436,29 @@
                 "comment": "",
                 "autoInc": false,
                 "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "5i8t3b",
+                "name": "legal_name",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
                 "unique": false,
                 "index": false,
                 "unsigned": false,
@@ -1030,6 +1053,29 @@
                 "unique": true,
                 "index": true,
                 "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "i3oi0k",
+                "name": "alternate_name",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
                 "foreignKey": {
                     "references": {
                         "id": "",
