@@ -6,7 +6,7 @@ trait sameAs
 {
     private function getSchemaOrgsameAs()
 	{
-		$sameAs = [];
+		$sameAs = null;
 		$thing = $this->thing()->get()->first();
 		if ($thing) {
 			$sameAsThings = $thing->same_as()->get();

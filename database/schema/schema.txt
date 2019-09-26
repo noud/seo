@@ -47,44 +47,56 @@
         },
         "positions": {
             "uwgi9o": {
-                "x": 1421,
-                "y": 90
+                "x": 1389,
+                "y": 335
             },
             "mure2o": {
-                "x": 168,
-                "y": 58
+                "x": 247,
+                "y": 129
             },
             "idoqfc": {
-                "x": 1146,
-                "y": 57
+                "x": 1143,
+                "y": 187
             },
             "zaz55d": {
-                "x": 919,
-                "y": 161
+                "x": 923,
+                "y": 177
             },
             "xldyf": {
-                "x": 630,
-                "y": 94
+                "x": 627,
+                "y": 111
             },
             "oxwau": {
-                "x": 619,
-                "y": 279
+                "x": 631,
+                "y": 287
             },
             "3z0orn": {
-                "x": 906,
-                "y": 345
+                "x": 924,
+                "y": 305
             },
             "yye68s": {
                 "x": 908,
-                "y": 528
+                "y": 571
             },
             "1d67r": {
-                "x": 607,
-                "y": 633
+                "x": 577,
+                "y": 775
             },
             "bo322d": {
-                "x": 608,
-                "y": 457
+                "x": 576,
+                "y": 951
+            },
+            "3rd2qr": {
+                "x": 587,
+                "y": 463
+            },
+            "07jqi": {
+                "x": 249,
+                "y": 436
+            },
+            "31s271": {
+                "x": 245,
+                "y": 627
             }
         }
     },
@@ -158,6 +170,27 @@
             "color": "table-header-green",
             "softDelete": false,
             "timeStamp": true
+        },
+        {
+            "id": "3rd2qr",
+            "name": "postal_address",
+            "color": "table-header-blue",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "07jqi",
+            "name": "place",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "31s271",
+            "name": "geo_coordinates",
+            "color": "table-header-blue",
+            "softDelete": false,
+            "timeStamp": true
         }
     ],
     "columns": {
@@ -186,15 +219,38 @@
                 }
             },
             {
-                "id": "uc1v5p",
-                "name": "given_name",
-                "type": "string",
+                "id": "q56vpr",
+                "name": "address_id",
+                "type": "bigInteger",
                 "length": "",
                 "defValue": "",
                 "comment": "",
                 "autoInc": false,
                 "nullable": false,
                 "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "3m7css",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "3rd2qr",
+                        "name": "postal_address"
+                    }
+                }
+            },
+            {
+                "id": "nkqdn8",
+                "name": "email",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": true,
                 "index": false,
                 "unsigned": false,
                 "foreignKey": {
@@ -232,8 +288,8 @@
                 }
             },
             {
-                "id": "nkqdn8",
-                "name": "email",
+                "id": "uc1v5p",
+                "name": "given_name",
                 "type": "string",
                 "length": "",
                 "defValue": "",
@@ -322,6 +378,75 @@
                     "on": {
                         "id": "",
                         "name": ""
+                    }
+                }
+            },
+            {
+                "id": "tlhl7s",
+                "name": "address_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "3m7css",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "3rd2qr",
+                        "name": "postal_address"
+                    }
+                }
+            },
+            {
+                "id": "r2od53",
+                "name": "email",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "8w5im",
+                "name": "location_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "36ildg",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "07jqi",
+                        "name": "place"
                     }
                 }
             },
@@ -939,6 +1064,311 @@
                     }
                 }
             }
+        ],
+        "3rd2qr": [
+            {
+                "id": "3m7css",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "rc79dk",
+                "name": "address_country",
+                "type": "char",
+                "length": "2",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": true,
+                "index": true,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "ydwdevh",
+                "name": "address_locality",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "rcpldl",
+                "name": "address_region",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "slgxqp",
+                "name": "post_office_box_number",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "9cxnna",
+                "name": "postal_code",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "nlg2q",
+                "name": "street_address",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
+        ],
+        "07jqi": [
+            {
+                "id": "36ildg",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "fkxp6c",
+                "name": "address_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "3m7css",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "3rd2qr",
+                        "name": "postal_address"
+                    }
+                }
+            },
+            {
+                "id": "nmajm",
+                "name": "geo_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "yzk6n",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "31s271",
+                        "name": "geo_coordinates"
+                    }
+                }
+            }
+        ],
+        "31s271": [
+            {
+                "id": "yzk6n",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "90j78p",
+                "name": "latitude",
+                "type": "float",
+                "length": "8,5",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "g203g8",
+                "name": "longitude",
+                "type": "float",
+                "length": "8,5",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
         ]
     },
     "relations": [
@@ -1040,6 +1470,56 @@
             "target": {
                 "columnId": "utpnb5",
                 "tableId": "yye68s"
+            }
+        },
+        {
+            "source": {
+                "columnId": "tlhl7s",
+                "tableId": "mure2o"
+            },
+            "target": {
+                "columnId": "3m7css",
+                "tableId": "3rd2qr"
+            }
+        },
+        {
+            "source": {
+                "columnId": "q56vpr",
+                "tableId": "uwgi9o"
+            },
+            "target": {
+                "columnId": "3m7css",
+                "tableId": "3rd2qr"
+            }
+        },
+        {
+            "source": {
+                "columnId": "fkxp6c",
+                "tableId": "07jqi"
+            },
+            "target": {
+                "columnId": "3m7css",
+                "tableId": "3rd2qr"
+            }
+        },
+        {
+            "source": {
+                "columnId": "8w5im",
+                "tableId": "mure2o"
+            },
+            "target": {
+                "columnId": "36ildg",
+                "tableId": "07jqi"
+            }
+        },
+        {
+            "source": {
+                "columnId": "nmajm",
+                "tableId": "07jqi"
+            },
+            "target": {
+                "columnId": "yzk6n",
+                "tableId": "31s271"
             }
         }
     ]

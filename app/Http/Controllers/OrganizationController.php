@@ -12,6 +12,11 @@ class OrganizationController extends Controller
         return $organization->$field ?? 'not found';
     }
 
+    public function address(Organization $organization, String $field)
+    {
+        return $organization->postal_address->$field ?? 'not found';
+    }
+
     public function employeesByName(Organization $organization, String $name, String $field)
     {
         // https://stackoverflow.com/questions/33193525/schema-org-laravel-way-too-complicated

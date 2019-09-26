@@ -2,7 +2,25 @@
 {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "url": "https://duodeka.nl/",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tivolistraat 50-52",
+        "postalCode": "5017 HR",
+        "addressLocality": "Tilburg",
+        "addressCountry": "NL"
+    },
+    "location": {
+        "@type": "Place",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Tivolistraat 50-52",
+            "postalCode": "5017 HR",
+            "addressLocality": "Tilburg",
+            "addressCountry": "NL"
+        }
+    },
+    "email": "info@duodeka.nl",
+    "url": "https://duodeka.nl",
     "sameAs": [
         "https://www.facebook.com/duodeka",
         "https://www.instagram.com/duodeka",
@@ -11,14 +29,14 @@
     "@id": "https://duodeka.nl/#organization",
     "name": "DUODEKA Co\u00f6peratie U.A.",
     "logo": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png",
-    "telephone": "132032264",
+    "telephone": "+31 13 203 2264",
     "employees": [
         {
             "@type": "Person",
             "givenName": "Koen",
             "familyName": "Lavrijssen",
             "email": "koen@duodeka.nl",
-            "telephone": "622783833",
+            "telephone": "+31 6 2278 3833",
             "sameAs": [
                 "https://www.linkedin.com/in/klavrijssen"
             ]
@@ -28,7 +46,7 @@
             "givenName": "Rik",
             "familyName": "van de Looi",
             "email": "rik@doodeka.nl",
-            "telephone": "620992844",
+            "telephone": "+31 6 2099 2844",
             "sameAs": [
                 "https://www.linkedin.com/in/rik-van-de-looi"
             ]
@@ -40,7 +58,7 @@
             "givenName": "Koen",
             "familyName": "Lavrijssen",
             "email": "koen@duodeka.nl",
-            "telephone": "622783833",
+            "telephone": "+31 6 2278 3833",
             "sameAs": [
                 "https://www.linkedin.com/in/klavrijssen"
             ]
@@ -50,7 +68,7 @@
             "givenName": "Rik",
             "familyName": "van de Looi",
             "email": "rik@doodeka.nl",
-            "telephone": "620992844",
+            "telephone": "+31 6 2099 2844",
             "sameAs": [
                 "https://www.linkedin.com/in/rik-van-de-looi"
             ]
@@ -60,7 +78,7 @@
             "givenName": "Daan",
             "familyName": "Schoofs",
             "email": "daan@duodeka.nl",
-            "telephone": "653586900",
+            "telephone": "+31 6 5358 6900",
             "sameAs": [
                 "https://www.linkedin.com/in/daanschoofs"
             ]
@@ -70,7 +88,7 @@
             "givenName": "Dion",
             "familyName": "Duimel",
             "email": "dion@duodeka.nl",
-            "telephone": "644810461",
+            "telephone": "+31 6 4481 0461",
             "sameAs": [
                 "https://www.linkedin.com/in/dion-duimel"
             ]

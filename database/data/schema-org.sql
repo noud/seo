@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Sep 25, 2019 at 08:19 PM
+-- Generation Time: Sep 26, 2019 at 07:51 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -67,25 +67,39 @@ INSERT INTO `founders` (`id`, `organization_id`, `founder_id`, `created_at`, `up
 -- Dumping data for table `organization`
 --
 
-INSERT INTO `organization` (`id`, `logo`, `telephone`, `thing_id`, `created_at`, `updated_at`) VALUES
-(1, 'http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png', '132032264', 1, NULL, NULL),
-(2, '', '', 11, NULL, NULL);
+INSERT INTO `organization` (`id`, `address_id`, `email`, `location_id`, `logo`, `telephone`, `thing_id`, `created_at`, `updated_at`) VALUES
+(1, 1, 'info@duodeka.nl', 1, 'http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png', '132032264', 1, NULL, NULL),
+(2, 0, NULL, 0, '', '', 11, NULL, NULL);
 
 --
 -- Dumping data for table `person`
 --
 
-INSERT INTO `person` (`id`, `given_name`, `family_name`, `email`, `telephone`, `thing_id`, `created_at`, `updated_at`) VALUES
-(1, 'Koen', 'Lavrijssen', 'koen@duodeka.nl', '622783833', 2, NULL, NULL),
-(2, 'Rik', 'van de Looi', 'rik@doodeka.nl', '620992844', 3, NULL, NULL),
-(3, 'Daan', 'Schoofs', 'daan@duodeka.nl', '653586900', 4, NULL, NULL),
-(4, 'Dion', 'Duimel', 'dion@duodeka.nl', '644810461', 5, NULL, NULL),
-(5, 'David', 'Schulpen', 'david@duodeka.nl', '', 6, NULL, NULL),
-(6, 'Emiel', 'Popelier', 'emiel@duodeka.nl', '651269639', 7, NULL, NULL),
-(7, 'Joey', 'Maas', 'joey@duodeka.nl', '643720659', NULL, NULL, NULL),
-(8, 'Sven', 'Zahharov', 'sven@duodeka.nl', '613782844', 8, NULL, NULL),
-(9, 'Thijs', 'de Jong', 'thijs@mrwinston.nl', '644870767', 9, NULL, NULL),
-(10, 'Wesley', 'van Bergen', 'wesley@mrwinston.nl', '642577524', 10, NULL, NULL);
+INSERT INTO `person` (`id`, `address_id`, `email`, `family_name`, `given_name`, `telephone`, `thing_id`, `created_at`, `updated_at`) VALUES
+(1, 0, 'koen@duodeka.nl', 'Lavrijssen', 'Koen', '622783833', 2, NULL, NULL),
+(2, 0, 'rik@doodeka.nl', 'van de Looi', 'Rik', '620992844', 3, NULL, NULL),
+(3, 0, 'daan@duodeka.nl', 'Schoofs', 'Daan', '653586900', 4, NULL, NULL),
+(4, 0, 'dion@duodeka.nl', 'Duimel', 'Dion', '644810461', 5, NULL, NULL),
+(5, 0, 'david@duodeka.nl', 'Schulpen', 'David', '', 6, NULL, NULL),
+(6, 0, 'emiel@duodeka.nl', 'Popelier', 'Emiel', '651269639', 7, NULL, NULL),
+(7, 0, 'joey@duodeka.nl', 'Maas', 'Joey', '643720659', NULL, NULL, NULL),
+(8, 0, 'sven@duodeka.nl', 'Zahharov', 'Sven', '613782844', 8, NULL, NULL),
+(9, 0, 'thijs@mrwinston.nl', 'de Jong', 'Thijs', '644870767', 9, NULL, NULL),
+(10, 0, 'wesley@mrwinston.nl', 'van Bergen', 'Wesley', '642577524', 10, NULL, NULL);
+
+--
+-- Dumping data for table `place`
+--
+
+INSERT INTO `place` (`id`, `address_id`, `geo_id`, `created_at`, `updated_at`) VALUES
+(1, 1, NULL, NULL, NULL);
+
+--
+-- Dumping data for table `postal_address`
+--
+
+INSERT INTO `postal_address` (`id`, `address_country`, `address_locality`, `address_region`, `post_office_box_number`, `postal_code`, `street_address`, `created_at`, `updated_at`) VALUES
+(1, 'NL', 'Tilburg', NULL, NULL, '5017HR', 'Tivolistraat 50-52', NULL, NULL);
 
 --
 -- Dumping data for table `role`
@@ -123,18 +137,18 @@ INSERT INTO `same_as` (`id`, `thing_id`, `url_id`, `created_at`, `updated_at`) V
 -- Dumping data for table `thing`
 --
 
-INSERT INTO `thing` (`id`, `url_id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 1, 'DUODEKA Coöperatie U.A.', NULL, NULL),
-(2, NULL, '', NULL, NULL),
-(3, NULL, '', NULL, NULL),
-(4, NULL, '', NULL, NULL),
-(5, NULL, '', NULL, NULL),
-(6, NULL, '', NULL, NULL),
-(7, NULL, '', NULL, NULL),
-(8, NULL, '', NULL, NULL),
-(9, NULL, '', NULL, NULL),
-(10, NULL, '', NULL, NULL),
-(11, NULL, 'Mr. Winston', NULL, NULL);
+INSERT INTO `thing` (`id`, `name`, `url_id`, `created_at`, `updated_at`) VALUES
+(1, 'DUODEKA Coöperatie U.A.', 1, NULL, NULL),
+(2, '', NULL, NULL, NULL),
+(3, '', NULL, NULL, NULL),
+(4, '', NULL, NULL, NULL),
+(5, '', NULL, NULL, NULL),
+(6, '', NULL, NULL, NULL),
+(7, '', NULL, NULL, NULL),
+(8, '', NULL, NULL, NULL),
+(9, '', NULL, NULL, NULL),
+(10, '', NULL, NULL, NULL),
+(11, 'Mr. Winston', NULL, NULL, NULL);
 
 --
 -- Dumping data for table `url`

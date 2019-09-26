@@ -39,6 +39,7 @@ chrome view-source:http://schema-org.localhost/organization/2/schema_org
 chrome view-source:http://schema-org.localhost/organization/1/founders/Koen/schema_org
 chrome view-source:http://schema-org.localhost/organization/1/employees/Koen/schema_org
 chrome view-source:http://schema-org.localhost/organization/2/employees/Koen/schema_org
+chrome view-source:http://schema-org.localhost/organization/1/address/schema_org
 ```
 
 The output can be validated at [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
@@ -48,8 +49,13 @@ The output can be validated at [Google Structured Data Testing Tool](https://sea
 - [Thing](https://schema.org/Thing)
     - [Organization](https://schema.org/Organization)
     - [Person](https://schema.org/Person)
+    - [Place](https://schema.org/Place)
     - Intangible
         - [Role](https://schema.org/Role)
+        - StructuredValue
+            - ContactPoint
+                - [PostalAddress](https://schema.org/PostalAddress)
+            - [GeoCoordinates](https://schema.org/GeoCoordinates)
 - Data Types
     - Text
         - [URL](https://schema.org/URL)

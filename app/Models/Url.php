@@ -18,8 +18,12 @@ class Url extends \App\Models\Base\Url
 	public function getNameAttribute()
 	{
 		if ($this) {
-			$url = $this->protocol . '://' . $this->host . '/' . $this->uri;
+			$url = $this->protocol . '://' . $this->host;
+			if ($this->uri) {
+			  $url = $url . '/' . $this->uri;
+			}
 			return $url;
 		}
+		return null;
 	}
 }
