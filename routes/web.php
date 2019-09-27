@@ -17,3 +17,6 @@ Route::get('/organization/{organization}/{field}', 'OrganizationController@field
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('schema', '\Agontuk\Schema\Controllers\SchemaController@index');
+Route::post('schema', '\Agontuk\Schema\Controllers\SchemaController@generateMigration');
