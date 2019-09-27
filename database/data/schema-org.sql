@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Sep 26, 2019 at 11:05 PM
+-- Generation Time: Sep 27, 2019 at 08:32 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -30,6 +30,8 @@ INSERT INTO `employee` (`id`, `created_at`, `updated_at`) VALUES
 (1, NULL, NULL),
 (2, NULL, NULL),
 (6, NULL, NULL),
+(7, NULL, NULL),
+(8, NULL, NULL),
 (9, NULL, NULL);
 
 --
@@ -41,7 +43,11 @@ INSERT INTO `employees` (`id`, `organization_id`, `employee_id`, `created_at`, `
 (1, 2, 1, NULL, NULL),
 (2, 1, 2, NULL, NULL),
 (9, 2, 9, NULL, NULL),
-(6, 2, 6, NULL, NULL);
+(6, 2, 6, NULL, NULL),
+(7, 1, 7, NULL, NULL),
+(8, 1, 8, NULL, NULL),
+(10, 2, 10, NULL, NULL),
+(5, 1, 5, NULL, NULL);
 
 --
 -- Dumping data for table `founder`
@@ -113,7 +119,11 @@ INSERT INTO `role` (`id`, `person_id`, `roleable_id`, `roleable_type`, `created_
 (5, 3, 3, 'App\\Models\\Founder', NULL, NULL),
 (6, 4, 4, 'App\\Models\\Founder', NULL, NULL),
 (7, 6, 6, 'App\\Models\\Employee', NULL, NULL),
-(8, 9, 9, 'App\\Models\\Employee', NULL, NULL);
+(8, 9, 9, 'App\\Models\\Employee', NULL, NULL),
+(9, 7, 7, 'App\\Models\\Employee', NULL, NULL),
+(10, 8, 8, 'App\\Models\\Employee', NULL, NULL),
+(11, 10, 10, 'App\\Models\\Employee', NULL, NULL),
+(12, 5, 5, 'App\\Models\\Employee', NULL, NULL);
 
 --
 -- Dumping data for table `same_as`
@@ -122,16 +132,7 @@ INSERT INTO `role` (`id`, `person_id`, `roleable_id`, `roleable_type`, `created_
 INSERT INTO `same_as` (`id`, `thing_id`, `url_id`, `created_at`, `updated_at`) VALUES
 (1, 1, 2, NULL, NULL),
 (2, 1, 3, NULL, NULL),
-(3, 1, 4, NULL, NULL),
-(4, 2, 5, NULL, NULL),
-(5, 3, 6, NULL, NULL),
-(6, 4, 7, NULL, NULL),
-(7, 5, 8, NULL, NULL),
-(8, 6, 9, NULL, NULL),
-(9, 7, 10, NULL, NULL),
-(10, 8, 11, NULL, NULL),
-(11, 9, 12, NULL, NULL),
-(12, 10, 13, NULL, NULL);
+(3, 1, 4, NULL, NULL);
 
 --
 -- Dumping data for table `thing`
@@ -139,15 +140,15 @@ INSERT INTO `same_as` (`id`, `thing_id`, `url_id`, `created_at`, `updated_at`) V
 
 INSERT INTO `thing` (`id`, `alternate_name`, `name`, `url_id`, `created_at`, `updated_at`) VALUES
 (1, 'XII', 'DUODEKA', 1, NULL, NULL),
-(2, '', '', NULL, NULL, NULL),
-(3, '', '', NULL, NULL, NULL),
-(4, '', '', NULL, NULL, NULL),
-(5, '', '', NULL, NULL, NULL),
-(6, '', '', NULL, NULL, NULL),
-(7, '', '', NULL, NULL, NULL),
-(8, '', '', NULL, NULL, NULL),
-(9, '', '', NULL, NULL, NULL),
-(10, '', '', NULL, NULL, NULL),
+(2, '', '', 5, NULL, NULL),
+(3, '', '', 6, NULL, NULL),
+(4, '', '', 7, NULL, NULL),
+(5, '', '', 8, NULL, NULL),
+(6, '', '', 9, NULL, NULL),
+(7, '', '', 10, NULL, NULL),
+(8, '', '', 11, NULL, NULL),
+(9, '', '', 12, NULL, NULL),
+(10, '', '', 13, NULL, NULL),
 (11, '', 'Mr. Winston', NULL, NULL, NULL);
 
 --

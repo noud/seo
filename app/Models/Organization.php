@@ -5,7 +5,6 @@ namespace App\Models;
 use App\Models\Traits\JsonLd;
 use App\Models\Traits\sameAs;
 use App\Models\Traits\telephone;
-use Spatie\SchemaOrg\Schema;
 
 class Organization extends \App\Models\Base\Organization
 {
@@ -23,6 +22,19 @@ class Organization extends \App\Models\Base\Organization
 
 	public function getSchemaOrgSchemaAttribute()
 	{
+		// employees and founders
+		$employeesSchemas = $this->getSchemaOrgPersonsHavingRole('employees', 'schema_org_schema');
+		// @todo should i call schema_org_schema schema_org_embedded ?
+		$foundersSchemas = $this->getSchemaOrgPersonsHavingRole('founders', 'schema_org_schema');
+		if ($foundersSchemas) {
+			// substract founders from employees and then add founderNodeIdentiefies (given all founders are employees)
+			$foundersNodeIdentifiers = $this->getSchemaOrgPersonsHavingRole('founders', 'schema_org_node_identifier');
+			$employeesSchemas = array_diff($employeesSchemas, $foundersSchemas);
+			$employeesSchemasCount = array_push($employeesSchemas, ...$foundersNodeIdentifiers);
+			$employeesSchemas = array_values($employeesSchemas);
+		}
+		$employeesSchemas = $employeesSchemas ?: null;
+
 		$email = $this->email ? $this->email : null;
 		$legal_name = $this->legal_name ? $this->legal_name : null;
 		$logo = $this->logo ? $this->logo : null;
@@ -31,14 +43,12 @@ class Organization extends \App\Models\Base\Organization
 		$telephone = $this->telephone ? $this->telephone : null;
 		// Thing
 		$alternate_name = $this->thing && $this->thing->alternate_name ? $this->thing->alternate_name : null;
-		$url = $this->thing && $this->thing->url && $this->thing->url->name ? $this->thing->url->name : null;
 
-		$organization = Schema::Organization()
-			->setProperty('@id', isset($url) ? $url . '/#organization' : null)
+		return $this->getSchemaOrgNodeIdentifierSchemaAttribute('Organization', true)
 			->address($postalAddressSchema)
 			->email($email)
-			->employees($this->getSchemaOrgPersonsHavingRole('employees'))
-			->founders($this->getSchemaOrgPersonsHavingRole('founders'))
+			->employees($employeesSchemas)
+			->founders($foundersSchemas)
 			->legalName($legal_name)
 			->location($placeSchema)
 			->logo($logo)
@@ -47,17 +57,20 @@ class Organization extends \App\Models\Base\Organization
 			->setProperty('alternateName', $alternate_name)
 			->name($this->thing->name)
 			->setProperty('sameAs', $this->getSchemaOrgsameAs())
-			->setProperty('url', $url)
 		;
-		return $organization;
 	}
 
-	public function getSchemaOrgPersonsHavingRole(string $role)
+	public function getSchemaOrgPersonsHavingRole(string $role, string $attribute)
 	{
 		$organizationPersonsHavingRole = $this->$role()->get();
 		$persons = null;
 		foreach ($organizationPersonsHavingRole as $organizationPersonHavingRole) {
-			$persons[] = $organizationPersonHavingRole->role->person->schema_org_schema;
+			$persons[] = $organizationPersonHavingRole->role->person->$attribute;
+		}
+		if (isset($persons[0]["givenName"])) {
+			usort($persons, function($a, $b){ return $a["givenName"] > $b["givenName"]; });
+		} elseif (isset($persons[0]["@id"])) {
+			usort($persons, function($a, $b){ return $a["@id"] > $b["@id"]; });
 		}
 		return $persons;
 	}

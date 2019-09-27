@@ -5,7 +5,6 @@ namespace App\Models;
 use App\Models\Traits\JsonLd;
 use App\Models\Traits\sameAs;
 use App\Models\Traits\telephone;
-use Spatie\SchemaOrg\Schema;
 
 class Person extends \App\Models\Base\Person
 {
@@ -24,20 +23,26 @@ class Person extends \App\Models\Base\Person
 	{
 		$additional_name = $this->additional_name ? $this->additional_name : null;
 
-		$person = Schema::Person()
+		return $this->getSchemaOrgNodeIdentifierSchemaAttribute('Person', true)
 			->additionalName($additional_name)
 			->email($this->email)
 			->familyName($this->family_name)
 			->givenName($this->given_name)
 			->telephone($this->telephone)
 			// Thing
-			->sameAs($this->getSchemaOrgsameAs())
+			->setProperty('sameAs', $this->getSchemaOrgsameAs())
 		;
-		return $person;
 	}
 
 	public function getSchemaOrgSchema()
 	{
 		return $this->getSchemaOrgSchemaAttribute();
+	}
+
+	// Node Identifier
+
+	public function getSchemaOrgNodeIdentifierSchema()
+	{
+		return $this->getSchemaOrgNodeIdentifierSchemaAttribute('Person');
 	}
 }

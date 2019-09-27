@@ -3,6 +3,7 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://duodeka.nl/#organization",
+    "url": "https://duodeka.nl",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "Tivolistraat 50-52",
@@ -14,67 +15,65 @@
     "employees": [
         {
             "@type": "Person",
-            "email": "koen@duodeka.nl",
-            "familyName": "Lavrijssen",
-            "givenName": "Koen",
-            "telephone": "+31 6 2278 3833",
-            "sameAs": [
-                "https://www.linkedin.com/in/klavrijssen"
-            ]
+            "email": "joey@duodeka.nl",
+            "familyName": "Maas",
+            "givenName": "Joey",
+            "telephone": "+31 6 4372 0659"
         },
         {
             "@type": "Person",
-            "additionalName": "van de",
-            "email": "rik@doodeka.nl",
-            "familyName": "Looi",
-            "givenName": "Rik",
-            "telephone": "+31 6 2099 2844",
-            "sameAs": [
-                "https://www.linkedin.com/in/rik-van-de-looi"
-            ]
+            "@id": "https://www.linkedin.com/in/daanschoofs/#person"
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.linkedin.com/in/dion-duimel/#person"
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.linkedin.com/in/klavrijssen/#person"
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.linkedin.com/in/rik-van-de-looi/#person"
         }
     ],
     "founders": [
         {
             "@type": "Person",
-            "email": "koen@duodeka.nl",
-            "familyName": "Lavrijssen",
-            "givenName": "Koen",
-            "telephone": "+31 6 2278 3833",
-            "sameAs": [
-                "https://www.linkedin.com/in/klavrijssen"
-            ]
+            "@id": "https://www.linkedin.com/in/daanschoofs/#person",
+            "url": "https://www.linkedin.com/in/daanschoofs",
+            "email": "daan@duodeka.nl",
+            "familyName": "Schoofs",
+            "givenName": "Daan",
+            "telephone": "+31 6 5358 6900"
         },
         {
             "@type": "Person",
+            "@id": "https://www.linkedin.com/in/dion-duimel/#person",
+            "url": "https://www.linkedin.com/in/dion-duimel",
+            "email": "dion@duodeka.nl",
+            "familyName": "Duimel",
+            "givenName": "Dion",
+            "telephone": "+31 6 4481 0461"
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.linkedin.com/in/klavrijssen/#person",
+            "url": "https://www.linkedin.com/in/klavrijssen",
+            "email": "koen@duodeka.nl",
+            "familyName": "Lavrijssen",
+            "givenName": "Koen",
+            "telephone": "+31 6 2278 3833"
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.linkedin.com/in/rik-van-de-looi/#person",
+            "url": "https://www.linkedin.com/in/rik-van-de-looi",
             "additionalName": "van de",
             "email": "rik@doodeka.nl",
             "familyName": "Looi",
             "givenName": "Rik",
-            "telephone": "+31 6 2099 2844",
-            "sameAs": [
-                "https://www.linkedin.com/in/rik-van-de-looi"
-            ]
-        },
-        {
-            "@type": "Person",
-            "email": "daan@duodeka.nl",
-            "familyName": "Schoofs",
-            "givenName": "Daan",
-            "telephone": "+31 6 5358 6900",
-            "sameAs": [
-                "https://www.linkedin.com/in/daanschoofs"
-            ]
-        },
-        {
-            "@type": "Person",
-            "email": "dion@duodeka.nl",
-            "familyName": "Duimel",
-            "givenName": "Dion",
-            "telephone": "+31 6 4481 0461",
-            "sameAs": [
-                "https://www.linkedin.com/in/dion-duimel"
-            ]
+            "telephone": "+31 6 2099 2844"
         }
     ],
     "legalName": "DUODEKA Co\u00f6peratie U.A.",
@@ -96,6 +95,5 @@
         "https://www.facebook.com/duodeka",
         "https://www.instagram.com/duodeka",
         "https://www.linkedin.com/company/duodeka"
-    ],
-    "url": "https://duodeka.nl"
+    ]
 }
