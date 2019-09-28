@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "70a0b0b2ea397d3ac421eb459d27d302",
+    "content-hash": "74566ae3a8716f936df46793c84544f6",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3621,6 +3621,42 @@
             "time": "2019-08-09T12:45:53+00:00"
         },
         {
+            "name": "noud/schema",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noud/schema.git",
+                "reference": "d3fa957f906a134320962883c1827c96631f771a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/noud/schema/zipball/d3fa957f906a134320962883c1827c96631f771a",
+                "reference": "d3fa957f906a134320962883c1827c96631f771a",
+                "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": "^2.24.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dfba\\Schema\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Bakker",
+                    "email": "dfba@davebakker.io"
+                }
+            ],
+            "description": "Read database schema, table and column metadata in Laravel or plain PHP.",
+            "time": "2019-09-28T21:49:30+00:00"
+        },
+        {
             "name": "noud/schema-builder",
             "version": "dev-master",
             "source": {
@@ -5101,6 +5137,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "noud/schema": 20,
         "noud/schema-builder": 20
     },
     "prefer-stable": true,
