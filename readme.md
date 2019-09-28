@@ -1,16 +1,16 @@
-### [Google Search](https://developers.google.com/search)
+## [Google Search](https://developers.google.com/search)
 
-## Guides [Explore the search gallery](https://developers.google.com/search/docs/guides/search-gallery)
-## Reference [Structured data](https://developers.google.com/search/docs/data-types/article)
+### Guides [Explore the search gallery](https://developers.google.com/search/docs/guides/search-gallery)
+### Reference [Structured data](https://developers.google.com/search/docs/data-types/article)
 
-### [Schema.org](https://schema.org)
+## [Schema.org](https://schema.org)
 
 This was inspired by this question and answer: [Schema.org + Laravel = way too complicated?
 ](https://stackoverflow.com/questions/33193525/schema-org-laravel-way-too-complicated)
 
 Start this app.
 
-## Schema to [Laravel Migrations](https://laravel.com/docs/master/migrations)
+### Schema to [Laravel Migrations](https://laravel.com/docs/master/migrations)
 
 Go to
 
@@ -20,25 +20,25 @@ http://schema-org.localhost/schema
 
 Import Schema 'database/schema/schema.txt'. Generate Database Migrations and extract them to 'database/migrations/'.
 
-## [Laravel Migrations](https://laravel.com/docs/master/migrations) to [SQL](https://en.wikipedia.org/wiki/SQL)
+### [Laravel Migrations](https://laravel.com/docs/master/migrations) to [SQL](https://en.wikipedia.org/wiki/SQL)
 
 ```
 php artisan migrate
 ```
 
-## [Eloquent Models](https://laravel.com/docs/master/eloquent) generation from [SQL](https://en.wikipedia.org/wiki/SQL)
+### [Eloquent Models](https://laravel.com/docs/master/eloquent) generation from [SQL](https://en.wikipedia.org/wiki/SQL)
 
 ```
 php artisan code:models
 ```
 
-## Import data
+### Import data
 
 ```
 mysql -u <user> -p <dbname> < database/data/schema-org.sql
 ```
 
-## Client
+### Client
 
 See the output
 
@@ -50,20 +50,19 @@ chrome view-source:
 - http://schema-org.localhost/organization/2/employees/Koen/schema_org
 - http://schema-org.localhost/organization/1/address/schema_org
 - [http://schema-org.localhost/web_site/1/schema_org](https://raw.githubusercontent.com/noud/schema-org/master/database/output/duodeka.website.json)
-```
 
 The output can be validated at [Google Search](https://developers.google.com/search) [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
 
-## [Google Search](https://developers.google.com/search) Structured data
+### [Google Search](https://developers.google.com/search) Structured data
 
 - [Sitelinks Searchbox](https://developers.google.com/search/docs/data-types/sitelinks-searchbox)
 
-## [Google Search](https://developers.google.com/search) Structured data to [Schema.org](https://schema.org)
+### [Google Search](https://developers.google.com/search) Structured data to [Schema.org](https://schema.org)
 
 - [Job Posting](https://developers.google.com/search/docs/data-types/job-posting) is [JobPosting](https://schema.org/JobPosting)
 - [Local Business Listing](https://developers.google.com/search/docs/data-types/local-business) is [LocalBusiness](https://schema.org/LocalBusiness)
 
-## [Schema.org](https://schema.org) [Types](https://schema.org/docs/full.html) used
+### [Schema.org](https://schema.org) [Types](https://schema.org/docs/full.html) used
 
 - [Thing](https://schema.org/Thing)
     - Action
@@ -84,7 +83,7 @@ The output can be validated at [Google Search](https://developers.google.com/sea
     - Text
         - [URL](https://schema.org/URL)
 
-## [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
+### [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
 
 ![Schema.org Entity-Relationship Diagram](./docs/erd.png?raw=true "Schema.org Entity-Relationship Diagram")
 
