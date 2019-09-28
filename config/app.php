@@ -166,8 +166,9 @@ return [
          * Package Service Providers...
          */
         \Agontuk\Schema\SchemaServiceProvider::class,
+        Dfba\Schema\Laravel\SchemaServiceProvider::class,
         Reliese\Coders\CodersServiceProvider::class,
-
+        
         /*
          * Application Service Providers...
          */
