@@ -25,6 +25,11 @@ Import Schema 'database/schema/schema.txt'. Generate Database Migrations and ext
 ```
 php artisan migrate
 ```
+### [SQL](https://en.wikipedia.org/wiki/SQL) documentation
+
+```
+php artisan db:spy
+```
 
 ### [Eloquent Models](https://laravel.com/docs/master/eloquent) generation from [SQL](https://en.wikipedia.org/wiki/SQL)
 
