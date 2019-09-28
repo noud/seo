@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "74566ae3a8716f936df46793c84544f6",
+    "content-hash": "17adec8d03469dc22b575f67d99b10f9",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -5042,6 +5042,63 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2016-10-03T07:35:21+00:00"
+        },
+        {
+            "name": "stolz/laravel-schema-spy",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stolz/laravel-schema-spy.git",
+                "reference": "f5bcfacd279b6242bde2a15a24b208e088378821"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stolz/laravel-schema-spy/zipball/f5bcfacd279b6242bde2a15a24b208e088378821",
+                "reference": "f5bcfacd279b6242bde2a15a24b208e088378821",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5|^6",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Stolz\\SchemaSpy\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stolz\\SchemaSpy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stolz",
+                    "homepage": "https://github.com/Stolz/laravel-schema-spy",
+                    "role": "developer"
+                }
+            ],
+            "description": "Laravel artisan command that uses JAVA schemaSpy tool to generate a graphical representation of a database schema",
+            "keywords": [
+                "database",
+                "er diagram",
+                "laravel",
+                "schema",
+                "schema-spy",
+                "schemaspy",
+                "sql"
+            ],
+            "time": "2019-09-12T13:47:46+00:00"
         },
         {
             "name": "theseer/tokenizer",

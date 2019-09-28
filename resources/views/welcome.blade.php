@@ -87,6 +87,7 @@
                 <div class="links">
                     <a href="schema">Schema Builder</a>
                     <a href="schema-inspector/test">Schema Inspector</a>
+                    <a href="schema-spy">Schema Spy</a>
                 </div>
             </div>
         </div>

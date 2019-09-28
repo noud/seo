@@ -168,6 +168,7 @@ return [
         \Agontuk\Schema\SchemaServiceProvider::class,
         Dfba\Schema\Laravel\SchemaServiceProvider::class,
         Reliese\Coders\CodersServiceProvider::class,
+        Stolz\SchemaSpy\ServiceProvider::class,
         
         /*
          * Application Service Providers...
