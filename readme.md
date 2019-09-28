@@ -62,7 +62,7 @@ The output can be validated at [Google Search](https://developers.google.com/sea
 - [Job Posting](https://developers.google.com/search/docs/data-types/job-posting) is [JobPosting](https://schema.org/JobPosting)
 - [Local Business Listing](https://developers.google.com/search/docs/data-types/local-business) is [LocalBusiness](https://schema.org/LocalBusiness)
 
-### [Schema.org](https://schema.org) [Types](https://schema.org/docs/full.html) used
+### [Schema.org](https://schema.org) [Types](https://schema.org/docs/full.html)
 
 - [Thing](https://schema.org/Thing)
     - Action
