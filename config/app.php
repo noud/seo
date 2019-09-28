@@ -167,7 +167,8 @@ return [
          */
         \Agontuk\Schema\SchemaServiceProvider::class,
         Reliese\Coders\CodersServiceProvider::class,
-
+        Stolz\SchemaSpy\ServiceProvider::class,
+        
         /*
          * Application Service Providers...
          */

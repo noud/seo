@@ -1,6 +1,7 @@
 # generated
 /app/Models/Base/*
 /database/migrations/*
+/public/schema-spy/*
 
 # webpack
 /public/css/*

@@ -22,7 +22,8 @@
         "noud/schema-builder": "dev-master",
         "nunomaduro/collision": "^3.0",
         "phpunit/phpunit": "^7.5",
-        "reliese/laravel": "^0.0.13"
+        "reliese/laravel": "^0.0.13",
+        "stolz/laravel-schema-spy": "^0.1.2"
     },
     "config": {
         "optimize-autoloader": true,
