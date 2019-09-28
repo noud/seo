@@ -31,7 +31,7 @@ php artisan migrate
 php artisan db:spy
 ```
 
-### [Eloquent Models](https://laravel.com/docs/master/eloquent) generation from [SQL](https://en.wikipedia.org/wiki/SQL)
+### [SQL](https://en.wikipedia.org/wiki/SQL) to [Eloquent Models](https://laravel.com/docs/master/eloquent)
 
 ```
 php artisan code:models
