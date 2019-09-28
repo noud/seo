@@ -1,0 +1,12 @@
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://duodeka.nl/#website",
+    "url": "https://duodeka.nl",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://duodeka.nl/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    "name": "DUODEKA - Venture Builder | Digital Transformer"
+}
