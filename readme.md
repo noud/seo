@@ -46,9 +46,9 @@ See the output
 - [organization/1/schema_org](https://raw.githubusercontent.com/noud/schema-org/master/database/output/duodeka.organization.json)
 - organization/2/schema_org
 - organization/1/founders/Koen/schema_org
-￼- organization/1/employees/Koen/schema_org
-￼- organization/2/employees/Koen/schema_org
-￼- organization/1/address/schema_org
+- organization/1/employees/Koen/schema_org
+- organization/2/employees/Koen/schema_org
+- organization/1/address/schema_org
 - [web_site/1/schema_org](https://raw.githubusercontent.com/noud/schema-org/master/database/output/duodeka.website.json)
 
 The output can be validated at [Google Search](https://developers.google.com/search) [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
