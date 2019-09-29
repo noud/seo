@@ -8,30 +8,36 @@
 This was inspired by this question and answer: [Schema.org + Laravel = way too complicated?
 ](https://stackoverflow.com/questions/33193525/schema-org-laravel-way-too-complicated)
 
+### code generation
+
 Start this app.
 
-### Schema to [Laravel Migrations](https://laravel.com/docs/master/migrations)
-
-Go to
+#### [SQL](https://en.wikipedia.org/wiki/SQL) to [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
 
 ```
-http://schema-org.localhost/schema
+chrome view-source:http://schema-org.localhost/schema-inspector/schema
+```
+
+#### [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model) to [Laravel Migrations](https://laravel.com/docs/master/migrations)
+
+```
+chrome view-source:http://schema-org.localhost/schema
 ```
 
 Import Schema 'database/schema/schema.txt'. Generate Database Migrations and extract them to 'database/migrations/'.
 
-### [Laravel Migrations](https://laravel.com/docs/master/migrations) to [SQL](https://en.wikipedia.org/wiki/SQL)
+#### [Laravel Migrations](https://laravel.com/docs/master/migrations) to [SQL](https://en.wikipedia.org/wiki/SQL)
 
 ```
 php artisan migrate
 ```
-### [SQL](https://en.wikipedia.org/wiki/SQL) documentation
+#### [SQL](https://en.wikipedia.org/wiki/SQL) documentation
 
 ```
 php artisan db:spy
 ```
 
-### [SQL](https://en.wikipedia.org/wiki/SQL) to [Eloquent Models](https://laravel.com/docs/master/eloquent)
+#### [SQL](https://en.wikipedia.org/wiki/SQL) to [Eloquent Models](https://laravel.com/docs/master/eloquent)
 
 ```
 php artisan code:models
