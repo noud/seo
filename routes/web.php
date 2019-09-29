@@ -22,4 +22,5 @@ Route::get('/', function () {
 Route::get('schema', '\Agontuk\Schema\Controllers\SchemaController@index');
 Route::post('schema', '\Agontuk\Schema\Controllers\SchemaController@generateMigration');
 
+Route::get('/schema-inspector/schema', 'SchemaInspectorController@schema');
 Route::get('/schema-inspector/test', 'SchemaInspectorController@test');

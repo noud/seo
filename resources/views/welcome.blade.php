@@ -85,9 +85,9 @@
                 </div>
 
                 <div class="links">
+                    <a href="schema-inspector/schema">import from SQL</a>
                     <a href="schema">Schema Builder</a>
-                    <a href="schema-inspector/test">Schema Inspector</a>
-                    <a href="schema-spy">Schema Spy</a>
+                    <a href="schema-spy">documentation</a>
                 </div>
             </div>
         </div>

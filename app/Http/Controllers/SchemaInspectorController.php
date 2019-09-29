@@ -9,6 +9,97 @@ use Illuminate\Routing\Controller as BaseController;
 
 class SchemaInspectorController extends BaseController
 {
+	public function schema(Schema $schema) {
+		$schemaJsonArray = [
+			'database' => [
+				'name' => $schema->getName(),
+			],
+			'ui' => [
+				"database" => [
+					"showModal" => false,
+					"edit" => false
+				],
+
+				"table" => [
+					"showModal" => false,
+					"edit" => false,
+					"editData" => [
+						"id" => "",
+						"name" => "",
+						"softDelete" => false,
+						"timeStamp" => true
+					]
+				],
+				"column" => [
+					"showModal" => false,
+					"edit" => false,
+					"editData" => [
+						"id" => "",
+						"name" => "",
+						"type" => "integer",
+						"length" => "",
+						"defValue" => "",
+						"comment" => "",
+						"autoInc" => false,
+						"nullable" => false,
+						"unique" => false,
+						"index" => false,
+						"unsigned" => false,
+						"foreignKey" => [
+							"references" => [
+								"id" => "",
+								"name" => ""
+							],
+							"on" => [
+								"id" => "",
+								"name" => ""
+							]
+						]
+					],
+					"tableId" => ""
+				],
+			]
+		];
+		$x = $y = 0;
+		foreach ($schema->getTables() as $table) {
+			$tableId = substr(uniqid(rand(10000,99999)),0,6);
+			$schemaJsonArray['ui']['positions'][$tableId][] = [
+				'x' => $x,
+				'y' => $y,
+			];
+			$schemaJsonArray['tables'][] = [
+				'id' => $tableId,
+				'name' => $table->getName(),
+				"color" => "table-header-green",
+				"softDelete" => false,
+				'timeStamp' => true,
+			];
+			foreach ($table->getColumns() as $column) {
+				if (!in_array($column->getName(), ['created_at', 'updated_at'])) {
+					$columnId = substr(uniqid(rand(10000,99999)),0,6);
+					$schemaJsonArray['columns'][$tableId][]= [
+						'id' => $columnId,
+						'name' => $column->getName(),
+						"foreignKey" => [
+							"references" => [
+								"id" => "",
+								"name" => ""
+							],
+							"on" => [
+								"id" => "",
+								"name" => ""
+							]
+						]
+					];
+				}
+			}
+			$x += 10;
+			$y += 10;
+		}
+		$schemaJsonArray['relations'] = [];
+		echo json_encode($schemaJsonArray, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+	}
+
 	public function test(Schema $schema) {
 		// --------------^ HERE
 
