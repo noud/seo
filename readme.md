@@ -71,11 +71,11 @@ php artisan code:models
 
 ## Structured data and Types used
 
-### [Google Search](https://developers.google.com/search) Structured data
+### [Google Search](https://developers.google.com/search) [Structured data](https://developers.google.com/search/docs/data-types/article)
 
 - [Sitelinks Searchbox](https://developers.google.com/search/docs/data-types/sitelinks-searchbox)
 
-### [Google Search](https://developers.google.com/search) Structured data conform [Schema.org](https://schema.org)
+### [Google Search](https://developers.google.com/search) [Structured data](https://developers.google.com/search/docs/data-types/article) conform [Schema.org](https://schema.org)
 
 - [Job Posting](https://developers.google.com/search/docs/data-types/job-posting) is [JobPosting](https://schema.org/JobPosting)
 - [Local Business Listing](https://developers.google.com/search/docs/data-types/local-business) is [LocalBusiness](https://schema.org/LocalBusiness)
