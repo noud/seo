@@ -1,6 +1,6 @@
 {
     "database": {
-        "name": "schema-org"
+        "name": "seo"
     },
     "ui": {
         "database": {
