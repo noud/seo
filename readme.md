@@ -8,7 +8,7 @@
 This was inspired by this question and answer: [Schema.org + Laravel = way too complicated?
 ](https://stackoverflow.com/questions/33193525/schema-org-laravel-way-too-complicated)
 
-### code generation
+### Code generation
 
 Start this app.
 
