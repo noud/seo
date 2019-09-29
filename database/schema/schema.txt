@@ -47,56 +47,52 @@
         },
         "positions": {
             "uwgi9o": {
-                "x": 1319,
-                "y": 1013
+                "x": 1292,
+                "y": 712
             },
             "mure2o": {
-                "x": 302,
-                "y": 824
+                "x": 306,
+                "y": 628
             },
             "idoqfc": {
-                "x": 1058,
-                "y": 900
+                "x": 1052,
+                "y": 653
             },
             "zaz55d": {
-                "x": 832,
-                "y": 880
+                "x": 830,
+                "y": 694
             },
             "xldyf": {
-                "x": 556,
-                "y": 814
+                "x": 566,
+                "y": 630
             },
             "oxwau": {
-                "x": 556,
-                "y": 988
+                "x": 566,
+                "y": 808
             },
             "3z0orn": {
-                "x": 828,
-                "y": 1010
-            },
-            "yye68s": {
-                "x": 554,
-                "y": 478
+                "x": 830,
+                "y": 812
             },
             "1d67r": {
-                "x": 284,
-                "y": 590
+                "x": 1269,
+                "y": 377
             },
             "bo322d": {
-                "x": 280,
-                "y": 372
+                "x": 1019,
+                "y": 287
             },
             "3rd2qr": {
-                "x": 794,
-                "y": 1230
+                "x": 846,
+                "y": 1019
             },
             "07jqi": {
-                "x": 308,
-                "y": 1174
+                "x": 584,
+                "y": 1106
             },
             "31s271": {
-                "x": 306,
-                "y": 1356
+                "x": 293,
+                "y": 1134
             },
             "zfqc9b": {
                 "x": 1558,
@@ -137,6 +133,34 @@
             "m38x3w": {
                 "x": 1728,
                 "y": 264
+            },
+            "f79uri": {
+                "x": 584,
+                "y": 27
+            },
+            "24m42k": {
+                "x": 896,
+                "y": 28
+            },
+            "xgyas": {
+                "x": 1200,
+                "y": 24
+            },
+            "au3fwm": {
+                "x": 279,
+                "y": 27
+            },
+            "hcd0z": {
+                "x": 277,
+                "y": 168
+            },
+            "3zow5p": {
+                "x": 567,
+                "y": 450
+            },
+            "36kdx": {
+                "x": 827,
+                "y": 587
             }
         }
     },
@@ -187,13 +211,6 @@
             "id": "3z0orn",
             "name": "founder",
             "color": "table-header-dark-blue",
-            "softDelete": false,
-            "timeStamp": true
-        },
-        {
-            "id": "yye68s",
-            "name": "url",
-            "color": "table-header-purple",
             "softDelete": false,
             "timeStamp": true
         },
@@ -298,6 +315,55 @@
         {
             "id": "m38x3w",
             "name": "site",
+            "color": "table-header-red",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "f79uri",
+            "name": "job_postng",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "24m42k",
+            "name": "monetary_amount",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "xgyas",
+            "name": "quantitative_value",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "au3fwm",
+            "name": "education_requirement",
+            "color": "table-header-dark-blue",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "hcd0z",
+            "name": "education_requirements",
+            "color": "table-header-dark-blue",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "3zow5p",
+            "name": "recruiters",
+            "color": "table-header-red",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "36kdx",
+            "name": "recruiter",
             "color": "table-header-red",
             "softDelete": false,
             "timeStamp": true
@@ -962,123 +1028,6 @@
                 }
             }
         ],
-        "yye68s": [
-            {
-                "id": "utpnb5",
-                "name": "id",
-                "type": "bigInteger",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": true,
-                "nullable": false,
-                "unique": true,
-                "index": true,
-                "unsigned": true,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "m34ncb",
-                "name": "protocol",
-                "type": "string",
-                "length": "10",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": false,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "8pff3",
-                "name": "host",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": false,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "vabvva",
-                "name": "port",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "bgyae",
-                "name": "uri",
-                "type": "string",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": true,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            }
-        ],
         "1d67r": [
             {
                 "id": "jj8qr",
@@ -1128,24 +1077,24 @@
             },
             {
                 "id": "qbnc",
-                "name": "url_id",
-                "type": "bigInteger",
+                "name": "url",
+                "type": "string",
                 "length": "",
                 "defValue": "",
                 "comment": "",
                 "autoInc": false,
                 "nullable": false,
                 "unique": false,
-                "index": true,
-                "unsigned": true,
+                "index": false,
+                "unsigned": false,
                 "foreignKey": {
                     "references": {
-                        "id": "utpnb5",
-                        "name": "id"
+                        "id": "",
+                        "name": ""
                     },
                     "on": {
-                        "id": "yye68s",
-                        "name": "url"
+                        "id": "",
+                        "name": ""
                     }
                 }
             }
@@ -1222,24 +1171,24 @@
             },
             {
                 "id": "gfexzs",
-                "name": "url_id",
-                "type": "bigInteger",
+                "name": "url",
+                "type": "string",
                 "length": "",
                 "defValue": "",
                 "comment": "",
                 "autoInc": false,
                 "nullable": true,
                 "unique": false,
-                "index": true,
-                "unsigned": true,
+                "index": false,
+                "unsigned": false,
                 "foreignKey": {
                     "references": {
-                        "id": "utpnb5",
-                        "name": "id"
+                        "id": "",
+                        "name": ""
                     },
                     "on": {
-                        "id": "yye68s",
-                        "name": "url"
+                        "id": "",
+                        "name": ""
                     }
                 }
             }
@@ -2143,6 +2092,480 @@
                     }
                 }
             }
+        ],
+        "f79uri": [
+            {
+                "id": "mpol82",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "ejddzr",
+                "name": "base_salary_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "1xqngj",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "24m42k",
+                        "name": "monetary_amount"
+                    }
+                }
+            },
+            {
+                "id": "ut9bsq",
+                "name": "employment_type",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "n5x89",
+                "name": "hiring_organization_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "ull9k",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "mure2o",
+                        "name": "organization"
+                    }
+                }
+            },
+            {
+                "id": "hgsd3c",
+                "name": "job_location",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "36ildg",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "07jqi",
+                        "name": "place"
+                    }
+                }
+            }
+        ],
+        "24m42k": [
+            {
+                "id": "1xqngj",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "nclkgc",
+                "name": "currency",
+                "type": "string",
+                "length": "3",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "6q8de",
+                "name": "value_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "wxro6i",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "xgyas",
+                        "name": "quantitative_value"
+                    }
+                }
+            }
+        ],
+        "xgyas": [
+            {
+                "id": "wxro6i",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "fcndu7e",
+                "name": "unit_text",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "zevhh",
+                "name": "value",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
+        ],
+        "au3fwm": [
+            {
+                "id": "ktfivo",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "sx5rj",
+                "name": "educational_requirement",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
+        ],
+        "hcd0z": [
+            {
+                "id": "ea36c",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "p2vjlr",
+                "name": "job_posting_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "mpol82",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "f79uri",
+                        "name": "job_postng"
+                    }
+                }
+            },
+            {
+                "id": "u35ysr",
+                "name": "education_requirement_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "ktfivo",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "au3fwm",
+                        "name": "education_requirement"
+                    }
+                }
+            }
+        ],
+        "3zow5p": [
+            {
+                "id": "0zrclt",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "hs2i1",
+                "name": "organization_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "ull9k",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "mure2o",
+                        "name": "organization"
+                    }
+                }
+            },
+            {
+                "id": "zwbt4h",
+                "name": "recruiter_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "u9w7gg",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "36kdx",
+                        "name": "recruiter"
+                    }
+                }
+            }
+        ],
+        "36kdx": [
+            {
+                "id": "u9w7gg",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
         ]
     },
     "relations": [
@@ -2198,16 +2621,6 @@
         },
         {
             "source": {
-                "columnId": "qbnc",
-                "tableId": "1d67r"
-            },
-            "target": {
-                "columnId": "utpnb5",
-                "tableId": "yye68s"
-            }
-        },
-        {
-            "source": {
                 "columnId": "6e4oyg",
                 "tableId": "1d67r"
             },
@@ -2234,16 +2647,6 @@
             "target": {
                 "columnId": "3m7cdr",
                 "tableId": "bo322d"
-            }
-        },
-        {
-            "source": {
-                "columnId": "gfexzs",
-                "tableId": "bo322d"
-            },
-            "target": {
-                "columnId": "utpnb5",
-                "tableId": "yye68s"
             }
         },
         {
@@ -2394,6 +2797,86 @@
             "target": {
                 "columnId": "rz5bc",
                 "tableId": "m38x3w"
+            }
+        },
+        {
+            "source": {
+                "columnId": "6q8de",
+                "tableId": "24m42k"
+            },
+            "target": {
+                "columnId": "wxro6i",
+                "tableId": "xgyas"
+            }
+        },
+        {
+            "source": {
+                "columnId": "ejddzr",
+                "tableId": "f79uri"
+            },
+            "target": {
+                "columnId": "1xqngj",
+                "tableId": "24m42k"
+            }
+        },
+        {
+            "source": {
+                "columnId": "p2vjlr",
+                "tableId": "hcd0z"
+            },
+            "target": {
+                "columnId": "mpol82",
+                "tableId": "f79uri"
+            }
+        },
+        {
+            "source": {
+                "columnId": "u35ysr",
+                "tableId": "hcd0z"
+            },
+            "target": {
+                "columnId": "ktfivo",
+                "tableId": "au3fwm"
+            }
+        },
+        {
+            "source": {
+                "columnId": "n5x89",
+                "tableId": "f79uri"
+            },
+            "target": {
+                "columnId": "ull9k",
+                "tableId": "mure2o"
+            }
+        },
+        {
+            "source": {
+                "columnId": "hgsd3c",
+                "tableId": "f79uri"
+            },
+            "target": {
+                "columnId": "36ildg",
+                "tableId": "07jqi"
+            }
+        },
+        {
+            "source": {
+                "columnId": "hs2i1",
+                "tableId": "3zow5p"
+            },
+            "target": {
+                "columnId": "ull9k",
+                "tableId": "mure2o"
+            }
+        },
+        {
+            "source": {
+                "columnId": "zwbt4h",
+                "tableId": "3zow5p"
+            },
+            "target": {
+                "columnId": "u9w7gg",
+                "tableId": "36kdx"
             }
         }
     ]

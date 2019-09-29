@@ -75,7 +75,7 @@ php artisan code:models
 
 - [Sitelinks Searchbox](https://developers.google.com/search/docs/data-types/sitelinks-searchbox)
 
-### [Google Search](https://developers.google.com/search) Structured data to [Schema.org](https://schema.org)
+### [Google Search](https://developers.google.com/search) Structured data conform [Schema.org](https://schema.org)
 
 - [Job Posting](https://developers.google.com/search/docs/data-types/job-posting) is [JobPosting](https://schema.org/JobPosting)
 - [Local Business Listing](https://developers.google.com/search/docs/data-types/local-business) is [LocalBusiness](https://schema.org/LocalBusiness)
@@ -91,15 +91,15 @@ php artisan code:models
     - [Person](https://schema.org/Person)
     - [Place](https://schema.org/Place)
     - Intangible
+        - [JobPosting](https://schema.org/JobPosting)
         - [PropertyValueSpecification](https://schema.org/PropertyValueSpecification)
         - [Role](https://schema.org/Role)
         - StructuredValue
             - ContactPoint
                 - [PostalAddress](https://schema.org/PostalAddress)
             - [GeoCoordinates](https://schema.org/GeoCoordinates)
-- Data Types
-    - Text
-        - [URL](https://schema.org/URL)
+            - [MonetaryAmount](https://schema.org/MonetaryAmount)
+            - [QuantitativeValue](https://schema.org/QuantitativeValue)
 
 ## [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
 
