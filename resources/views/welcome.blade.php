@@ -80,13 +80,30 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title-small m-b-md">
+                    Google Search<br>Structured data
+                </div>
+
+                <div class="links">
+                    <a href="job_posting/1/schema_org">Job posting</a>
+                    <a href="web_site/1/schema_org">WebSite</a>
+                </div>
+                
+                <div class="title-small m-b-md">
                     Schema.org
                 </div>
 
                 <div class="links">
-                    <a href="schema-inspector/schema">import from SQL</a>
-                    <a href="schema">Schema Builder</a>
+                    <a href="organization/1/schema_org">Organization</a>
+                </div>
+
+                <div class="title-small m-b-md">
+                    schema design
+                </div>
+
+                <div class="links">
+                    <a href="schema-inspector/schema">import SQL metadata</a>
+                    <a href="schema">ERD</a>
                     <a href="schema-spy">documentation</a>
                 </div>
             </div>
