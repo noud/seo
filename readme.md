@@ -1,5 +1,7 @@
 # [Search engine optimization (SEO)](https://en.wikipedia.org/wiki/Search_engine_optimization)
 
+conform Google Search and Schema.org in Laravel
+
 ![SEO](./docs/seo.png?raw=true "SEO")
 
 This app gives formatted SEO data for searchengines using
