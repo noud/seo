@@ -11,9 +11,30 @@ For instance this is what it does to your date on [Google Search](https://develo
 This app was inspired by this question and answer: [Schema.org + Laravel = way too complicated?
 ](https://stackoverflow.com/questions/33193525/schema-org-laravel-way-too-complicated)
 
-## Code generation
+## Start app
 
-Start this app.
+## Import data
+
+```
+mysql -u <user> -p <dbname> < database/data/schema-org.sql
+```
+
+## Client
+
+See the output
+
+```chrome view-source: http://schema-org.localhost/```
+- [organization/1/schema_org](https://raw.githubusercontent.com/noud/schema-org/master/database/output/duodeka.organization.json)
+- organization/2/schema_org
+- organization/1/founders/Koen/schema_org
+- organization/1/employees/Koen/schema_org
+- organization/2/employees/Koen/schema_org
+- organization/1/address/schema_org
+- [web_site/1/schema_org](https://raw.githubusercontent.com/noud/schema-org/master/database/output/duodeka.website.json)
+
+The output can be validated at [Google Search](https://developers.google.com/search) [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
+
+## Code generation
 
 ### [SQL](https://en.wikipedia.org/wiki/SQL) to [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
 
@@ -45,27 +66,6 @@ php artisan db:spy
 ```
 php artisan code:models
 ```
-
-## Import data
-
-```
-mysql -u <user> -p <dbname> < database/data/schema-org.sql
-```
-
-## Client
-
-See the output
-
-```chrome view-source: http://schema-org.localhost/```
-- [organization/1/schema_org](https://raw.githubusercontent.com/noud/schema-org/master/database/output/duodeka.organization.json)
-- organization/2/schema_org
-- organization/1/founders/Koen/schema_org
-- organization/1/employees/Koen/schema_org
-- organization/2/employees/Koen/schema_org
-- organization/1/address/schema_org
-- [web_site/1/schema_org](https://raw.githubusercontent.com/noud/schema-org/master/database/output/duodeka.website.json)
-
-The output can be validated at [Google Search](https://developers.google.com/search) [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
 
 ## Structured data and Types used
 
