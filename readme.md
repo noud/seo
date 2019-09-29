@@ -2,27 +2,26 @@
 
 ![SEO](./docs/seo.png?raw=true "SEO")
 
-## [Google Search](https://developers.google.com/search)
+This app gives formatted SEO data for searchengines using
+- [Google Search](https://developers.google.com/search) [Structured data](https://developers.google.com/search/docs/data-types/article)
+- [Schema.org](https://schema.org) [Types](https://schema.org/docs/full.html)
 
-### Guides [Explore the search gallery](https://developers.google.com/search/docs/guides/search-gallery)
-### Reference [Structured data](https://developers.google.com/search/docs/data-types/article)
+For instance this is what it does to your date on [Google Search](https://developers.google.com/search) [Explore the search gallery](https://developers.google.com/search/docs/guides/search-gallery)
 
-## [Schema.org](https://schema.org)
-
-This was inspired by this question and answer: [Schema.org + Laravel = way too complicated?
+This app was inspired by this question and answer: [Schema.org + Laravel = way too complicated?
 ](https://stackoverflow.com/questions/33193525/schema-org-laravel-way-too-complicated)
 
-### Code generation
+## Code generation
 
 Start this app.
 
-#### [SQL](https://en.wikipedia.org/wiki/SQL) to [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
+### [SQL](https://en.wikipedia.org/wiki/SQL) to [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
 
 ```
 chrome view-source:http://schema-org.localhost/schema-inspector/schema
 ```
 
-#### [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model) to [Laravel Migrations](https://laravel.com/docs/master/migrations)
+### [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model) to [Laravel Migrations](https://laravel.com/docs/master/migrations)
 
 ```
 chrome view-source:http://schema-org.localhost/schema
@@ -30,30 +29,30 @@ chrome view-source:http://schema-org.localhost/schema
 
 Import Schema 'database/schema/schema.txt'. Generate Database Migrations and extract them to 'database/migrations/'.
 
-#### [Laravel Migrations](https://laravel.com/docs/master/migrations) to [SQL](https://en.wikipedia.org/wiki/SQL)
+### [Laravel Migrations](https://laravel.com/docs/master/migrations) to [SQL](https://en.wikipedia.org/wiki/SQL)
 
 ```
 php artisan migrate
 ```
-#### [SQL](https://en.wikipedia.org/wiki/SQL) documentation
+### [SQL](https://en.wikipedia.org/wiki/SQL) documentation
 
 ```
 php artisan db:spy
 ```
 
-#### [SQL](https://en.wikipedia.org/wiki/SQL) to [Eloquent Models](https://laravel.com/docs/master/eloquent)
+### [SQL](https://en.wikipedia.org/wiki/SQL) to [Eloquent Models](https://laravel.com/docs/master/eloquent)
 
 ```
 php artisan code:models
 ```
 
-### Import data
+## Import data
 
 ```
 mysql -u <user> -p <dbname> < database/data/schema-org.sql
 ```
 
-### Client
+## Client
 
 See the output
 
@@ -67,6 +66,8 @@ See the output
 - [web_site/1/schema_org](https://raw.githubusercontent.com/noud/schema-org/master/database/output/duodeka.website.json)
 
 The output can be validated at [Google Search](https://developers.google.com/search) [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
+
+## Structured data and Types used
 
 ### [Google Search](https://developers.google.com/search) Structured data
 
@@ -98,9 +99,11 @@ The output can be validated at [Google Search](https://developers.google.com/sea
     - Text
         - [URL](https://schema.org/URL)
 
-### [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
+## [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
 
 ![Schema.org Entity-Relationship Diagram](./docs/erd.png?raw=true "Schema.org Entity-Relationship Diagram")
+
+## Build with
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
