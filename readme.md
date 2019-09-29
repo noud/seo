@@ -4,14 +4,14 @@ conform Google Search and Schema.org in Laravel
 
 ![SEO](./docs/seo.png?raw=true "SEO")
 
-This app gives formatted SEO data for searchengines that use
+This app* gives formatted SEO data for searchengines that use
 - [Google Search](https://developers.google.com/search) [Structured data](https://developers.google.com/search/docs/data-types/article)
 - [Schema.org](https://schema.org) [Types](https://schema.org/docs/full.html)
 
 For instance this is what it does to your date on [Google Search](https://developers.google.com/search): [Explore the search gallery](https://developers.google.com/search/docs/guides/search-gallery)
 
-This app was inspired by this question and answer: [Schema.org + Laravel = way too complicated?
-](https://stackoverflow.com/questions/33193525/schema-org-laravel-way-too-complicated)
+*(This app was inspired by this question and answer: [Schema.org + Laravel = way too complicated?
+](https://stackoverflow.com/questions/33193525/schema-org-laravel-way-too-complicated))
 
 ## Start app
 
