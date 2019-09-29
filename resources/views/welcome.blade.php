@@ -86,7 +86,7 @@
 
                 <div class="links">
                     <a href="job_posting/1/schema_org">Job posting</a>
-                    <a href="web_site/1/schema_org">WebSite</a>
+                    <a href="web_site/1/schema_org">Sitelinks Searchbox</a>
                 </div>
                 
                 <div class="title-small m-b-md">
