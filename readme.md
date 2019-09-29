@@ -1,3 +1,7 @@
+# [Search engine optimization (SEO)](https://en.wikipedia.org/wiki/Search_engine_optimization)
+
+![SEO](./docs/seo.png?raw=true "SEO")
+
 ## [Google Search](https://developers.google.com/search)
 
 ### Guides [Explore the search gallery](https://developers.google.com/search/docs/guides/search-gallery)
