@@ -11,7 +11,7 @@ trait sameAs
 		if ($thing) {
 			$sameAsThings = $thing->same_as()->get();
 			foreach ($sameAsThings as $sameAsThing) {
-				$sameAs[] = $sameAsThing->url->name;
+				$sameAs[] = $sameAsThing->url;
 			}
 		}
 		return $sameAs;

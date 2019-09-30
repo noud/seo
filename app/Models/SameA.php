@@ -9,6 +9,6 @@ class SameA extends \App\Models\Base\SameA
 	protected $fillable = [
 		'id',
 		'thing_id',
-		'url_id'
+		'url'
 	];
 }
