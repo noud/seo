@@ -49,7 +49,7 @@ chrome view-source:http://seo.localhost/schema-inspector/schema
 ### [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model) to [Laravel Migrations](https://laravel.com/docs/master/migrations)
 
 ```
-chrome view-source:http://schema-org.localhost/schema
+chrome view-source:http://seo.localhost/schema
 ```
 
 Import Schema 'database/schema/schema.txt'. Generate Database Migrations and extract them to 'database/migrations/'.
