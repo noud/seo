@@ -129,46 +129,27 @@ INSERT INTO `role` (`id`, `person_id`, `roleable_id`, `roleable_type`, `created_
 -- Dumping data for table `same_as`
 --
 
-INSERT INTO `same_as` (`id`, `thing_id`, `url_id`, `created_at`, `updated_at`) VALUES
-(1, 1, 2, NULL, NULL),
-(2, 1, 3, NULL, NULL),
-(3, 1, 4, NULL, NULL);
+INSERT INTO `same_as` (`id`, `thing_id`, `url`, `created_at`, `updated_at`) VALUES
+(1, 1, 'https://www.facebook.com/duodeka', NULL, NULL),
+(2, 1, 'https://www.instagram.com/duodeka', NULL, NULL),
+(3, 1, 'https://www.linkedin.com/company/duodeka', NULL, NULL);
 
 --
 -- Dumping data for table `thing`
 --
 
-INSERT INTO `thing` (`id`, `alternate_name`, `name`, `url_id`, `created_at`, `updated_at`) VALUES
-(1, 'XII', 'DUODEKA', 1, NULL, NULL),
-(2, '', '', 5, NULL, NULL),
-(3, '', '', 6, NULL, NULL),
-(4, '', '', 7, NULL, NULL),
-(5, '', '', 8, NULL, NULL),
-(6, '', '', 9, NULL, NULL),
-(7, '', '', 10, NULL, NULL),
-(8, '', '', 11, NULL, NULL),
-(9, '', '', 12, NULL, NULL),
-(10, '', '', 13, NULL, NULL),
+INSERT INTO `thing` (`id`, `alternate_name`, `name`, `url`, `created_at`, `updated_at`) VALUES
+(1, 'XII', 'DUODEKA', 'https://duodeka.nl', NULL, NULL),
+(2, '', '', 'https://www.linkedin.com/in/klavrijssen', NULL, NULL),
+(3, '', '', 'https://www.linkedin.com/in/rik-van-de-looi', NULL, NULL),
+(4, '', '', 'https://www.linkedin.com/in/daanschoofs', NULL, NULL),
+(5, '', '', 'https://www.linkedin.com/in/dion-duimel', NULL, NULL),
+(6, '', '', 'https://www.linkedin.com/in/david-schulpen', NULL, NULL),
+(7, '', '', 'https://www.linkedin.com/in/emiel-popelier-870732177', NULL, NULL),
+(8, '', '', 'https://www.linkedin.com/in/sven-zahharov-a82507158', NULL, NULL),
+(9, '', '', 'https://www.linkedin.com/in/thijsdejong1995', NULL, NULL),
+(10, '', '', 'https://www.linkedin.com/in/wesleyvanbergen', NULL, NULL),
 (11, '', 'Mr. Winston', NULL, NULL, NULL);
-
---
--- Dumping data for table `url`
---
-
-INSERT INTO `url` (`id`, `protocol`, `host`, `port`, `uri`, `created_at`, `updated_at`) VALUES
-(1, 'https', 'duodeka.nl', NULL, NULL, NULL, NULL),
-(2, 'https', 'www.facebook.com', NULL, 'duodeka', NULL, NULL),
-(3, 'https', 'www.instagram.com', NULL, 'duodeka', NULL, NULL),
-(4, 'https', 'www.linkedin.com', NULL, 'company/duodeka', NULL, NULL),
-(5, 'https', 'www.linkedin.com', NULL, 'in/klavrijssen', NULL, NULL),
-(6, 'https', 'www.linkedin.com', NULL, 'in/rik-van-de-looi', NULL, NULL),
-(7, 'https', 'www.linkedin.com', NULL, 'in/daanschoofs', NULL, NULL),
-(8, 'https', 'www.linkedin.com', NULL, 'in/dion-duimel', NULL, NULL),
-(9, 'https', 'www.linkedin.com', NULL, 'in/david-schulpen', NULL, NULL),
-(10, 'https', 'www.linkedin.com', NULL, 'in/emiel-popelier-870732177', NULL, NULL),
-(11, 'https', 'www.linkedin.com', NULL, 'in/sven-zahharov-a82507158', NULL, NULL),
-(12, 'https', 'www.linkedin.com', NULL, 'in/thijsdejong1995', NULL, NULL),
-(13, 'https', 'www.linkedin.com', NULL, 'in/wesleyvanbergen', NULL, NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
