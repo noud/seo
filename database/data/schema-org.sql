@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Sep 27, 2019 at 08:32 PM
+-- Generation Time: Sep 30, 2019 at 07:21 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -108,6 +108,20 @@ INSERT INTO `postal_address` (`id`, `address_country`, `address_locality`, `addr
 (1, 'NL', 'Tilburg', NULL, NULL, '5017HR', 'Tivolistraat 50-52', NULL, NULL);
 
 --
+-- Dumping data for table `potential_action _google`
+--
+
+INSERT INTO `potential_action _google` (`id`, `google_web_site`, `google_search_action_id`, `created_at`, `updated_at`) VALUES
+(1, 1, 1, NULL, NULL);
+
+--
+-- Dumping data for table `property_value_specification`
+--
+
+INSERT INTO `property_value_specification` (`id`, `value_name`, `value_required`, `created_at`, `updated_at`) VALUES
+(1, 'search_term_string', 1, NULL, NULL);
+
+--
 -- Dumping data for table `role`
 --
 
@@ -135,6 +149,20 @@ INSERT INTO `same_as` (`id`, `thing_id`, `url`, `created_at`, `updated_at`) VALU
 (3, 1, 'https://www.linkedin.com/company/duodeka', NULL, NULL);
 
 --
+-- Dumping data for table `search_action_google`
+--
+
+INSERT INTO `search_action_google` (`in`, `target`, `query-input`, `created_at`, `updated_at`) VALUES
+(1, 'https://duodeka.nl/?s={search_term_string}', 1, NULL, NULL);
+
+--
+-- Dumping data for table `site`
+--
+
+INSERT INTO `site` (`id`, `thing_id`, `created_at`, `updated_at`) VALUES
+(1, 12, NULL, NULL);
+
+--
 -- Dumping data for table `thing`
 --
 
@@ -149,7 +177,22 @@ INSERT INTO `thing` (`id`, `alternate_name`, `name`, `url`, `created_at`, `updat
 (8, '', '', 'https://www.linkedin.com/in/sven-zahharov-a82507158', NULL, NULL),
 (9, '', '', 'https://www.linkedin.com/in/thijsdejong1995', NULL, NULL),
 (10, '', '', 'https://www.linkedin.com/in/wesleyvanbergen', NULL, NULL),
-(11, '', 'Mr. Winston', NULL, NULL, NULL);
+(11, '', 'Mr. Winston', NULL, NULL, NULL),
+(12, '', 'DUODEKA - Venture Builder | Digital Transformer', 'https://duodeka.nl', NULL, NULL);
+
+--
+-- Dumping data for table `web_site`
+--
+
+INSERT INTO `web_site` (`id`, `site_id`, `created_at`, `updated_at`) VALUES
+(1, 1, NULL, NULL);
+
+--
+-- Dumping data for table `web_site_google`
+--
+
+INSERT INTO `web_site_google` (`id`, `site_id`, `created_at`, `updated_at`) VALUES
+(1, 1, NULL, NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -10,7 +10,11 @@ trait JsonLd
 
 	public function getSchemaOrgNodeIdentifierSchemaAttribute(string $type, bool $withUrl = false)
 	{
-		$url = $this->thing && $this->thing->url ? $this->thing->url : null;
+		if (!in_array($type, ['WebSite','WebSiteGoogle'])) {
+			$url = $this->thing && $this->thing->url ? $this->thing->url : null;
+		} else {
+			$url = $this->site->thing && $this->site->thing->url ? $this->site->thing->url : null;
+		}
 		$schema = Schema::$type()->setProperty('@id', isset($url) ? $url . '/#' . strtolower($type) : null);
 		if ($withUrl) {
 			$schema = $schema->setProperty('url', $url);

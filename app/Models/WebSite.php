@@ -17,34 +17,15 @@ class WebSite extends \App\Models\Base\WebSite
 
 	public function getSchemaOrgSchemaAttribute()
 	{
-		// @todo fetch from db
-		$searchAction = Schema::SearchAction()
-			->target('https://duodeka.nl/?s={search_term_string}')
-			->setProperty('query-input', 'required name=search_term_string')
-		;
-
-		$searchActionMobile = Schema::SearchAction()
-			->target('https://duodeka.nl/?m={mobile_search_term_string}')
-			->setProperty('query-input', 'required name=mobile_search_term_string')
-		;
-		$searchActions = $searchAction;
-		// $searchActions = [$searchAction, $searchActionMobile];
-		
 		return $this->getSchemaOrgNodeIdentifierSchemaAttribute('WebSite', true)
-			->potentialAction($searchActions)
 			// Thing
-			->name($this->thing->name)
+			->name($this->site->thing->name)
 		;
 	}
 
 	public function getSchemaOrgSchema()
 	{
 		return $this->getSchemaOrgSchemaAttribute();
-	}
-
-	public function potentialActions()
-	{
-		return $this->hasMany(\App\Models\Action::class, 'potentialActions');
 	}
 
 	public function action()

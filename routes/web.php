@@ -14,7 +14,7 @@ Route::get('/organization/{organization}/address/{field}', 'OrganizationControll
 Route::get('/organization/{organization}/employees/{name}/{field}', 'OrganizationController@employeesByName');
 Route::get('/organization/{organization}/founders/{name}/{field}', 'OrganizationController@foundersByName');
 Route::get('/organization/{organization}/{field}', 'OrganizationController@field');
-Route::get('/web_site/{web_site}/{field}', 'WebSiteController@field');
+Route::get('/web_site/{web_site_google}/{field}', 'WebSiteGoogleController@field');
 Route::get('/', function () {
     return view('welcome');
 });
