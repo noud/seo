@@ -5,7 +5,7 @@
  * Date: Sat, 28 Sep 2019 13:24:36 +0000.
  */
 
-namespace App\Models\Base;
+namespace App\Models;
 
 use Reliese\Database\Eloquent\Model as Eloquent;
 
@@ -23,4 +23,9 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 class DataBaseTable extends Eloquent
 {
 	protected $table = 'data_base_table';
+
+	protected $fillable = [
+		'name',
+		'comment'
+	];
 }
