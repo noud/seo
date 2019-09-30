@@ -153,14 +153,6 @@
             "hcd0z": {
                 "x": 277,
                 "y": 168
-            },
-            "3zow5p": {
-                "x": 567,
-                "y": 450
-            },
-            "36kdx": {
-                "x": 827,
-                "y": 587
             }
         }
     },
@@ -351,20 +343,6 @@
             "id": "hcd0z",
             "name": "education_requirements",
             "color": "table-header-dark-blue",
-            "softDelete": false,
-            "timeStamp": true
-        },
-        {
-            "id": "3zow5p",
-            "name": "recruiters",
-            "color": "table-header-red",
-            "softDelete": false,
-            "timeStamp": true
-        },
-        {
-            "id": "36kdx",
-            "name": "recruiter",
-            "color": "table-header-red",
             "softDelete": false,
             "timeStamp": true
         }
@@ -2470,102 +2448,6 @@
                     }
                 }
             }
-        ],
-        "3zow5p": [
-            {
-                "id": "0zrclt",
-                "name": "id",
-                "type": "bigInteger",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": true,
-                "nullable": false,
-                "unique": true,
-                "index": true,
-                "unsigned": true,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
-                "id": "hs2i1",
-                "name": "organization_id",
-                "type": "bigInteger",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": false,
-                "unique": false,
-                "index": true,
-                "unsigned": true,
-                "foreignKey": {
-                    "references": {
-                        "id": "ull9k",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "mure2o",
-                        "name": "organization"
-                    }
-                }
-            },
-            {
-                "id": "zwbt4h",
-                "name": "recruiter_id",
-                "type": "bigInteger",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": false,
-                "unique": false,
-                "index": true,
-                "unsigned": true,
-                "foreignKey": {
-                    "references": {
-                        "id": "u9w7gg",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "36kdx",
-                        "name": "recruiter"
-                    }
-                }
-            }
-        ],
-        "36kdx": [
-            {
-                "id": "u9w7gg",
-                "name": "id",
-                "type": "bigInteger",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": true,
-                "nullable": false,
-                "unique": true,
-                "index": true,
-                "unsigned": true,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            }
         ]
     },
     "relations": [
@@ -2857,26 +2739,6 @@
             "target": {
                 "columnId": "36ildg",
                 "tableId": "07jqi"
-            }
-        },
-        {
-            "source": {
-                "columnId": "hs2i1",
-                "tableId": "3zow5p"
-            },
-            "target": {
-                "columnId": "ull9k",
-                "tableId": "mure2o"
-            }
-        },
-        {
-            "source": {
-                "columnId": "zwbt4h",
-                "tableId": "3zow5p"
-            },
-            "target": {
-                "columnId": "u9w7gg",
-                "tableId": "36kdx"
             }
         }
     ]
