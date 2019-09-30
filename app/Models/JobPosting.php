@@ -35,14 +35,26 @@ class JobPosting extends \App\Models\Base\JobPosting
 			];
 		};
 		// @todo ENUM
-		$employmentTypes = [
-			'full-time',
-			'part-time',
-			'contract',
-			'temporary',
-			'seasonal',
-			'internship',
+		// FULL_TIME
+		$employmentTypes = [	// Google
+			'FULL_TIME',
+            'PART_TIME',
+            'CONTRACTOR',
+			'TEMPORARY',
+			'INTERN',
+			"VOLUNTEER",
+			"PER_DIEM",
+			"OTHER",
 		];
+		// $employmentTypes = [	// Schema.org
+		// 	'full-time',
+		// 	'part-time',
+		// 	'contract',
+		// 	'temporary',
+		// 	'seasonal',
+		// 	'internship',
+		// ];
+		// @todo $employmentType = [$employmentType, $employmentType];
 		$employmentType = isset($this->employment_type) ? $employmentTypes[$this->employment_type] : null;
 		// Organization
 		// $person = null;
@@ -64,6 +76,7 @@ class JobPosting extends \App\Models\Base\JobPosting
 				->name($this->organization->thing->name)
 			;
 		}
+		$identifier = null;	// @todo
 		$jobLocation = null;	// @todo check if manditory
 		if ($this->job_location) {
 			$address = Schema::PostalAddress()
@@ -75,8 +88,7 @@ class JobPosting extends \App\Models\Base\JobPosting
 			$jobLocation = Schema::Place()->address($address);
 		}
 		$jobLocationType = [
-			'TELECOMMUTE',	// Schema.org
-			'remote',	// Google
+			'TELECOMMUTE',	// Google
 		];
 
 		return $this->getSchemaOrgNodeIdentifierSchemaAttribute('JobPosting', true)
