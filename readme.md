@@ -26,7 +26,9 @@ mysql -u <user> -p <dbname> < database/data/schema-org.sql
 See the output
 
 ```chrome view-source: http://seo.localhost/```
-- [organization/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.organization.json)
+- [job_posting/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.1.json)
+- [job_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.1.json)
+- [organization/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.organization.json)
 - organization/2/schema_org
 - organization/1/founders/Koen/schema_org
 - organization/1/employees/Koen/schema_org

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Sep 30, 2019 at 07:21 PM
+-- Generation Time: Sep 30, 2019 at 10:21 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -70,6 +70,21 @@ INSERT INTO `founders` (`id`, `organization_id`, `founder_id`, `created_at`, `up
 (4, 1, 4, NULL, NULL);
 
 --
+-- Dumping data for table `job_posting`
+--
+
+INSERT INTO `job_posting` (`id`, `base_salary_id`, `date_posted`, `employment_type`, `hiring_organization_id`, `job_location`, `title`, `valid_through`, `thing_id`, `created_at`, `updated_at`) VALUES
+(1, 1, '2019-09-30', 0, 1, 1, 'Frontend developer', '2019-10-31 00:00:00', 13, NULL, NULL),
+(2, 1, '2019-10-01', 0, 1, 1, 'Full-stack developer', NULL, 14, NULL, NULL);
+
+--
+-- Dumping data for table `monetary_amount`
+--
+
+INSERT INTO `monetary_amount` (`id`, `currency`, `value_id`, `created_at`, `updated_at`) VALUES
+(1, 'EUR', 1, NULL, NULL);
+
+--
 -- Dumping data for table `organization`
 --
 
@@ -122,6 +137,13 @@ INSERT INTO `property_value_specification` (`id`, `value_name`, `value_required`
 (1, 'search_term_string', 1, NULL, NULL);
 
 --
+-- Dumping data for table `quantitative_value`
+--
+
+INSERT INTO `quantitative_value` (`id`, `unit_text`, `value`, `created_at`, `updated_at`) VALUES
+(1, 'month', 3250, NULL, NULL);
+
+--
 -- Dumping data for table `role`
 --
 
@@ -166,19 +188,21 @@ INSERT INTO `site` (`id`, `thing_id`, `created_at`, `updated_at`) VALUES
 -- Dumping data for table `thing`
 --
 
-INSERT INTO `thing` (`id`, `alternate_name`, `name`, `url`, `created_at`, `updated_at`) VALUES
-(1, 'XII', 'DUODEKA', 'https://duodeka.nl', NULL, NULL),
-(2, '', '', 'https://www.linkedin.com/in/klavrijssen', NULL, NULL),
-(3, '', '', 'https://www.linkedin.com/in/rik-van-de-looi', NULL, NULL),
-(4, '', '', 'https://www.linkedin.com/in/daanschoofs', NULL, NULL),
-(5, '', '', 'https://www.linkedin.com/in/dion-duimel', NULL, NULL),
-(6, '', '', 'https://www.linkedin.com/in/david-schulpen', NULL, NULL),
-(7, '', '', 'https://www.linkedin.com/in/emiel-popelier-870732177', NULL, NULL),
-(8, '', '', 'https://www.linkedin.com/in/sven-zahharov-a82507158', NULL, NULL),
-(9, '', '', 'https://www.linkedin.com/in/thijsdejong1995', NULL, NULL),
-(10, '', '', 'https://www.linkedin.com/in/wesleyvanbergen', NULL, NULL),
-(11, '', 'Mr. Winston', NULL, NULL, NULL),
-(12, '', 'DUODEKA - Venture Builder | Digital Transformer', 'https://duodeka.nl', NULL, NULL);
+INSERT INTO `thing` (`id`, `alternate_name`, `description`, `name`, `url`, `created_at`, `updated_at`) VALUES
+(1, 'XII', '', 'DUODEKA', 'https://duodeka.nl', NULL, NULL),
+(2, '', '', '', 'https://www.linkedin.com/in/klavrijssen', NULL, NULL),
+(3, '', '', '', 'https://www.linkedin.com/in/rik-van-de-looi', NULL, NULL),
+(4, '', '', '', 'https://www.linkedin.com/in/daanschoofs', NULL, NULL),
+(5, '', '', '', 'https://www.linkedin.com/in/dion-duimel', NULL, NULL),
+(6, '', '', '', 'https://www.linkedin.com/in/david-schulpen', NULL, NULL),
+(7, '', '', '', 'https://www.linkedin.com/in/emiel-popelier-870732177', NULL, NULL),
+(8, '', '', '', 'https://www.linkedin.com/in/sven-zahharov-a82507158', NULL, NULL),
+(9, '', '', '', 'https://www.linkedin.com/in/thijsdejong1995', NULL, NULL),
+(10, '', '', '', 'https://www.linkedin.com/in/wesleyvanbergen', NULL, NULL),
+(11, '', '', 'Mr. Winston', NULL, NULL, NULL),
+(12, '', '', 'DUODEKA - Venture Builder | Digital Transformer', 'https://duodeka.nl', NULL, NULL),
+(13, '', '<p>DUODEKA is a Venture Builder started by IT entrepreneurs from Tilburg. We specialize in devising, validating and developing digital products, apps and platforms.</p>\r\n<p>Together with entrepreneurs, we develop digital products that are marketed as a separate company.</p>\r\n<p>On the one hand, we devise, develop and market our own digital concepts. On the other hand, we develop digital products for SME that digitally transform a business model.</p>\r\n<p>To strengthen our current team, we are looking for a (English) frontend developer in Tilburg.</p>\r\n<p>Job description<br />\r\nAs a (English) frontend developer in Tilburg at DUODEKA you have the opportunity to participate fully in all projects; both for the customer and our own products. These are mainly developed in React or Vue.js (frontend) and Laravel or Meteor (backend).</p>\r\n<p>You translate the visual wishes into concrete functionality and design. You understand the flow of an application and can transform it into a perfect UX. You see that the complexity of applications nowadays is shifting more and more from the backend to the frontend and you are not afraid to take on the associated challenges.</p>\r\n<p><em>Do you like all of this? Then read on!</em></p>\r\n<p><strong>Our MoSCoW list (job requirements)</strong><br />\r\n<em>Must haves</em></p>\r\n<ul>\r\n<li>Good command of the Dutch and English language</li>\r\n<li>Experience with frontend JavaScript frameworks (React, Vue.js)</li>\r\n<li>Very skilled with HTML, css / sass</li>\r\n<li>A good eye for UI / UX and Design</li>\r\n<li>Being able to solve problems independently</li>\r\n</ul>\r\n<p><em>Should haves</em></p>\r\n<ul>\r\n<li>Experience with GIT (or other VCS)</li>\r\n<li>Translate customer wishes into concrete developments</li>\r\n<li>Understanding of commercial and business processes</li>\r\n</ul>\r\n<p><em>(very) Nice to have</em><br />\r\nExperience with:</p>\r\n<ul>\r\n<li>API interfacing (GraphQL or REST)</li>\r\n<li>Laravel, MeteorJS</li>\r\n<li>SQL (MySQL) or NoSQL (MongoDB) databases</li>\r\n<li>Database design, application structures and design patterns</li>\r\n<li>Project management (tools such as JIRA)</li>\r\n<li>WordPress</li>\r\n</ul>\r\n<p><strong>We offer</strong></p>\r\n<ul>\r\n<li>Working in a young company consisting of digital entrepreneurs and programmers</li>\r\n<li>Working on custom projects and own SaaS products in the latest technologies</li>\r\n<li>A continuous focus on software development that supports (new) revenue models</li>\r\n<li>Working with ambitious colleagues who always want to learn new things</li>\r\n<li>Fast career opportunities as a project manager, team lead, business analyst and / or product owner</li>\r\n<li>Lots of room for innovation, research and personal contribution</li>\r\n<li>Business laptop</li>\r\n<li>Every Friday: Vrijmibo</li>\r\n<li>LAN party events</li>\r\n</ul>\r\n<p><strong>Job application</strong><br />\r\nAre you interested in this vacancy and does the profile of (English) frontend developer in Tilburg suit you? Then we would love to hear from you. For more information you can contact Daan Schoofs via the telephone number <strong>06 535 869 00</strong> or via email at <strong><a href=\"/cdn-cgi/l/email-protection\" class=\"__cf_email__\" data-cfemail=\"92f6f3f3fcd2f6e7fdf6f7f9f3bcfcfe\">[email&#160;protected]</a></strong>.</p>\r\n<p><strong>About DUODEKA</strong><br />\r\nOur team has years of experience with web development (Laravel, Meteor, React, Vue.js) and entrepreneurship. Our team also has expertise in UX / UI, sales and marketing.</p>\r\n<p>Do you find it cool to help companies take the next step in digital transformation and develop a new business? Then you have come to the right place. Our commercial software team mainly develops in PHP (Laravel) and Javascript (Meteor). For this we use frontend frameworks such as ReactJS and Vue.JS. Furthermore, we naturally work with programs such as JIRA, Git, Adobe XD, InVision and Visual Studio Code.</p>\r\n<p>If you want to know more about the projects in which you are going to work, have a look at <a href=\"https://duodeka.nl\">https://duodeka.nl</a>.</p>\r\n', 'Frontend developer in Tilburg', 'https://duodeka.nl/vacature/english-frontend-developer-in-tilburg', NULL, NULL),
+(14, '', '<p>DUODEKA is a Venture Builder started by IT entrepreneurs from Tilburg. We specialize in devising, validating and developing digital products, apps and platforms.</p>\r\n<p>Together with entrepreneurs, we develop digital products that are marketed as a separate company.</p>\r\n<p>On the one hand, we devise, develop and market our own digital concepts. On the other hand, we develop digital products for SME that digitally transform a business model.</p>\r\n<p>To strengthen our current team, we are looking for a (English) full-stack developer in Tilburg.</p>\r\n<p><strong>Job description</strong><br />\r\nAs a (English) full-stack developer in Tilburg at DUODEKA you directly participate in a wide range of projects, including both customized assignments and our own SaaS products. You develop functionality based on the defined requirements and you are a valuable part of the development team. We mainly develop in Laravel or Meteor (backend) and React or Vue.js (frontend).</p>\r\n<p>In addition, we offer the opportunity to quickly grow into a management position (team lead, project manager) or to grow as a business analyst (intake, database design, requirements). In short, a lot of room for (software) development!</p>\r\n<p><em>Do you like all  of this? Then read on!</em></p>\r\n<p><strong>Our MoSCoW list (job requirements)</strong><br />\r\n<em>Must haves</em></p>\r\n<ul>\r\n<li>Good command of the Dutch and English language</li>\r\n<li>A strong understanding of OOP within a modern MVC framework</li>\r\n<li>Experience with SQL (MySQL) or NoSQL (MongoDB) databases</li>\r\n<li>Experience with front-end JavaScript frameworks (React, Vue.js)</li>\r\n<li>Being able to solve problems independently</li>\r\n</ul>\r\n<p><em>Should haves</em></p>\r\n<ul>\r\n<li>Experience with GIT (or other VCS)</li>\r\n<li>Experience with API interfacing (GraphQL or REST)</li>\r\n<li>Understanding of commercial and business processes</li>\r\n</ul>\r\n<p><em>(very) Nice to have</em><br />\r\nExperience with:</p>\r\n<ul>\r\n<li>Laravel, MeteorJS</li>\r\n<li>Project management (tools such as JIRA)</li>\r\n<li>Database design, application structures and design patterns</li>\r\n<li>Translate customer wishes into concrete developments</li>\r\n</ul>\r\n<p><strong>We offer</strong></p>\r\n<ul>\r\n<li>Working in a young company consisting of digital entrepreneurs and programmers</li>\r\n<li>Working on custom projects and own SaaS products in the latest technologies</li>\r\n<li>A continuous focus on software development that supports (new) revenue models</li>\r\n<li>Working with ambitious colleagues who always want to learn new things</li>\r\n<li>Fast career opportunities as a project manager, team lead, business analyst and / or product owner</li>\r\n<li>Lots of room for innovation, research and personal contribution</li>\r\n<li>Business laptop</li>\r\n<li>Every Friday: Vrijmibo</li>\r\n<li>LAN party events</li>\r\n</ul>\r\n<p><strong>Job application</strong><br />\r\nAre you interested in this vacancy and does the profile of (English) full-stack developer in Tilburg suit you? Then we would love to hear from you. For more information you can contact Daan Schoofs via the telephone number <strong>06 535 869 00</strong> or via email at <strong><a href=\"/cdn-cgi/l/email-protection\" class=\"__cf_email__\" data-cfemail=\"543035353a1430213b30313f357a3a38\">[email&#160;protected]</a></strong>.</p>\r\n<p><strong>About DUODEKA</strong><br />\r\nOur team has years of experience with web development (Laravel, Meteor, React, Vue.js) and entrepreneurship. Our team also has expertise in UX / UI, sales and marketing.</p>\r\n<p>Do you find it cool to help companies take the next step in digital transformation and develop a new business? Then you have come to the right place. Our commercial software team mainly develops in PHP (Laravel) and Javascript (Meteor). For this we use frontend frameworks such as ReactJS and Vue.JS. Furthermore, we naturally work with programs such as JIRA, Git, Adobe XD, InVision and Visual Studio Code.</p>\r\n<p>If you want to know more about the projects in which you are going to work, have a look at <a href=\"https://duodeka.nl\">https://duodeka.nl</a>.</p>\r\n', 'Full-stack developer in Tilburg', 'https://duodeka.nl/vacature/english-full-stack-developer-in-tilburg', NULL, NULL);
 
 --
 -- Dumping data for table `web_site`

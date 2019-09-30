@@ -75,12 +75,12 @@
                 "y": 812
             },
             "1d67r": {
-                "x": 1269,
-                "y": 377
+                "x": 1272,
+                "y": 425
             },
             "bo322d": {
-                "x": 1019,
-                "y": 287
+                "x": 1025,
+                "y": 363
             },
             "3rd2qr": {
                 "x": 846,
@@ -313,7 +313,7 @@
         },
         {
             "id": "f79uri",
-            "name": "job_postng",
+            "name": "job_posting",
             "color": "table-header-green",
             "softDelete": false,
             "timeStamp": true
@@ -1105,6 +1105,29 @@
                 "id": "i3oi0k",
                 "name": "alternate_name",
                 "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "za718",
+                "name": "description",
+                "type": "text",
                 "length": "",
                 "defValue": "",
                 "comment": "",
@@ -2103,7 +2126,7 @@
                 "defValue": "",
                 "comment": "",
                 "autoInc": false,
-                "nullable": false,
+                "nullable": true,
                 "unique": false,
                 "index": true,
                 "unsigned": true,
@@ -2119,6 +2142,29 @@
                 }
             },
             {
+                "id": "6wp6db",
+                "name": "date_posted",
+                "type": "date",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
                 "id": "ut9bsq",
                 "name": "employment_type",
                 "type": "integer",
@@ -2126,7 +2172,7 @@
                 "defValue": "",
                 "comment": "",
                 "autoInc": false,
-                "nullable": false,
+                "nullable": true,
                 "unique": false,
                 "index": false,
                 "unsigned": false,
@@ -2172,7 +2218,7 @@
                 "defValue": "",
                 "comment": "",
                 "autoInc": false,
-                "nullable": false,
+                "nullable": true,
                 "unique": false,
                 "index": true,
                 "unsigned": true,
@@ -2184,6 +2230,75 @@
                     "on": {
                         "id": "07jqi",
                         "name": "place"
+                    }
+                }
+            },
+            {
+                "id": "68363i",
+                "name": "title",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "ce9qg",
+                "name": "valid_through",
+                "type": "dateTime",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "4ud7c",
+                "name": "thing_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "3m7cdr",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "bo322d",
+                        "name": "thing"
                     }
                 }
             }
@@ -2421,7 +2536,7 @@
                     },
                     "on": {
                         "id": "f79uri",
-                        "name": "job_postng"
+                        "name": "job_posting"
                     }
                 }
             },
@@ -2739,6 +2854,16 @@
             "target": {
                 "columnId": "36ildg",
                 "tableId": "07jqi"
+            }
+        },
+        {
+            "source": {
+                "columnId": "4ud7c",
+                "tableId": "f79uri"
+            },
+            "target": {
+                "columnId": "3m7cdr",
+                "tableId": "bo322d"
             }
         }
     ]

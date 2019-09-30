@@ -1,0 +1,39 @@
+
+{
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "@id": "https://duodeka.nl/vacature/english-frontend-developer-in-tilburg/#jobposting",
+    "url": "https://duodeka.nl/vacature/english-frontend-developer-in-tilburg",
+    "baseSalary": {
+        "@type": "MonetaryAmount",
+        "currency": "EUR",
+        "value": {
+            "@type": "QuantitativeValue",
+            "unitText": "month",
+            "value": 3250
+        }
+    },
+    "datePosted": "2019-09-30T00:00:00+00:00",
+    "employmentType": "full-time",
+    "hiringOrganization": {
+        "@type": "Organization",
+        "logo": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png",
+        "telephone": "+31 13 203 2264",
+        "url": "https://duodeka.nl",
+        "name": "DUODEKA"
+    },
+    "jobLocation": {
+        "@type": "Place",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Tivolistraat 50-52",
+            "addressLocality": "Tilburg",
+            "postalCode": "5017 HR",
+            "addressCountry": "NL"
+        }
+    },
+    "title": "Frontend developer",
+    "validThrough": "2019-10-31T00:00:00+00:00",
+    "description": "<p>DUODEKA is a Venture Builder started by IT entrepreneurs from Tilburg. We specialize in devising, validating and developing digital products, apps and platforms.</p>\r\n<p>Together with entrepreneurs, we develop digital products that are marketed as a separate company.</p>\r\n<p>On the one hand, we devise, develop and market our own digital concepts. On the other hand, we develop digital products for SME that digitally transform a business model.</p>\r\n<p>To strengthen our current team, we are looking for a (English) frontend developer in Tilburg.</p>\r\n<p>Job description<br />\r\nAs a (English) frontend developer in Tilburg at DUODEKA you have the opportunity to participate fully in all projects; both for the customer and our own products. These are mainly developed in React or Vue.js (frontend) and Laravel or Meteor (backend).</p>\r\n<p>You translate the visual wishes into concrete functionality and design. You understand the flow of an application and can transform it into a perfect UX. You see that the complexity of applications nowadays is shifting more and more from the backend to the frontend and you are not afraid to take on the associated challenges.</p>\r\n<p><em>Do you like all of this? Then read on!</em></p>\r\n<p><strong>Our MoSCoW list (job requirements)</strong><br />\r\n<em>Must haves</em></p>\r\n<ul>\r\n<li>Good command of the Dutch and English language</li>\r\n<li>Experience with frontend JavaScript frameworks (React, Vue.js)</li>\r\n<li>Very skilled with HTML, css / sass</li>\r\n<li>A good eye for UI / UX and Design</li>\r\n<li>Being able to solve problems independently</li>\r\n</ul>\r\n<p><em>Should haves</em></p>\r\n<ul>\r\n<li>Experience with GIT (or other VCS)</li>\r\n<li>Translate customer wishes into concrete developments</li>\r\n<li>Understanding of commercial and business processes</li>\r\n</ul>\r\n<p><em>(very) Nice to have</em><br />\r\nExperience with:</p>\r\n<ul>\r\n<li>API interfacing (GraphQL or REST)</li>\r\n<li>Laravel, MeteorJS</li>\r\n<li>SQL (MySQL) or NoSQL (MongoDB) databases</li>\r\n<li>Database design, application structures and design patterns</li>\r\n<li>Project management (tools such as JIRA)</li>\r\n<li>WordPress</li>\r\n</ul>\r\n<p><strong>We offer</strong></p>\r\n<ul>\r\n<li>Working in a young company consisting of digital entrepreneurs and programmers</li>\r\n<li>Working on custom projects and own SaaS products in the latest technologies</li>\r\n<li>A continuous focus on software development that supports (new) revenue models</li>\r\n<li>Working with ambitious colleagues who always want to learn new things</li>\r\n<li>Fast career opportunities as a project manager, team lead, business analyst and / or product owner</li>\r\n<li>Lots of room for innovation, research and personal contribution</li>\r\n<li>Business laptop</li>\r\n<li>Every Friday: Vrijmibo</li>\r\n<li>LAN party events</li>\r\n</ul>\r\n<p><strong>Job application</strong><br />\r\nAre you interested in this vacancy and does the profile of (English) frontend developer in Tilburg suit you? Then we would love to hear from you. For more information you can contact Daan Schoofs via the telephone number <strong>06 535 869 00</strong> or via email at <strong><a href=\"/cdn-cgi/l/email-protection\" class=\"__cf_email__\" data-cfemail=\"92f6f3f3fcd2f6e7fdf6f7f9f3bcfcfe\">[email&#160;protected]</a></strong>.</p>\r\n<p><strong>About DUODEKA</strong><br />\r\nOur team has years of experience with web development (Laravel, Meteor, React, Vue.js) and entrepreneurship. Our team also has expertise in UX / UI, sales and marketing.</p>\r\n<p>Do you find it cool to help companies take the next step in digital transformation and develop a new business? Then you have come to the right place. Our commercial software team mainly develops in PHP (Laravel) and Javascript (Meteor). For this we use frontend frameworks such as ReactJS and Vue.JS. Furthermore, we naturally work with programs such as JIRA, Git, Adobe XD, InVision and Visual Studio Code.</p>\r\n<p>If you want to know more about the projects in which you are going to work, have a look at <a href=\"https://duodeka.nl\">https://duodeka.nl</a>.</p>\r\n",
+    "name": "Frontend developer in Tilburg"
+}
