@@ -1,7 +1,7 @@
 # generated
 /app/Models/Base/*
 /database/migrations/*
-!/database/migrations/2019_09_28_175217_create_data_base_table_table.php
+!/database/migrations/2019_12_31_175217_create_data_base_table_table.php
 /public/schema-spy/*
 
 # webpack
