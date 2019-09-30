@@ -43,7 +43,7 @@ The output can be validated at [Google Search](https://developers.google.com/sea
 ### [SQL](https://en.wikipedia.org/wiki/SQL) to [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
 
 ```
-chrome view-source:http://schema-org.localhost/schema-inspector/schema
+chrome view-source:http://seo.localhost/schema-inspector/schema
 ```
 
 ### [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model) to [Laravel Migrations](https://laravel.com/docs/master/migrations)
