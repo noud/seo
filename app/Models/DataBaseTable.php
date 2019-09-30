@@ -13,17 +13,10 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  * Class Thing
  * 
  * @property int $id
- * @property string $alternate_name
  * @property string $name
- * @property int $url_id
+ * @property string $comment
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
- * 
- * @property \App\Models\Url $url
- * @property \Illuminate\Database\Eloquent\Collection $organizations
- * @property \Illuminate\Database\Eloquent\Collection $people
- * @property \App\Models\SameA $same_a
- * @property \Illuminate\Database\Eloquent\Collection $web_sites
  *
  * @package App\Models\Base
  */
