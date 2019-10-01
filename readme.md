@@ -101,6 +101,7 @@ php artisan code:models
                 - [PostalAddress](https://schema.org/PostalAddress)
             - [GeoCoordinates](https://schema.org/GeoCoordinates)
             - [MonetaryAmount](https://schema.org/MonetaryAmount)
+            - [PropertyValue](https://schema.org/PropertyValue)
             - [QuantitativeValue](https://schema.org/QuantitativeValue)
 
 ## [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
