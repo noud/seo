@@ -35,7 +35,7 @@ class JobPosting extends \App\Models\Base\JobPosting
 			];
 		};
 		// @todo ENUM
-		// FULL_TIME
+		$employmentType = null;
 		$employmentTypes = [	// Google
 			'FULL_TIME',
             'PART_TIME',
@@ -76,20 +76,30 @@ class JobPosting extends \App\Models\Base\JobPosting
 				->name($this->organization->thing->name)
 			;
 		}
-		$identifier = null;	// @todo
+		$identifier = null;
+		if ($this->thing->identifier) {
+			$identifier = Schema::PropertyValue()
+				->value($this->thing->identifier->value)
+				// Thing
+				->name($this->thing->identifier->thing->name)
+			;
+		}
 		$jobLocation = null;	// @todo check if manditory
 		if ($this->job_location) {
 			$address = Schema::PostalAddress()
 				->streetAddress($this->place->postal_address->street_address)
 				->addressLocality($this->place->postal_address->address_locality)
-				->addressRegion($this->place->postal_address->address_region)	// @todo Google advised
+				->addressRegion($this->place->postal_address->address_region)	// Google advised
 				->postalCode($this->place->postal_address->postal_code)
-				->addressCountry($this->place->postal_address->address_country);
+				->addressCountry($this->place->postal_address->address_country)
+			;
 			$jobLocation = Schema::Place()->address($address);
 		}
-		$jobLocationType = [
+		$jobLocationType = null;
+		$jobLocationTypes = [
 			'TELECOMMUTE',	// Google
 		];
+		$jobLocationType = isset($this->job_location_type) ? $jobLocationTypes[$this->job_location_type] : null;
 
 		return $this->getSchemaOrgNodeIdentifierSchemaAttribute('JobPosting', true)
 			->baseSalary($baseSalary)	// Google advised
@@ -98,10 +108,12 @@ class JobPosting extends \App\Models\Base\JobPosting
 			->employmentType($employmentType)
 			->hiringOrganization($hiringOrganization)
 			->jobLocation($jobLocation)
+			->jobLocationType($jobLocationType)
 			->title($this->title)	// jobTitle
 			->validThrough($this->valid_through)	// Google advised
 			// Thing
 			->description($this->thing->description)
+			->identifier($identifier)	// optional
 			->name($this->thing->name)
 		;
 	}

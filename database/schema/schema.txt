@@ -153,6 +153,10 @@
             "hcd0z": {
                 "x": 277,
                 "y": 168
+            },
+            "vpvoh": {
+                "x": 764,
+                "y": 449
             }
         }
     },
@@ -343,6 +347,13 @@
             "id": "hcd0z",
             "name": "education_requirements",
             "color": "table-header-dark-blue",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "vpvoh",
+            "name": "property_value",
+            "color": "table-header-green",
             "softDelete": false,
             "timeStamp": true
         }
@@ -1190,6 +1201,29 @@
                     "on": {
                         "id": "",
                         "name": ""
+                    }
+                }
+            },
+            {
+                "id": "jgk2fi",
+                "name": "identifier_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "ar1vn",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "vpvoh",
+                        "name": "property_value"
                     }
                 }
             }
@@ -2234,6 +2268,29 @@
                 }
             },
             {
+                "id": "1kn7r",
+                "name": "job_location_type",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
                 "id": "68363i",
                 "name": "title",
                 "type": "string",
@@ -2299,29 +2356,6 @@
                     "on": {
                         "id": "bo322d",
                         "name": "thing"
-                    }
-                }
-            },
-            {
-                "id": "1kn7r",
-                "name": "job_location_type",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": false,
-                "unique": false,
-                "index": false,
-                "unsigned": true,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
                     }
                 }
             }
@@ -2583,6 +2617,77 @@
                     "on": {
                         "id": "au3fwm",
                         "name": "education_requirement"
+                    }
+                }
+            }
+        ],
+        "vpvoh": [
+            {
+                "id": "ar1vn",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "oxsp1b",
+                "name": "value",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "tnlt2e",
+                "name": "thing_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "3m7cdr",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "bo322d",
+                        "name": "thing"
                     }
                 }
             }
@@ -2887,6 +2992,26 @@
             "target": {
                 "columnId": "3m7cdr",
                 "tableId": "bo322d"
+            }
+        },
+        {
+            "source": {
+                "columnId": "tnlt2e",
+                "tableId": "vpvoh"
+            },
+            "target": {
+                "columnId": "3m7cdr",
+                "tableId": "bo322d"
+            }
+        },
+        {
+            "source": {
+                "columnId": "jgk2fi",
+                "tableId": "bo322d"
+            },
+            "target": {
+                "columnId": "ar1vn",
+                "tableId": "vpvoh"
             }
         }
     ]
