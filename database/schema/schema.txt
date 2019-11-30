@@ -75,8 +75,8 @@
                 "y": 812
             },
             "1d67r": {
-                "x": 1272,
-                "y": 425
+                "x": 1290,
+                "y": 366
             },
             "bo322d": {
                 "x": 1025,
@@ -157,6 +157,22 @@
             "vpvoh": {
                 "x": 764,
                 "y": 449
+            },
+            "v7ws35": {
+                "x": 1992,
+                "y": 12
+            },
+            "wiacc": {
+                "x": 1724,
+                "y": 11
+            },
+            "i7jmu": {
+                "x": 1478,
+                "y": 14
+            },
+            "i3du98": {
+                "x": 1290,
+                "y": 536
             }
         }
     },
@@ -354,6 +370,34 @@
             "id": "vpvoh",
             "name": "property_value",
             "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "v7ws35",
+            "name": "blog_posting",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "wiacc",
+            "name": "article",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "i7jmu",
+            "name": "creative_work",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "i3du98",
+            "name": "image",
+            "color": "table-header-dark-blue",
             "softDelete": false,
             "timeStamp": true
         }
@@ -1224,6 +1268,29 @@
                     "on": {
                         "id": "vpvoh",
                         "name": "property_value"
+                    }
+                }
+            },
+            {
+                "id": "sb65x",
+                "name": "main_entity_of_page",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
                     }
                 }
             }
@@ -2691,6 +2758,359 @@
                     }
                 }
             }
+        ],
+        "v7ws35": [
+            {
+                "id": "1kiak",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "nviyf9",
+                "name": "article_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "nhu9j",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "wiacc",
+                        "name": "article"
+                    }
+                }
+            }
+        ],
+        "wiacc": [
+            {
+                "id": "nhu9j",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "bqftc8",
+                "name": "article_body",
+                "type": "text",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "2n8a6a",
+                "name": "creative_work_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "srej3c",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "i7jmu",
+                        "name": "creative_work"
+                    }
+                }
+            }
+        ],
+        "i7jmu": [
+            {
+                "id": "srej3c",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "f4x28c",
+                "name": "author",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "ull9j",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "uwgi9o",
+                        "name": "person"
+                    }
+                }
+            },
+            {
+                "id": "g799e",
+                "name": "publisher",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "ull9k",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "mure2o",
+                        "name": "organization"
+                    }
+                }
+            },
+            {
+                "id": "be30dn",
+                "name": "date_modified",
+                "type": "dateTime",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "y352s",
+                "name": "date_published",
+                "type": "dateTime",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "7p7pdu",
+                "name": "headline",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "bfa919",
+                "name": "thing_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "3m7cdr",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "bo322d",
+                        "name": "thing"
+                    }
+                }
+            }
+        ],
+        "i3du98": [
+            {
+                "id": "wy3kpp",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "n8xvfn",
+                "name": "thing_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "3m7cdr",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "bo322d",
+                        "name": "thing"
+                    }
+                }
+            },
+            {
+                "id": "yvmnqj",
+                "name": "image",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
         ]
     },
     "relations": [
@@ -3012,6 +3432,66 @@
             "target": {
                 "columnId": "ar1vn",
                 "tableId": "vpvoh"
+            }
+        },
+        {
+            "source": {
+                "columnId": "nviyf9",
+                "tableId": "v7ws35"
+            },
+            "target": {
+                "columnId": "nhu9j",
+                "tableId": "wiacc"
+            }
+        },
+        {
+            "source": {
+                "columnId": "f4x28c",
+                "tableId": "i7jmu"
+            },
+            "target": {
+                "columnId": "ull9j",
+                "tableId": "uwgi9o"
+            }
+        },
+        {
+            "source": {
+                "columnId": "g799e",
+                "tableId": "i7jmu"
+            },
+            "target": {
+                "columnId": "ull9k",
+                "tableId": "mure2o"
+            }
+        },
+        {
+            "source": {
+                "columnId": "2n8a6a",
+                "tableId": "wiacc"
+            },
+            "target": {
+                "columnId": "srej3c",
+                "tableId": "i7jmu"
+            }
+        },
+        {
+            "source": {
+                "columnId": "bfa919",
+                "tableId": "i7jmu"
+            },
+            "target": {
+                "columnId": "3m7cdr",
+                "tableId": "bo322d"
+            }
+        },
+        {
+            "source": {
+                "columnId": "n8xvfn",
+                "tableId": "i3du98"
+            },
+            "target": {
+                "columnId": "3m7cdr",
+                "tableId": "bo322d"
             }
         }
     ]

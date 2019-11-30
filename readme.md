@@ -18,7 +18,7 @@ For instance this is what it does to your date on [Google Search](https://develo
 ## Import data
 
 ```
-mysql -u <user> -p <dbname> < database/data/schema-org.sql
+mysql -u <user> -p <dbname> < database/data/seo.sql
 ```
 
 ## Client
@@ -26,15 +26,22 @@ mysql -u <user> -p <dbname> < database/data/schema-org.sql
 See the output
 
 ```chrome view-source: http://seo.localhost/```
-- [job_posting/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.1.json)
-- [job_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.2.json)
-- [organization/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.organization.json)
-- organization/2/schema_org
-- organization/1/founders/Koen/schema_org
-- organization/1/employees/Koen/schema_org
-- organization/2/employees/Koen/schema_org
-- organization/1/address/schema_org
-- [web_site/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.website.json)
+- [Article](https://developers.google.com/search/docs/data-types/article)
+    - [blog_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.blog_posting.2.json)
+- [Job Posting](https://developers.google.com/search/docs/data-types/job-posting)
+    - [job_posting/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.1.json)
+    - [job_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.2.json)
+- [Organization](https://schema.org/Organization)
+    - [organization/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.organization.json)
+    - organization/2/schema_org
+- [Person](https://schema.org/Person)
+    - organization/1/founders/Koen/schema_org
+    - organization/1/employees/Koen/schema_org
+    - organization/2/employees/Koen/schema_org
+- [PostalAddress](https://schema.org/PostalAddress)
+    - organization/1/postal_address/schema_org
+- [Sitelinks Searchbox](https://developers.google.com/search/docs/data-types/sitelinks-searchbox)
+    - [web_site/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.website.json)
 
 The output can be validated at [Google Search](https://developers.google.com/search) [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
 
@@ -79,6 +86,10 @@ php artisan code:models
 
 ### [Google Search](https://developers.google.com/search) [Structured data](https://developers.google.com/search/docs/data-types/article) conform [Schema.org](https://schema.org)
 
+- [Article](https://developers.google.com/search/docs/data-types/article) is
+    - [Article](https://schema.org/Article)
+    - [NewsArticle](https://schema.org/NewsArticle)
+    - [BlogPosting](https://schema.org/BlogPosting)
 - [Job Posting](https://developers.google.com/search/docs/data-types/job-posting) is [JobPosting](https://schema.org/JobPosting)
 - [Local Business Listing](https://developers.google.com/search/docs/data-types/local-business) is [LocalBusiness](https://schema.org/LocalBusiness)
 
@@ -87,7 +98,10 @@ php artisan code:models
 - [Thing](https://schema.org/Thing)
     - Action
         - [SearchAction](https://schema.org/SearchAction)
-    - CreativeWork
+    - [CreativeWork](https://schema.org/CreativeWork)
+        - [Article](https://schema.org/Article)
+            - SocialMediaPosting
+                - [BlogPosting](https://schema.org/BlogPosting)
         - [WebSite](https://schema.org/WebSite)
     - [Organization](https://schema.org/Organization)
     - [Person](https://schema.org/Person)

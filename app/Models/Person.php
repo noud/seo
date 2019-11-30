@@ -34,6 +34,11 @@ class Person extends \App\Models\Base\Person
 		;
 	}
 
+	public function getNameAttribute()
+	{
+		return trim($this->given_name . ' '. $this->given_name) . ' ' . $this->family_name;
+	}
+
 	public function getSchemaOrgSchema()
 	{
 		return $this->getSchemaOrgSchemaAttribute();

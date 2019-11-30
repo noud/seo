@@ -8,10 +8,14 @@ class Thing extends \App\Models\Base\Thing
 	{
 		return $this->belongsTo(\App\Models\PropertyValue::class, 'identifier_id');
 	}
+
+	public function image()
+	{
+		return $this->hasMany(\App\Models\Image::class);
+	}
 	
 	public function same_as()
 	{
-		// return $this->hasOne(\App\Models\SameA::class);
 		return $this->hasMany(\App\Models\SameA::class);
 	}
 }
