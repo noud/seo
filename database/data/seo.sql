@@ -98,10 +98,11 @@ INSERT INTO `image` (`id`, `thing_id`, `image`, `created_at`, `updated_at`) VALU
 (1, 17, 'https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-11-at-09.58.03.jpeg', NULL, NULL),
 (2, 17, 'https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-11-at-09.57.42.jpeg', NULL, NULL),
 (3, 17, 'https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-11-at-09.57.42-1.jpeg', NULL, NULL),
-(4, 17, 'https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-10-at-00.49.58-1024x768.jpeg', NULL, NULL),
-(5, 17, 'https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-10-at-00.49.57-1024x768.jpeg', NULL, NULL),
-(6, 17, 'https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-10-at-00.49.57-1-768x1024.jpeg', NULL, NULL),
-(7, 17, 'https://duodeka.nl/app/uploads/2019/11/hackaton.jpg', NULL, NULL);
+(4, 17, 'https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-10-at-00.49.58.jpeg', NULL, NULL),
+(5, 17, 'https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-10-at-00.49.58-1024x768.jpeg', NULL, NULL),
+(6, 17, 'https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-10-at-00.49.57-1024x768.jpeg', NULL, NULL),
+(7, 17, 'https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-10-at-00.49.57-1-768x1024.jpeg', NULL, NULL),
+(8, 17, 'https://duodeka.nl/app/uploads/2019/11/hackaton.jpg', NULL, NULL);
 
 --
 -- Dumping data for table `job_posting`
