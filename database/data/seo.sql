@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Dec 02, 2019 at 07:10 PM
+-- Generation Time: Dec 02, 2019 at 09:30 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -225,12 +225,47 @@ INSERT INTO `image` (`id`, `thing_id`, `image`, `created_at`, `updated_at`) VALU
 (63, 38, 'https://duodeka.nl/app/uploads/2019/08/create-match.png', NULL, NULL);
 
 --
+-- Dumping data for table `item_list`
+--
+
+INSERT INTO `item_list` (`id`, `created_at`, `updated_at`) VALUES
+(1, NULL, NULL);
+
+--
 -- Dumping data for table `job_posting`
 --
 
 INSERT INTO `job_posting` (`id`, `base_salary_id`, `date_posted`, `employment_type`, `hiring_organization_id`, `job_location`, `job_location_type`, `title`, `valid_through`, `thing_id`, `created_at`, `updated_at`) VALUES
 (1, 1, '2019-09-30', 0, 1, 1, 0, 'Frontend developer', '2019-10-31 00:00:00', 13, NULL, NULL),
 (2, 1, '2019-10-01', 0, 1, 1, 0, 'Full-stack developer', NULL, 14, NULL, NULL);
+
+--
+-- Dumping data for table `list_item`
+--
+
+INSERT INTO `list_item` (`id`, `item_list_id`, `position`, `itemable_id`, `itemable_type`, `created_at`, `updated_at`) VALUES
+(5, 1, 1, 2, 'App\\Models\\BlogPosting', NULL, NULL),
+(6, 1, 2, 9, 'App\\Models\\BlogPosting', NULL, NULL),
+(7, 1, 3, 12, 'App\\Models\\BlogPosting', NULL, NULL),
+(8, 1, 4, 23, 'App\\Models\\BlogPosting', NULL, NULL),
+(9, 1, 5, 22, 'App\\Models\\BlogPosting', NULL, NULL),
+(10, 1, 6, 21, 'App\\Models\\BlogPosting', NULL, NULL),
+(11, 1, 7, 20, 'App\\Models\\BlogPosting', NULL, NULL),
+(12, 1, 8, 19, 'App\\Models\\BlogPosting', NULL, NULL),
+(13, 1, 9, 18, 'App\\Models\\BlogPosting', NULL, NULL),
+(14, 1, 10, 17, 'App\\Models\\BlogPosting', NULL, NULL),
+(15, 1, 12, 15, 'App\\Models\\BlogPosting', NULL, NULL),
+(16, 1, 13, 14, 'App\\Models\\BlogPosting', NULL, NULL),
+(17, 1, 14, 13, 'App\\Models\\BlogPosting', NULL, NULL),
+(18, 1, 11, 16, 'App\\Models\\BlogPosting', NULL, NULL),
+(19, 1, 16, 10, 'App\\Models\\BlogPosting', NULL, NULL),
+(20, 1, 15, 11, 'App\\Models\\BlogPosting', NULL, NULL),
+(21, 1, 17, 8, 'App\\Models\\BlogPosting', NULL, NULL),
+(22, 1, 18, 7, 'App\\Models\\BlogPosting', NULL, NULL),
+(23, 1, 19, 6, 'App\\Models\\BlogPosting', NULL, NULL),
+(24, 1, 20, 5, 'App\\Models\\BlogPosting', NULL, NULL),
+(25, 1, 21, 4, 'App\\Models\\BlogPosting', NULL, NULL),
+(26, 1, 22, 3, 'App\\Models\\BlogPosting', NULL, NULL);
 
 --
 -- Dumping data for table `monetary_amount`

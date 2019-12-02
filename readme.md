@@ -27,8 +27,10 @@ See the output
 
 ```chrome view-source: http://seo.localhost/```
 - [Article](https://developers.google.com/search/docs/data-types/article)
-    - [blog_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.blog_posting.2.json)
-    - [blog_posting/3/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.blog_posting.3.json)
+    - [blog_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.blog_posting.2.json)
+    - [blog_posting/3/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.blog_posting.3.json)
+- [Carousel](https://developers.google.com/search/docs/data-types/carousel)
+    - [carousel_summary/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.carousel.summary.blog_posting.json)
 - [Job Posting](https://developers.google.com/search/docs/data-types/job-posting)
     - [job_posting/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.1.json)
     - [job_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.2.json)
