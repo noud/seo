@@ -21,7 +21,6 @@ class BlogPosting extends \App\Models\Base\BlogPosting
 	{
 		$author = null;
 		if ($this->article->creative_work->author) {
-			// dump($this->article->creative_work->author);
 			$author = Schema::Person()
 				->name($this->article->creative_work->author->name)
 				// ->givenName($this->article->creative_work->author->first_name)
@@ -37,7 +36,6 @@ class BlogPosting extends \App\Models\Base\BlogPosting
 		if ($this->article->creative_work->publisher) {
 			$logo = Schema::ImageObject()
 				->url($this->article->creative_work->publisher->logo);
-			// dd($this->article->creative_work->publisher);
 			$publisher = Schema::Organization()
 				// ->employee($this->organization->getSchemaOrgEmployee())
 				->logo($logo)
@@ -58,7 +56,7 @@ class BlogPosting extends \App\Models\Base\BlogPosting
 			->author($author)
 			->publisher($publisher)
 			// Thing
-			->description($this->article->creative_work->thing->description)
+			->description($this->article->creative_work->thing->description)	// optional
 			->mainEntityOfPage($this->article->creative_work->thing->main_entity_of_page)
 			->setProperty('image', $this->getSchemaOrgimage())
 		;
