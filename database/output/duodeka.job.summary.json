@@ -1,0 +1,16 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": "1",
+            "url": "https://duodeka.nl/vacature/full-stack-developer-tilburg/"
+        },
+        {
+            "@type": "ListItem",
+            "position": "2",
+            "url": "https://duodeka.nl/vacature/frontend-developer-tilburg/"
+        }
+    ]
+}

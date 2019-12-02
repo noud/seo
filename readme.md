@@ -28,6 +28,7 @@ See the output
 ```chrome view-source: http://seo.localhost/```
 - [Article](https://developers.google.com/search/docs/data-types/article)
     - [blog_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.blog_posting.2.json)
+    - [blog_posting/3/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.blog_posting.3.json)
 - [Job Posting](https://developers.google.com/search/docs/data-types/job-posting)
     - [job_posting/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.1.json)
     - [job_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.2.json)
@@ -86,12 +87,17 @@ php artisan code:models
 
 ### [Google Search](https://developers.google.com/search) [Structured data](https://developers.google.com/search/docs/data-types/article) conform [Schema.org](https://schema.org)
 
-- [Article](https://developers.google.com/search/docs/data-types/article) is
+- [Article](https://developers.google.com/search/docs/data-types/article) can be
     - [Article](https://schema.org/Article)
     - [NewsArticle](https://schema.org/NewsArticle)
     - [BlogPosting](https://schema.org/BlogPosting)
-- [Job Posting](https://developers.google.com/search/docs/data-types/job-posting) is [JobPosting](https://schema.org/JobPosting)
-- [Local Business Listing](https://developers.google.com/search/docs/data-types/local-business) is [LocalBusiness](https://schema.org/LocalBusiness)
+- [Carousel](https://developers.google.com/search/docs/data-types/carousel) consists of
+    - [ItemList](https://schema.org/ItemList)
+    - [ListItem](https://schema.org/ListItem)
+- [Job Posting](https://developers.google.com/search/docs/data-types/job-posting) is
+    - [JobPosting](https://schema.org/JobPosting)
+- [Local Business Listing](https://developers.google.com/search/docs/data-types/local-business) is
+    - [LocalBusiness](https://schema.org/LocalBusiness)
 
 ### [Schema.org](https://schema.org) [Types](https://schema.org/docs/full.html)
 
@@ -107,7 +113,9 @@ php artisan code:models
     - [Person](https://schema.org/Person)
     - [Place](https://schema.org/Place)
     - Intangible
+        - [ItemList](http://schema.org/ItemList)
         - [JobPosting](https://schema.org/JobPosting)
+        - [ListItem](http://schema.org/ListItem)
         - [PropertyValueSpecification](https://schema.org/PropertyValueSpecification)
         - [Role](https://schema.org/Role)
         - StructuredValue

@@ -43,8 +43,8 @@ class BlogPosting extends \App\Models\Base\BlogPosting
 				->logo($logo)
 				->telephone($this->article->creative_work->publisher->telephone)
 				// Thing
-				->url($this->article->creative_work->publisher->thing->url)	// @todo different
 				->name($this->article->creative_work->publisher->thing->name)
+				->url($this->article->creative_work->publisher->thing->url)	// @todo different
 			;
 		}
 
@@ -58,6 +58,7 @@ class BlogPosting extends \App\Models\Base\BlogPosting
 			->author($author)
 			->publisher($publisher)
 			// Thing
+			->description($this->article->creative_work->thing->description)
 			->mainEntityOfPage($this->article->creative_work->thing->main_entity_of_page)
 			->setProperty('image', $this->getSchemaOrgimage())
 		;

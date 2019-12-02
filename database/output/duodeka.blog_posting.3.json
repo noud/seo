@@ -1,0 +1,28 @@
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "articleBody": "<p>DUODEKa is nu 1 van de 4 offici\u00eble Meteor partners in Nederland! Met Meteor bouwen we Javascript webapplicaties die zowel op computer als op mobiele apparaten werken (Android, iOS, Windows Phone). Lees hieronder meer over de werking van MeteorJS.</p>\r\n<h2>MeteorJS framework</h2>\r\n<p>Onze webapplicaties worden boven op het Meteor framework gebouwd. Met de bleeding-edge technologie van het framework zijn onze ontwikkelaars in staat om in een rap tempo applicaties te maken die op elk mobiel apparaat, en de browser, geopend kunnen worden. Uw prototype app kan in zelfs in enkele dagen al klaar zijn voor gebruik.</p>\r\n<p>Dankzij de flexibiliteit van Meteor is het ook mogelijk om na de oplevering van het prototype extra functionaliteiten in te bouwen. Met Meteor is het mogelijk om notificaties te sturen naar de gebruiker en data te synchroniseren tussen apparaten. Bovendien is de performance van Meteor tegenwoordig nog nauwelijks te onderscheiden van Native mobile apps.</p>",
+    "datePublished": "2016-10-12 12:12:56",
+    "dateModified": "2019-05-24T14:28:25+00:00",
+    "headline": "DUODEKA partner van MeteorJS",
+    "author": {
+        "@type": "Person",
+        "name": "Koen Lavrijssen",
+        "email": "koen@duodeka.nl"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+        },
+        "telephone": "+31 13 203 2264",
+        "name": "DUODEKA",
+        "url": "https://duodeka.nl"
+    },
+    "description": "DUODEKA is een Meteor partner, \u00e9\u00e9n van de momenteel vier in Nederland. Meteor is een framework die DUODEKA gebruikt voor Lean Software Development.",
+    "mainEntityOfPage": "https://duodeka.nl/duodeka-official-meteor-partner/",
+    "image": [
+        "https://duodeka.nl/app/themes/duodeka/dist/images/photos/faxx_73456d0a.jpg"
+    ]
+}

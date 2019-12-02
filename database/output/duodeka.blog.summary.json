@@ -1,0 +1,21 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": "1",
+            "url": "https://duodeka.nl/duodeka-official-meteor-partner/"
+        },
+        {
+            "@type": "ListItem",
+            "position": "2",
+            "url": "https://duodeka.nl/maak-kennis-met-joey/"
+        },
+        {
+            "@type": "ListItem",
+            "position": "6",
+            "url": "https://duodeka.nl/kennismaken-met-david/"
+        }
+    ]
+}

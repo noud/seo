@@ -1,0 +1,75 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": "1",
+            "item": {
+                "@type": "BlogPosting",
+                "url": "https://duodeka.nl/blog/#duodeka-official-meteor-partner",
+                "mainEntityOfPage": "https://duodeka.nl/duodeka-official-meteor-partner/",
+                "name": "DUODEKA partner van MeteorJS",
+                "headline": "DUODEKA partner van MeteorJS",
+                "image": [
+                    "https://duodeka.nl/app/uploads/2016/10/Meteor.png"
+                ],
+                "author": {
+                    "@type": "Person",
+                    "@id": "https://www.linkedin.com/in/klavrijssen/#person",
+                    "url": "https://www.linkedin.com/in/klavrijssen",
+                    "email": "koen@duodeka.nl",
+                    "name": "Koen Lavrijssen",
+                    "familyName": "Lavrijssen",
+                    "givenName": "Koen",
+                    "telephone": "+31 6 2278 3833"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "url": "https://duodeka.nl",
+                    "name": "DUODEKA"
+                },
+                "dateModified": "2018-03-10",
+                "datePublished": "2018-03-10"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": "2",
+            "item": {
+                "@context": "https://schema.org/",
+                "@type": "BlogPosting",
+                "url": "https://duodeka.nl/blog/#maak-kennis-met-joey",
+                "mainEntityOfPage": "https://duodeka.nl/maak-kennis-met-joey/",
+                "name": "Maak kennis met Joey",
+                "headline": "Maak kennis met Joey",
+                "image": "https://duodeka.nl/app/uploads/2018/05/joey-maas.jpg",
+                "author": {
+                    "@type": "Person",
+                    "email": "joey@duodeka.nl",
+                    "name": "Maas",
+                    "familyName": "Joey Maas",
+                    "givenName": "Joey",
+                    "telephone": "+31 6 4372 0659"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "url": "https://duodeka.nl",
+                    "name": "DUODEKA"
+                },
+                "dateModified": "2018-03-10",
+                "datePublished": "2018-03-10"
+            }
+        }
+    ]
+}
