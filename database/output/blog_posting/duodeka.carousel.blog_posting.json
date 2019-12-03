@@ -4,25 +4,16 @@
     "itemListElement": [
         {
             "@type": "ListItem",
-            "position": "1",
+            "position": 1,
             "item": {
                 "@type": "BlogPosting",
-                "url": "https://duodeka.nl/blog/#duodeka-official-meteor-partner",
-                "mainEntityOfPage": "https://duodeka.nl/duodeka-official-meteor-partner/",
-                "name": "DUODEKA partner van MeteorJS",
-                "headline": "DUODEKA partner van MeteorJS",
-                "image": [
-                    "https://duodeka.nl/app/uploads/2016/10/Meteor.png"
-                ],
+                "datePublished": "2019-11-12T13:15:14+00:00",
+                "dateModified": "2019-11-12T15:29:42+00:00",
+                "headline": "Hackathon Tilburg groot succes",
                 "author": {
                     "@type": "Person",
-                    "@id": "https://www.linkedin.com/in/klavrijssen/#person",
-                    "url": "https://www.linkedin.com/in/klavrijssen",
-                    "email": "koen@duodeka.nl",
-                    "name": "Koen Lavrijssen",
-                    "familyName": "Lavrijssen",
-                    "givenName": "Koen",
-                    "telephone": "+31 6 2278 3833"
+                    "name": "Dion Duimel",
+                    "email": "dion@duodeka.nl"
                 },
                 "publisher": {
                     "@type": "Organization",
@@ -31,31 +22,35 @@
                         "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
                     },
                     "telephone": "+31 13 203 2264",
-                    "url": "https://duodeka.nl",
-                    "name": "DUODEKA"
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
                 },
-                "dateModified": "2018-03-10",
-                "datePublished": "2018-03-10"
+                "image": [
+                    "https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-11-at-09.58.03.jpeg",
+                    "https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-11-at-09.57.42.jpeg",
+                    "https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-11-at-09.57.42-1.jpeg",
+                    "https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-10-at-00.49.58-1024x768.jpeg",
+                    "https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-10-at-00.49.57-1024x768.jpeg",
+                    "https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-10-at-00.49.57-1-768x1024.jpeg",
+                    "https://duodeka.nl/app/uploads/2019/11/hackaton.jpg",
+                    "https://duodeka.nl/app/uploads/2019/11/WhatsApp-Image-2019-11-10-at-00.49.58.jpeg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/hackathon-tilburg-groot-succes/",
+                "url": "https://duodeka.nl/blog/#hackathon-tilburg-groot-succes"
             }
         },
         {
             "@type": "ListItem",
-            "position": "2",
+            "position": 2,
             "item": {
-                "@context": "https://schema.org/",
                 "@type": "BlogPosting",
-                "url": "https://duodeka.nl/blog/#maak-kennis-met-joey",
-                "mainEntityOfPage": "https://duodeka.nl/maak-kennis-met-joey/",
-                "name": "Maak kennis met Joey",
-                "headline": "Maak kennis met Joey",
-                "image": "https://duodeka.nl/app/uploads/2018/05/joey-maas.jpg",
+                "datePublished": "2019-10-02T14:35:01+00:00",
+                "dateModified": "2019-10-02T14:40:53+00:00",
+                "headline": "Minimum Viable Product",
                 "author": {
                     "@type": "Person",
-                    "email": "joey@duodeka.nl",
-                    "name": "Maas",
-                    "familyName": "Joey Maas",
-                    "givenName": "Joey",
-                    "telephone": "+31 6 4372 0659"
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
                 },
                 "publisher": {
                     "@type": "Organization",
@@ -64,11 +59,648 @@
                         "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
                     },
                     "telephone": "+31 13 203 2264",
-                    "url": "https://duodeka.nl",
-                    "name": "DUODEKA"
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
                 },
-                "dateModified": "2018-03-10",
-                "datePublished": "2018-03-10"
+                "image": [
+                    "https://duodeka.nl/app/uploads/2018/06/quickorder-301139-unsplash-e1528207233965.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/minimum-viable-product/",
+                "url": "https://duodeka.nl/blog/#minimum-viable-product"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2019-09-26T09:07:42+00:00",
+                "dateModified": "2019-09-27T08:58:52+00:00",
+                "headline": "Case \u2013 Personal Protein Webshop",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2019/06/desktop-and-products-e1562872561667.png",
+                    "https://duodeka.nl/app/uploads/2019/07/Kopie-van-mobile.png"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/personal-protein/",
+                "url": "https://duodeka.nl/blog/#personal-protein"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2019-08-14T10:58:06+00:00",
+                "dateModified": "2019-10-21T06:58:25+00:00",
+                "headline": "Case \u2013 Concept validatie online gaming platform",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2019/08/gg4u-web.jpg",
+                    "https://duodeka.nl/app/uploads/2019/08/create-match.png"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/concept-validatie-platform/",
+                "url": "https://duodeka.nl/blog/#concept-validatie-platform"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2019-07-22T10:49:08+00:00",
+                "dateModified": "2019-10-02T14:37:42+00:00",
+                "headline": "De Lean Startup Methode",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2019/07/Lean-Startup-Methode.jpg",
+                    "https://duodeka.nl/app/uploads/2019/07/ondernemen_duodeka.png",
+                    "https://duodeka.nl/app/uploads/2019/07/Lean-Startup-BMC-768x512.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/lean-startup-methode/",
+                "url": "https://duodeka.nl/blog/#lean-startup-methode"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2019-07-01T09:47:59+00:00",
+                "dateModified": "2019-09-27T08:58:45+00:00",
+                "headline": "Case \u2013 Roosterapplicatie voor het EBT carri\u00e8re evenement",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2018/06/ebt-picture-e1561715334116.jpg",
+                    "https://duodeka.nl/app/uploads/2018/06/ebt.png",
+                    "https://duodeka.nl/app/uploads/2018/06/ebt-example-company-768x768.png",
+                    "https://duodeka.nl/app/uploads/2018/06/ebt-screenshot-768x768.png"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/case-roosterapplicatie-voor-het-ebt-carriere-evenement/",
+                "url": "https://duodeka.nl/blog/#case-roosterapplicatie-voor-het-ebt-carriere-evenement"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2019-06-28T09:40:36+00:00",
+                "dateModified": "2019-09-27T08:58:42+00:00",
+                "headline": "Case \u2013 Photo Booth software Red Panda",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2018/11/red-panda-vr-breda.jpg",
+                    "https://duodeka.nl/app/uploads/2018/11/red-panda-vr-dashboard-768x364.png",
+                    "https://duodeka.nl/app/uploads/2018/11/redpanda-virtual-reality.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/case-photo-booth-software-red-panda/",
+                "url": "https://duodeka.nl/blog/#case-photo-booth-software-red-panda"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2019-05-24T12:20:38+00:00",
+                "dateModified": "2019-09-27T08:57:57+00:00",
+                "headline": "Online verdienmodellen \u2013 Begin met online ondernemen",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2019/05/Online-verdienmodellen-1.jpg",
+                    "https://duodeka.nl/app/uploads/2019/05/Digitale-transformatie-2-724x1024.png",
+                    "https://duodeka.nl/app/uploads/2019/05/online-ondernemer.jpg",
+                    "https://duodeka.nl/app/uploads/2019/05/Opstarten-online-business.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/online-verdienmodellen/",
+                "url": "https://duodeka.nl/blog/#online-verdienmodellen"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2019-05-24T11:52:14+00:00",
+                "dateModified": "2019-09-27T08:58:01+00:00",
+                "headline": "Business Model Canvas \u2013 Online concept validatie",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2019/05/Business-Model-Canvas.jpg",
+                    "https://duodeka.nl/app/uploads/2019/05/Digitale-transformatie-2-724x1024.png",
+                    "https://duodeka.nl/app/uploads/2019/05/1119px-Business_Model_Canvas-768x494.png",
+                    "https://duodeka.nl/app/uploads/2019/05/BusinessModel.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/business-model-canvas/",
+                "url": "https://duodeka.nl/blog/#business-model-canvas"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2018-12-27T13:35:46+00:00",
+                "dateModified": "2019-05-24T14:23:17+00:00",
+                "headline": "DUODEKA Fontys ICT Partner in Education",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2018/10/image-2018-10-02-e1538484370346.png",
+                    "https://duodeka.nl/app/uploads/2018/10/Partner-in-Education-Daan.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/fontys-ict-partner-in-education/",
+                "url": "https://duodeka.nl/blog/#fontys-ict-partner-in-education"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2018-10-03T18:58:51+00:00",
+                "dateModified": "2019-10-18T22:25:10+00:00",
+                "headline": "Onze favoriete online tools",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2018/09/image-2018-09-17-e1537190005541.png",
+                    "https://duodeka.nl/app/uploads/2018/09/Wunderlist-250x188.png",
+                    "https://duodeka.nl/app/uploads/2018/09/slack-700x200.png",
+                    "https://duodeka.nl/app/uploads/2018/09/Hubspot-700x203.png",
+                    "https://duodeka.nl/app/uploads/2018/09/Homerun.png",
+                    "https://duodeka.nl/app/uploads/2018/06/logo-2-700x213.png"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/handige-online-tools/",
+                "url": "https://duodeka.nl/blog/#handige-online-tools"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2018-09-21T12:07:30+00:00",
+                "dateModified": "2019-05-28T06:19:27+00:00",
+                "headline": "DUODEKA Academy: De omscholing van Guido",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2018/09/IMG-20180629-WA0020-e1537531239953.jpg",
+                    "https://duodeka.nl/app/uploads/2018/04/backbone_logo-700x577.png",
+                    "https://duodeka.nl/app/uploads/2018/09/2018-07-03.png",
+                    "https://duodeka.nl/app/uploads/2018/06/logo-2-700x213.png"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/duodeka-academy-guido-omscholen/",
+                "url": "https://duodeka.nl/blog/#duodeka-academy-guido-omscholen"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2018-07-24T19:57:44+00:00",
+                "dateModified": "2019-09-27T08:58:06+00:00",
+                "headline": "Onze redenen om te stoppen met Excel",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2018/07/rawpixel-659481-unsplash-min_opt.jpg",
+                    "https://duodeka.nl/app/uploads/2018/07/Problemen-met-Excel-700x394.png",
+                    "https://duodeka.nl/app/uploads/2019/06/fzo-2.png"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/onze-redenen-om-te-stoppen-met-excel/",
+                "url": "https://duodeka.nl/blog/#onze-redenen-om-te-stoppen-met-excel"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 14,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2018-06-20T09:49:19+00:00",
+                "dateModified": "2019-06-13T11:46:19+00:00",
+                "headline": "Standaard of maatwerk software?",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2018/06/image-2018-06-19.png",
+                    "https://duodeka.nl/app/uploads/2018/06/image-2018-06-19-700x466.png",
+                    "https://duodeka.nl/app/uploads/2018/06/icons-for-website-01-700x518.png",
+                    "https://duodeka.nl/app/uploads/2018/04/backbone_logo-700x577.png"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/standaard-of-maatwerk-software/",
+                "url": "https://duodeka.nl/blog/#standaard-of-maatwerk-software"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 15,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2018-06-01T12:45:45+00:00",
+                "dateModified": "2019-05-24T14:16:15+00:00",
+                "headline": "Verlies van tijd en geld door IT problemen",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2018/06/jeshoots-com-523925-unsplash-2.jpg",
+                    "https://duodeka.nl/verliezen-door-it-problemen/duodeka.test/app/uploads/2018/06/neonbrand-618320-unsplash-250x156.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/verliezen-door-it-problemen/",
+                "url": "https://duodeka.nl/blog/#verliezen-door-it-problemen"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 16,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2018-04-03T12:48:49+00:00",
+                "dateModified": "2019-05-24T14:16:21+00:00",
+                "headline": "Software kwaliteitscontrole",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2018/04/Software-kwaliteitcontrole.png",
+                    "https://duodeka.nl/app/uploads/2018/04/Software-kwaliteitcontrole-1.png",
+                    "https://duodeka.nl/app/uploads/2017/12/THAR-fotoshoot-1200X800-e1512750915248.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/software-kwaliteit-controle/",
+                "url": "https://duodeka.nl/blog/#software-kwaliteit-controle"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 17,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2018-03-20T15:52:42+00:00",
+                "dateModified": "2019-10-18T14:08:05+00:00",
+                "headline": "Kennismaken met David",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2018/10/image-2018-10-02-e1538484370346.png",
+                    "https://duodeka.nl/app/uploads/2018/05/david.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/kennismaken-met-david/",
+                "url": "https://duodeka.nl/blog/#kennismaken-met-david"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 18,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2018-03-19T12:18:21+00:00",
+                "dateModified": "2019-10-18T14:10:37+00:00",
+                "headline": "Online urenregistratie & planning voor jouw bedrijf",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2019/05/Opstarten-online-business.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/online-urenregistratie-planning-voor-jouw-bedrijf/",
+                "url": "https://duodeka.nl/blog/#online-urenregistratie-planning-voor-jouw-bedrijf"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 19,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2017-07-20T14:20:26+00:00",
+                "dateModified": "2019-10-18T14:08:52+00:00",
+                "headline": "Faces online interview met Daan Schoofs",
+                "author": {
+                    "@type": "Person",
+                    "name": "Daan Schoofs",
+                    "email": "daan@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2019/05/online-ondernemer.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/daan-schoofs-faces-online-interview-nl/",
+                "url": "https://duodeka.nl/blog/#daan-schoofs-faces-online-interview-nl"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 20,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2017-07-06T12:52:01+00:00",
+                "dateModified": "2019-06-11T11:40:02+00:00",
+                "headline": "Ontvlechten met microservice-architectuur",
+                "author": {
+                    "@type": "Person",
+                    "name": "Koen Lavrijssen",
+                    "email": "koen@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2017/07/Microservice-architectuur.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/ontvlechten-met-microservice-architectuur/",
+                "url": "https://duodeka.nl/blog/#ontvlechten-met-microservice-architectuur"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 21,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2017-01-21T13:56:00+00:00",
+                "dateModified": "2019-10-18T14:14:08+00:00",
+                "headline": "Maak kennis met Joey",
+                "author": {
+                    "@type": "Person",
+                    "name": "Koen Lavrijssen",
+                    "email": "koen@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/uploads/2018/10/image-2018-10-02-e1538484370346.png",
+                    "https://duodeka.nl/app/uploads/2018/05/joey-maas.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/maak-kennis-met-joey/",
+                "url": "https://duodeka.nl/blog/#maak-kennis-met-joey"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 22,
+            "item": {
+                "@type": "BlogPosting",
+                "datePublished": "2016-10-12T12:12:56+00:00",
+                "dateModified": "2019-05-24T14:28:25+00:00",
+                "headline": "DUODEKA partner van MeteorJS",
+                "author": {
+                    "@type": "Person",
+                    "name": "Koen Lavrijssen",
+                    "email": "koen@duodeka.nl"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png"
+                    },
+                    "telephone": "+31 13 203 2264",
+                    "name": "DUODEKA",
+                    "url": "https://duodeka.nl"
+                },
+                "image": [
+                    "https://duodeka.nl/app/themes/duodeka/dist/images/photos/faxx_73456d0a.jpg"
+                ],
+                "mainEntityOfPage": "https://duodeka.nl/duodeka-official-meteor-partner/",
+                "url": "https://duodeka.nl/blog/#duodeka-official-meteor-partner"
             }
         }
     ]

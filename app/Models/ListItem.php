@@ -11,7 +11,6 @@ class ListItem extends \App\Models\Base\ListItem
 		'itemable_type'
 	];
 
-
 	public function itemable()
 	{
 		return $this->morphTo();

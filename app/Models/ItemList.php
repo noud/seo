@@ -33,5 +33,10 @@ class ItemList extends \App\Models\Base\ItemList
 	public function getSchemaOrgSchema()
 	{
 		return $this->getSchemaOrgSchemaAttribute();
+    }
+    
+    public function list_items()
+	{
+		return $this->hasMany(\App\Models\ListItem::class, 'item_list_id', 'id');
 	}
 }

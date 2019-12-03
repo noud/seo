@@ -3,14 +3,12 @@
 namespace App\Models;
 
 use App\Models\Traits\JsonLd;
-use App\Models\Traits\image;
 use App\Models\Traits\sameAs;
 use Spatie\SchemaOrg\Schema;
 
 class BlogPosting extends \App\Models\Base\BlogPosting
 {
 	use JsonLd;
-	use image;
 	use sameAs;
 
 	protected $fillable = [
@@ -58,7 +56,7 @@ class BlogPosting extends \App\Models\Base\BlogPosting
 			// Thing
 			->description($this->article->creative_work->thing->description)	// optional
 			->mainEntityOfPage($this->article->creative_work->thing->main_entity_of_page)
-			->setProperty('image', $this->getSchemaOrgimage())
+			->setProperty('image', $this->article->creative_work->thing->getSchemaOrgimage())
 		;
 	}
 	

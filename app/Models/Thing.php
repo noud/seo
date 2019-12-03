@@ -2,8 +2,12 @@
 
 namespace App\Models;
 
+use App\Models\Traits\image;
+
 class Thing extends \App\Models\Base\Thing
 {
+	use image;
+
 	public function identifier()
 	{
 		return $this->belongsTo(\App\Models\PropertyValue::class, 'identifier_id');
