@@ -49,7 +49,7 @@ See the output
 - [Sitelinks Searchbox](https://developers.google.com/search/docs/data-types/sitelinks-searchbox)
     - [web_site/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.website.json)
 
-The output can be validated at [Google Search](https://developers.google.com/search) [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
+The output can be validated at [Google Search](https://developers.google.com/search) [Structured data](https://developers.google.com/search/docs/data-types/article) [Testing Tool](https://search.google.com/structured-data/testing-tool)
 
 ## Code generation
 
