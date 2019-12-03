@@ -29,6 +29,8 @@ See the output
 - [Article](https://developers.google.com/search/docs/data-types/article)
     - [blog_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.blog_posting.2.json)
     - [blog_posting/3/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.blog_posting.3.json)
+- [Breadcrumb](https://developers.google.com/search/docs/data-types/breadcrumb)
+    - [breadcrumb/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.breadcrumb.1.json) @todo
 - [Carousel](https://developers.google.com/search/docs/data-types/carousel)
     - [carousel/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.carousel.blog_posting.json)
     - [carousel_summary/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.carousel.summary.blog_posting.json)
@@ -94,6 +96,9 @@ php artisan code:models
     - [Article](https://schema.org/Article)
     - [NewsArticle](https://schema.org/NewsArticle)
     - [BlogPosting](https://schema.org/BlogPosting)
+- [Breadcrumb](https://developers.google.com/search/docs/data-types/breadcrumb) consists of
+    - [BreadcrumbList](https://schema.org/BreadcrumbList)
+    - [ListItem](https://schema.org/ListItem)
 - [Carousel](https://developers.google.com/search/docs/data-types/carousel) consists of
     - [ItemList](https://schema.org/ItemList)
     - [ListItem](https://schema.org/ListItem)
@@ -117,6 +122,7 @@ php artisan code:models
     - [Place](https://schema.org/Place)
     - Intangible
         - [ItemList](http://schema.org/ItemList)
+            - [BreadcrumbList](https://schema.org/BreadcrumbList)
         - [JobPosting](https://schema.org/JobPosting)
         - [ListItem](http://schema.org/ListItem)
         - [PropertyValueSpecification](https://schema.org/PropertyValueSpecification)

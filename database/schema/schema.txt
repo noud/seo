@@ -175,12 +175,16 @@
                 "y": 536
             },
             "hrk8a": {
-                "x": 2225,
-                "y": 221
+                "x": 2229,
+                "y": 551
             },
             "wb34ii": {
-                "x": 2226,
-                "y": 363
+                "x": 2228,
+                "y": 663
+            },
+            "w1bjnm": {
+                "x": 2232,
+                "y": 435
             }
         }
     },
@@ -420,6 +424,13 @@
             "id": "wb34ii",
             "name": "list_item",
             "color": "table-header-blue",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "w1bjnm",
+            "name": "breadcrumb_list",
+            "color": "table-header-green",
             "softDelete": false,
             "timeStamp": true
         }
@@ -3185,7 +3196,7 @@
             },
             {
                 "id": "ehkdxq",
-                "name": "item_list_id",
+                "name": "list_id",
                 "type": "bigInteger",
                 "length": "",
                 "defValue": "",
@@ -3197,12 +3208,35 @@
                 "unsigned": true,
                 "foreignKey": {
                     "references": {
-                        "id": "ur4yc",
-                        "name": "id"
+                        "id": "",
+                        "name": ""
                     },
                     "on": {
-                        "id": "hrk8a",
-                        "name": "item_list"
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "ehkdxr",
+                "name": "list_type",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
                     }
                 }
             },
@@ -3231,7 +3265,7 @@
             },
             {
                 "id": "nng6s8",
-                "name": "itemable_id",
+                "name": "item_id",
                 "type": "bigInteger",
                 "length": "",
                 "defValue": "",
@@ -3254,7 +3288,7 @@
             },
             {
                 "id": "j90dhf",
-                "name": "itemable_type",
+                "name": "item_type",
                 "type": "string",
                 "length": "",
                 "defValue": "",
@@ -3264,6 +3298,31 @@
                 "unique": false,
                 "index": false,
                 "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
+        ],
+        "w1bjnm": [
+            {
+                "id": "k5ohv5h",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": true,
+                "unsigned": true,
                 "foreignKey": {
                     "references": {
                         "id": "",
@@ -3656,16 +3715,6 @@
             "target": {
                 "columnId": "3m7cdr",
                 "tableId": "bo322d"
-            }
-        },
-        {
-            "source": {
-                "columnId": "ehkdxq",
-                "tableId": "wb34ii"
-            },
-            "target": {
-                "columnId": "ur4yc",
-                "tableId": "hrk8a"
             }
         }
     ]
