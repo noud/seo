@@ -18,12 +18,18 @@ class BreadcrumbList extends \App\Models\Base\BreadcrumbList
             $item = $listItem->item;
             if ($item) {
                 // @todo this should be morphable
-                $url = $item->url;
+                if ($item->main_entity_of_page) {
+                    $url = $item->main_entity_of_page;
+                } else {
+                    $url = $item->url;
+                }
+                $thing = Schema::Thing()
+                     ->setProperty('@id', $url)
+                     ->name($item->name)
+                ;
                 $listItems[] = Schema::ListItem()
                     ->position($listItem->position)
-                    // Thing
-                    ->name($item->name)
-                    ->url($url)
+                    ->item($thing)
                 ;
             }
         }

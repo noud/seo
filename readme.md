@@ -30,7 +30,7 @@ See the output
     - [blog_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.blog_posting.2.json)
     - [blog_posting/3/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.blog_posting.3.json)
 - [Breadcrumb](https://developers.google.com/search/docs/data-types/breadcrumb)
-    - [breadcrumb/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.breadcrumb.1.json) @todo
+    - [breadcrumb/3/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.breadcrumb.3.json)
 - [Carousel](https://developers.google.com/search/docs/data-types/carousel)
     - [carousel/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.carousel.blog_posting.json)
     - [carousel_summary/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.carousel.summary.blog_posting.json)

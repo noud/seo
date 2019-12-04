@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://duodeka.nl",
+        "name": "DUODEKA"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://duodeka.nl/venture-building-kennisbank",
+        "name": "Kennisbank"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://duodeka.nl/lean-startup-methode/",
+        "name": ""
+      }
+    }
+  ]
+}

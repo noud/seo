@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Dec 04, 2019 at 08:06 PM
+-- Generation Time: Dec 04, 2019 at 08:33 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -85,7 +85,9 @@ INSERT INTO `blog_posting` (`id`, `article_id`, `created_at`, `updated_at`) VALU
 --
 
 INSERT INTO `breadcrumb_list` (`id`, `created_at`, `updated_at`) VALUES
-(1, NULL, NULL);
+(1, NULL, NULL),
+(2, NULL, NULL),
+(3, NULL, NULL);
 
 --
 -- Dumping data for table `creative_work`
@@ -273,7 +275,12 @@ INSERT INTO `list_item` (`id`, `list_id`, `list_type`, `position`, `item_id`, `i
 (24, 1, 'item_list', 20, 5, 'App\\Models\\BlogPosting', NULL, NULL),
 (25, 1, 'item_list', 21, 4, 'App\\Models\\BlogPosting', NULL, NULL),
 (26, 1, 'item_list', 22, 3, 'App\\Models\\BlogPosting', NULL, NULL),
-(27, 1, 'breadcrumb_list', 1, 1, 'App\\Models\\Thing', NULL, NULL);
+(27, 1, 'breadcrumb_list', 1, 1, 'App\\Models\\Thing', NULL, NULL),
+(28, 2, 'breadcrumb_list', 1, 1, 'App\\Models\\Thing', NULL, NULL),
+(29, 2, 'breadcrumb_list', 2, 39, 'App\\Models\\Thing', NULL, NULL),
+(30, 3, 'breadcrumb_list', 1, 1, 'App\\Models\\Thing', NULL, NULL),
+(31, 3, 'breadcrumb_list', 2, 39, 'App\\Models\\Thing', NULL, NULL),
+(32, 3, 'breadcrumb_list', 3, 37, 'App\\Models\\Thing', NULL, NULL);
 
 --
 -- Dumping data for table `monetary_amount`
@@ -431,8 +438,9 @@ INSERT INTO `thing` (`id`, `alternate_name`, `description`, `name`, `url`, `iden
 (34, '', 'Jij hebt een idee voor een online verdienmodel: een digitaal product of dienst op de markt brengen of jouw huidige business digitaal transformeren.', '', 'https://duodeka.nl/blog/#online-verdienmodellen', NULL, 'https://duodeka.nl/online-verdienmodellen/', NULL, NULL),
 (35, '', 'RedPanda heeft DUODEKA benaderd voor de ontwikkeling van Photo Booth software. Er was behoefte aan een interface voor een nieuwe &hellip;', '', 'https://duodeka.nl/blog/#case-photo-booth-software-red-panda', NULL, 'https://duodeka.nl/case-photo-booth-software-red-panda/', NULL, NULL),
 (36, '', 'Jaarlijks vinden de Economic Business weeks Tilburg plaats op de campus van Tilburg University. Om alles in goede banen te &hellip;', '', 'https://duodeka.nl/blog/#case-roosterapplicatie-voor-het-ebt-carriere-evenement', NULL, 'https://duodeka.nl/case-roosterapplicatie-voor-het-ebt-carriere-evenement/', NULL, NULL),
-(37, '', 'De Lean Startup Methode is een methode van Eric Ries. Middels een MVP kun jij jouw bedrijfsidee testen voordat je daadwerkelijk de markt op gaat.', '', 'https://duodeka.nl/blog/#lean-startup-methode', NULL, 'https://duodeka.nl/lean-startup-methode/', NULL, NULL),
-(38, '', 'Om de levensvatbaarheid van het concept voor een online gaming platform te toetsen hebben GG4U en DUODEKA een riskiest assumption test uitgevoerd.', '', 'https://duodeka.nl/blog/#concept-validatie-platform', NULL, 'https://duodeka.nl/concept-validatie-platform/', NULL, NULL);
+(37, '', 'De Lean Startup Methode is een methode van Eric Ries. Middels een MVP kun jij jouw bedrijfsidee testen voordat je daadwerkelijk de markt op gaat.', 'Artikel Lean Startup Methode', 'https://duodeka.nl/blog/#lean-startup-methode', NULL, 'https://duodeka.nl/lean-startup-methode/', NULL, NULL),
+(38, '', 'Om de levensvatbaarheid van het concept voor een online gaming platform te toetsen hebben GG4U en DUODEKA een riskiest assumption test uitgevoerd.', '', 'https://duodeka.nl/blog/#concept-validatie-platform', NULL, 'https://duodeka.nl/concept-validatie-platform/', NULL, NULL),
+(39, '', '', 'Kennisbank', 'https://duodeka.nl/venture-building-kennisbank', NULL, '', NULL, NULL);
 
 --
 -- Dumping data for table `web_site`
