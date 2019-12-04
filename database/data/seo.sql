@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Dec 04, 2019 at 05:34 PM
+-- Generation Time: Dec 04, 2019 at 05:44 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -87,26 +87,26 @@ INSERT INTO `blog_posting` (`id`, `article_id`, `created_at`, `updated_at`) VALU
 INSERT INTO `creative_work` (`id`, `author_id`, `publisher_id`, `date_modified`, `date_published`, `headline`, `thing_id`, `created_at`, `updated_at`) VALUES
 (1, 4, 1, '2019-11-12 15:29:42', '2019-11-12 13:15:14', 'Hackathon Tilburg groot succes', 17, NULL, NULL),
 (2, 1, 1, '2019-05-24 14:28:25', '2016-10-12 12:12:56', 'DUODEKA partner van MeteorJS', 18, NULL, NULL),
-(3, 1, 1, '2019-10-18 14:14:08', '2017-01-21 13:56:00', 'Maak kennis met Joey', 19, NULL, NULL),
+(3, 5, 1, '2019-10-18 14:14:08', '2017-01-21 13:56:00', 'Maak kennis met Joey', 19, NULL, NULL),
 (4, 1, 1, '2019-06-11 11:40:02', '2017-07-06 12:52:01', 'Ontvlechten met microservice-architectuur', 20, NULL, NULL),
 (5, 3, 1, '2019-10-18 14:08:52', '2017-07-20 14:20:26', 'Faces online interview met Daan Schoofs', 21, NULL, NULL),
-(6, 3, 1, '2019-10-18 14:10:37', '2018-03-19 12:18:21', 'Online urenregistratie & planning voor jouw bedrijf', 22, NULL, NULL),
-(7, 3, 1, '2019-10-18 14:08:05', '2018-03-20 15:52:42', 'Kennismaken met David', 23, NULL, NULL),
-(8, 3, 1, '2019-10-02 14:40:53', '2019-10-02 14:35:01', 'Minimum Viable Product', 24, NULL, NULL),
-(9, 3, 1, '2019-05-24 14:16:21', '2018-04-03 12:48:49', 'Software kwaliteitscontrole', 25, NULL, NULL),
-(10, 3, 1, '2019-05-24 14:16:15', '2018-06-01 12:45:45', 'Verlies van tijd en geld door IT problemen', 26, NULL, NULL),
-(11, 3, 1, '2019-09-27 08:58:52', '2019-09-26 09:07:42', 'Case – Personal Protein Webshop', 27, NULL, NULL),
-(12, 3, 1, '2019-06-13 11:46:19', '2018-06-20 09:49:19', 'Standaard of maatwerk software?', 28, NULL, NULL),
-(13, 3, 1, '2019-09-27 08:58:06', '2018-07-24 19:57:44', 'Onze redenen om te stoppen met Excel', 29, NULL, NULL),
-(14, 3, 1, '2019-05-28 06:19:27', '2018-09-21 12:07:30', 'DUODEKA Academy: De omscholing van Guido', 30, NULL, NULL),
-(15, 3, 1, '2019-10-18 22:25:10', '2018-10-03 18:58:51', 'Onze favoriete online tools', 31, NULL, NULL),
-(16, 3, 1, '2019-05-24 14:23:17', '2018-12-27 13:35:46', 'DUODEKA Fontys ICT Partner in Education', 32, NULL, NULL),
-(17, 3, 1, '2019-09-27 08:58:01', '2019-05-24 11:52:14', 'Business Model Canvas – Online concept validatie', 33, NULL, NULL),
-(18, 3, 1, '2019-09-27 08:57:57', '2019-05-24 12:20:38', 'Online verdienmodellen – Begin met online ondernemen', 34, NULL, NULL),
-(19, 3, 1, '2019-09-27 08:58:42', '2019-06-28 09:40:36', 'Case – Photo Booth software Red Panda', 35, NULL, NULL),
-(20, 3, 1, '2019-09-27 08:58:45', '2019-07-01 09:47:59', 'Case – Roosterapplicatie voor het EBT carrière evenement', 36, NULL, NULL),
-(21, 3, 1, '2019-10-02 14:37:42', '2019-07-22 10:49:08', 'De Lean Startup Methode', 37, NULL, NULL),
-(22, 3, 1, '2019-10-21 06:58:25', '2019-08-14 10:58:06', 'Case – Concept validatie online gaming platform', 38, NULL, NULL);
+(6, 5, 1, '2019-10-18 14:10:37', '2018-03-19 12:18:21', 'Online urenregistratie & planning voor jouw bedrijf', 22, NULL, NULL),
+(7, 5, 1, '2019-10-18 14:08:05', '2018-03-20 15:52:42', 'Kennismaken met David', 23, NULL, NULL),
+(8, 5, 1, '2019-10-02 14:40:53', '2019-10-02 14:35:01', 'Minimum Viable Product', 24, NULL, NULL),
+(9, 5, 1, '2019-05-24 14:16:21', '2018-04-03 12:48:49', 'Software kwaliteitscontrole', 25, NULL, NULL),
+(10, 5, 1, '2019-05-24 14:16:15', '2018-06-01 12:45:45', 'Verlies van tijd en geld door IT problemen', 26, NULL, NULL),
+(11, 5, 1, '2019-09-27 08:58:52', '2019-09-26 09:07:42', 'Case – Personal Protein Webshop', 27, NULL, NULL),
+(12, 5, 1, '2019-06-13 11:46:19', '2018-06-20 09:49:19', 'Standaard of maatwerk software?', 28, NULL, NULL),
+(13, 5, 1, '2019-09-27 08:58:06', '2018-07-24 19:57:44', 'Onze redenen om te stoppen met Excel', 29, NULL, NULL),
+(14, 5, 1, '2019-05-28 06:19:27', '2018-09-21 12:07:30', 'DUODEKA Academy: De omscholing van Guido', 30, NULL, NULL),
+(15, 5, 1, '2019-10-18 22:25:10', '2018-10-03 18:58:51', 'Onze favoriete online tools', 31, NULL, NULL),
+(16, 5, 1, '2019-05-24 14:23:17', '2018-12-27 13:35:46', 'DUODEKA Fontys ICT Partner in Education', 32, NULL, NULL),
+(17, 5, 1, '2019-09-27 08:58:01', '2019-05-24 11:52:14', 'Business Model Canvas – Online concept validatie', 33, NULL, NULL),
+(18, 5, 1, '2019-09-27 08:57:57', '2019-05-24 12:20:38', 'Online verdienmodellen – Begin met online ondernemen', 34, NULL, NULL),
+(19, 5, 1, '2019-09-27 08:58:42', '2019-06-28 09:40:36', 'Case – Photo Booth software Red Panda', 35, NULL, NULL),
+(20, 5, 1, '2019-09-27 08:58:45', '2019-07-01 09:47:59', 'Case – Roosterapplicatie voor het EBT carrière evenement', 36, NULL, NULL),
+(21, 5, 1, '2019-10-02 14:37:42', '2019-07-22 10:49:08', 'De Lean Startup Methode', 37, NULL, NULL),
+(22, 5, 1, '2019-10-21 06:58:25', '2019-08-14 10:58:06', 'Case – Concept validatie online gaming platform', 38, NULL, NULL);
 
 --
 -- Dumping data for table `employee`
