@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/breadcrumb/{breadcrumb_list}/{field}', 'BreadcrumbController@field');
 Route::get('/carousel/{carousel}/{field}', 'CarouselController@field');
 Route::get('/carousel_summary/{itemList}/{field}', 'CarouselSummaryController@field');
 Route::get('/blog_posting/{blog_posting}/{field}', 'BlogPostingController@field');

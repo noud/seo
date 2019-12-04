@@ -8,11 +8,20 @@ use Spatie\SchemaOrg\Schema;
 
 class Carousel extends ItemList
 {
+    /**
+     * prevent
+     * select * from `list_item` where `list_item`.`list_id` = 1 and `list_item`.`list_id` is not null and `list_item`.`list_type` = App\Models\Carousel order by `position` asc
+     */
+    public function getMorphClass()
+	{
+        return 'item_list';
+    }
+
 	public function getSchemaOrgSchemaAttribute()
 	{
         $listItems = [];
         foreach($this->list_items()->orderBy('position','asc')->get() as $listItem) {
-            $item = $listItem->itemable;
+            $item = $listItem->item;
             if ($item) {
                 $author = null;
                 if ($item->article->creative_work->author) {
@@ -57,7 +66,7 @@ class Carousel extends ItemList
                 ;
 
                 // @todo this should be morphable
-                $url = $listItem->itemable->article->creative_work->thing->main_entity_of_page;
+                $url = $listItem->item->article->creative_work->thing->main_entity_of_page;
                 $listItems[] = Schema::ListItem()
                     ->position($listItem->position)
                     ->item($blogPosting)

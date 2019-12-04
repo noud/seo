@@ -5,13 +5,19 @@ namespace App\Models;
 class ListItem extends \App\Models\Base\ListItem
 {
 	protected $fillable = [
-		'item_list_id',
+		'list_id',
+		'list_type',
 		'position',
-		'itemable_id',
-		'itemable_type'
+		'item_id',
+		'item_type'
 	];
 
-	public function itemable()
+	public function list()
+	{
+		return $this->morphTo();
+	}
+	
+	public function item()
 	{
 		return $this->morphTo();
 	}

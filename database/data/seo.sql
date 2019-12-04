@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Dec 04, 2019 at 05:44 PM
+-- Generation Time: Dec 04, 2019 at 08:06 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -79,6 +79,13 @@ INSERT INTO `blog_posting` (`id`, `article_id`, `created_at`, `updated_at`) VALU
 (21, 20, NULL, NULL),
 (22, 21, NULL, NULL),
 (23, 22, NULL, NULL);
+
+--
+-- Dumping data for table `breadcrumb_list`
+--
+
+INSERT INTO `breadcrumb_list` (`id`, `created_at`, `updated_at`) VALUES
+(1, NULL, NULL);
 
 --
 -- Dumping data for table `creative_work`
@@ -243,29 +250,30 @@ INSERT INTO `job_posting` (`id`, `base_salary_id`, `date_posted`, `employment_ty
 -- Dumping data for table `list_item`
 --
 
-INSERT INTO `list_item` (`id`, `item_list_id`, `position`, `itemable_id`, `itemable_type`, `created_at`, `updated_at`) VALUES
-(5, 1, 1, 2, 'App\\Models\\BlogPosting', NULL, NULL),
-(6, 1, 2, 9, 'App\\Models\\BlogPosting', NULL, NULL),
-(7, 1, 3, 12, 'App\\Models\\BlogPosting', NULL, NULL),
-(8, 1, 4, 23, 'App\\Models\\BlogPosting', NULL, NULL),
-(9, 1, 5, 22, 'App\\Models\\BlogPosting', NULL, NULL),
-(10, 1, 6, 21, 'App\\Models\\BlogPosting', NULL, NULL),
-(11, 1, 7, 20, 'App\\Models\\BlogPosting', NULL, NULL),
-(12, 1, 8, 19, 'App\\Models\\BlogPosting', NULL, NULL),
-(13, 1, 9, 18, 'App\\Models\\BlogPosting', NULL, NULL),
-(14, 1, 10, 17, 'App\\Models\\BlogPosting', NULL, NULL),
-(15, 1, 12, 15, 'App\\Models\\BlogPosting', NULL, NULL),
-(16, 1, 13, 14, 'App\\Models\\BlogPosting', NULL, NULL),
-(17, 1, 14, 13, 'App\\Models\\BlogPosting', NULL, NULL),
-(18, 1, 11, 16, 'App\\Models\\BlogPosting', NULL, NULL),
-(19, 1, 16, 10, 'App\\Models\\BlogPosting', NULL, NULL),
-(20, 1, 15, 11, 'App\\Models\\BlogPosting', NULL, NULL),
-(21, 1, 17, 8, 'App\\Models\\BlogPosting', NULL, NULL),
-(22, 1, 18, 7, 'App\\Models\\BlogPosting', NULL, NULL),
-(23, 1, 19, 6, 'App\\Models\\BlogPosting', NULL, NULL),
-(24, 1, 20, 5, 'App\\Models\\BlogPosting', NULL, NULL),
-(25, 1, 21, 4, 'App\\Models\\BlogPosting', NULL, NULL),
-(26, 1, 22, 3, 'App\\Models\\BlogPosting', NULL, NULL);
+INSERT INTO `list_item` (`id`, `list_id`, `list_type`, `position`, `item_id`, `item_type`, `created_at`, `updated_at`) VALUES
+(5, 1, 'item_list', 1, 2, 'App\\Models\\BlogPosting', NULL, NULL),
+(6, 1, 'item_list', 2, 9, 'App\\Models\\BlogPosting', NULL, NULL),
+(7, 1, 'item_list', 3, 12, 'App\\Models\\BlogPosting', NULL, NULL),
+(8, 1, 'item_list', 4, 23, 'App\\Models\\BlogPosting', NULL, NULL),
+(9, 1, 'item_list', 5, 22, 'App\\Models\\BlogPosting', NULL, NULL),
+(10, 1, 'item_list', 6, 21, 'App\\Models\\BlogPosting', NULL, NULL),
+(11, 1, 'item_list', 7, 20, 'App\\Models\\BlogPosting', NULL, NULL),
+(12, 1, 'item_list', 8, 19, 'App\\Models\\BlogPosting', NULL, NULL),
+(13, 1, 'item_list', 9, 18, 'App\\Models\\BlogPosting', NULL, NULL),
+(14, 1, 'item_list', 10, 17, 'App\\Models\\BlogPosting', NULL, NULL),
+(15, 1, 'item_list', 12, 15, 'App\\Models\\BlogPosting', NULL, NULL),
+(16, 1, 'item_list', 13, 14, 'App\\Models\\BlogPosting', NULL, NULL),
+(17, 1, 'item_list', 14, 13, 'App\\Models\\BlogPosting', NULL, NULL),
+(18, 1, 'item_list', 11, 16, 'App\\Models\\BlogPosting', NULL, NULL),
+(19, 1, 'item_list', 16, 10, 'App\\Models\\BlogPosting', NULL, NULL),
+(20, 1, 'item_list', 15, 11, 'App\\Models\\BlogPosting', NULL, NULL),
+(21, 1, 'item_list', 17, 8, 'App\\Models\\BlogPosting', NULL, NULL),
+(22, 1, 'item_list', 18, 7, 'App\\Models\\BlogPosting', NULL, NULL),
+(23, 1, 'item_list', 19, 6, 'App\\Models\\BlogPosting', NULL, NULL),
+(24, 1, 'item_list', 20, 5, 'App\\Models\\BlogPosting', NULL, NULL),
+(25, 1, 'item_list', 21, 4, 'App\\Models\\BlogPosting', NULL, NULL),
+(26, 1, 'item_list', 22, 3, 'App\\Models\\BlogPosting', NULL, NULL),
+(27, 1, 'breadcrumb_list', 1, 1, 'App\\Models\\Thing', NULL, NULL);
 
 --
 -- Dumping data for table `monetary_amount`

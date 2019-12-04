@@ -6,9 +6,9 @@ use App\Models\Traits\JsonLd;
 use App\Models\Traits\MorphMap;
 use Spatie\SchemaOrg\Schema;
 
-class ItemList extends \App\Models\Base\ItemList
+class BreadcrumbList extends \App\Models\Base\BreadcrumbList
 {
-    use JsonLd;
+	use JsonLd;
     use MorphMap;
 
 	public function getSchemaOrgSchemaAttribute()
@@ -18,16 +18,17 @@ class ItemList extends \App\Models\Base\ItemList
             $item = $listItem->item;
             if ($item) {
                 // @todo this should be morphable
-                $url = $listItem->item->article->creative_work->thing->main_entity_of_page;
+                $url = $item->url;
                 $listItems[] = Schema::ListItem()
                     ->position($listItem->position)
                     // Thing
+                    ->name($item->name)
                     ->url($url)
                 ;
             }
         }
 
-        return $this->getSchemaOrgNodeIdentifierSchemaAttribute('ItemList', true)
+        return $this->getSchemaOrgNodeIdentifierSchemaAttribute('BreadcrumbList', true)
             ->itemListElement($listItems)
 		;
 	}
