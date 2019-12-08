@@ -1,0 +1,32 @@
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "priceRange": "$$$",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tivolistraat 50-52",
+        "postalCode": "5017 HR",
+        "addressLocality": "Tilburg",
+        "addressCountry": "NL"
+    },
+    "email": "info@duodeka.nl",
+    "legalName": "DUODEKA Co\u00f6peratie U.A.",
+    "location": {
+        "@type": "Place",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Tivolistraat 50-52",
+            "postalCode": "5017 HR",
+            "addressLocality": "Tilburg",
+            "addressCountry": "NL"
+        }
+    },
+    "logo": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png",
+    "telephone": "+31 13 203 2264",
+    "alternateName": "XII",
+    "image": [
+        "https://duodeka.nl/app/themes/duodeka/dist/images/photos/NweFaxxOkt2019forWeb_799cd585.png"
+    ],
+    "name": "DUODEKA",
+    "url": "https://duodeka.nl"
+}

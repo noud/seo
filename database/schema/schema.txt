@@ -185,6 +185,10 @@
             "w1bjnm": {
                 "x": 2232,
                 "y": 435
+            },
+            "ggrk8m": {
+                "x": 303,
+                "y": 428
             }
         }
     },
@@ -430,6 +434,13 @@
         {
             "id": "w1bjnm",
             "name": "breadcrumb_list",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "ggrk8m",
+            "name": "local_business",
             "color": "table-header-green",
             "softDelete": false,
             "timeStamp": true
@@ -3334,6 +3345,77 @@
                     }
                 }
             }
+        ],
+        "ggrk8m": [
+            {
+                "id": "z7o3e",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "vtxqxc",
+                "name": "organization_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "ull9k",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "mure2o",
+                        "name": "organization"
+                    }
+                }
+            },
+            {
+                "id": "ws4gve",
+                "name": "price_range",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            }
         ]
     },
     "relations": [
@@ -3715,6 +3797,16 @@
             "target": {
                 "columnId": "3m7cdr",
                 "tableId": "bo322d"
+            }
+        },
+        {
+            "source": {
+                "columnId": "vtxqxc",
+                "tableId": "ggrk8m"
+            },
+            "target": {
+                "columnId": "ull9k",
+                "tableId": "mure2o"
             }
         }
     ]

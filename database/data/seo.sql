@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Dec 04, 2019 at 09:08 PM
+-- Generation Time: Dec 08, 2019 at 06:53 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -231,7 +231,8 @@ INSERT INTO `image` (`id`, `thing_id`, `image`, `created_at`, `updated_at`) VALU
 (60, 37, 'https://duodeka.nl/app/uploads/2019/07/ondernemen_duodeka.png', NULL, NULL),
 (61, 37, 'https://duodeka.nl/app/uploads/2019/07/Lean-Startup-BMC-768x512.jpg', NULL, NULL),
 (62, 38, 'https://duodeka.nl/app/uploads/2019/08/gg4u-web.jpg', NULL, NULL),
-(63, 38, 'https://duodeka.nl/app/uploads/2019/08/create-match.png', NULL, NULL);
+(63, 38, 'https://duodeka.nl/app/uploads/2019/08/create-match.png', NULL, NULL),
+(64, 1, 'https://duodeka.nl/app/themes/duodeka/dist/images/photos/NweFaxxOkt2019forWeb_799cd585.png', NULL, NULL);
 
 --
 -- Dumping data for table `item_list`
@@ -281,6 +282,13 @@ INSERT INTO `list_item` (`id`, `list_id`, `list_type`, `position`, `item_id`, `i
 (30, 3, 'breadcrumb_list', 1, 1, 'App\\Models\\Thing', NULL, NULL),
 (31, 3, 'breadcrumb_list', 2, 39, 'App\\Models\\Thing', NULL, NULL),
 (32, 3, 'breadcrumb_list', 3, 37, 'App\\Models\\Thing', NULL, NULL);
+
+--
+-- Dumping data for table `local_business`
+--
+
+INSERT INTO `local_business` (`id`, `organization_id`, `price_range`, `created_at`, `updated_at`) VALUES
+(1, 1, '$$$', NULL, NULL);
 
 --
 -- Dumping data for table `monetary_amount`

@@ -37,6 +37,12 @@ See the output
 - [Job Posting](https://developers.google.com/search/docs/data-types/job-posting)
     - [job_posting/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.1.json)
     - [job_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.2.json)
+- [Local Business Listing](https://developers.google.com/search/docs/data-types/local-business)
+    - [local_business/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.local_business.json)
+    - organization/2/schema_org
+- [Sitelinks Searchbox](https://developers.google.com/search/docs/data-types/sitelinks-searchbox)
+    - [web_site/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.website.json)
+
 - [Organization](https://schema.org/Organization)
     - [organization/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.organization.json)
     - organization/2/schema_org
@@ -46,8 +52,6 @@ See the output
     - organization/2/employees/Koen/schema_org
 - [PostalAddress](https://schema.org/PostalAddress)
     - organization/1/postal_address/schema_org
-- [Sitelinks Searchbox](https://developers.google.com/search/docs/data-types/sitelinks-searchbox)
-    - [web_site/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.website.json)
 
 The output can be validated at [Google Search](https://developers.google.com/search) [Structured data](https://developers.google.com/search/docs/data-types/article) [Testing Tool](https://search.google.com/structured-data/testing-tool)
 
@@ -118,8 +122,10 @@ php artisan code:models
                 - [BlogPosting](https://schema.org/BlogPosting)
         - [WebSite](https://schema.org/WebSite)
     - [Organization](https://schema.org/Organization)
+        - [LocalBusiness](https://schema.org/LocalBusiness)
     - [Person](https://schema.org/Person)
     - [Place](https://schema.org/Place)
+        - [LocalBusiness](https://schema.org/LocalBusiness)
     - Intangible
         - [ItemList](http://schema.org/ItemList)
             - [BreadcrumbList](https://schema.org/BreadcrumbList)
