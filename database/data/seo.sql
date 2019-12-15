@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Dec 15, 2019 at 06:53 PM
+-- Generation Time: Dec 15, 2019 at 07:16 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -169,7 +169,7 @@ INSERT INTO `founders` (`id`, `organization_id`, `founder_id`, `created_at`, `up
 --
 
 INSERT INTO `geo_coordinates` (`id`, `latitude`, `longitude`, `created_at`, `updated_at`) VALUES
-(1, 51.56060, 5.09191, NULL, NULL);
+(1, 51.560600000000000, 5.091914299999985, NULL, NULL);
 
 --
 -- Dumping data for table `image`
