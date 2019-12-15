@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Models\Traits\JsonLd;
 use App\Models\Traits\sameAs;
 use App\Models\Traits\telephone;
+use Spatie\SchemaOrg\Schema;
 
 class LocalBusiness extends \App\Models\Base\LocalBusiness
 {
@@ -25,6 +26,10 @@ class LocalBusiness extends \App\Models\Base\LocalBusiness
 		$placeSchema = $this->organization->place ? $this->organization->place->schema_org_schema : null;
 		$postalAddressSchema = $this->organization->postal_address ? $this->organization->postal_address->schema_org_schema : null;
 		$telephone = $this->organization->telephone ? $this->organization->telephone : null;
+		// Place
+		$geo = Schema::GeoCoordinates()
+			->latitude($this->organization->place->geo_coordinate->latitude)
+			->longitude($this->organization->place->geo_coordinate->longitude);
 		// Thing
 		$alternate_name = $this->organization->thing && $this->organization->thing->alternate_name ? $this->organization->thing->alternate_name : null;
 
@@ -32,6 +37,7 @@ class LocalBusiness extends \App\Models\Base\LocalBusiness
 			->priceRange($this->price_range)
 			// Organization
 			->address($postalAddressSchema)
+			->geo($geo)	// optional
 			->email($email)
 			->legalName($legal_name)
 			->location($placeSchema)

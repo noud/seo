@@ -2,17 +2,17 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "priceRange": "$$$",
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.560596,
+        "longitude": 5.091914299999985
+    },
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "Tivolistraat 50-52",
         "postalCode": "5017 HR",
         "addressLocality": "Tilburg",
         "addressCountry": "NL"
-    },
-    "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 51.5606,
-        "longitude": 5.09191
     },
     "email": "info@duodeka.nl",
     "legalName": "DUODEKA Co\u00f6peratie U.A.",

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Dec 08, 2019 at 06:53 PM
+-- Generation Time: Dec 15, 2019 at 06:53 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -163,6 +163,13 @@ INSERT INTO `founders` (`id`, `organization_id`, `founder_id`, `created_at`, `up
 (2, 1, 2, NULL, NULL),
 (3, 1, 3, NULL, NULL),
 (4, 1, 4, NULL, NULL);
+
+--
+-- Dumping data for table `geo_coordinates`
+--
+
+INSERT INTO `geo_coordinates` (`id`, `latitude`, `longitude`, `created_at`, `updated_at`) VALUES
+(1, 51.56060, 5.09191, NULL, NULL);
 
 --
 -- Dumping data for table `image`
@@ -326,7 +333,7 @@ INSERT INTO `person` (`id`, `additional_name`, `address_id`, `email`, `family_na
 --
 
 INSERT INTO `place` (`id`, `address_id`, `geo_id`, `created_at`, `updated_at`) VALUES
-(1, 1, NULL, NULL, NULL);
+(1, 1, 1, NULL, NULL);
 
 --
 -- Dumping data for table `postal_address`

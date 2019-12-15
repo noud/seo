@@ -138,6 +138,7 @@ php artisan code:models
                 - [PostalAddress](https://schema.org/PostalAddress)
             - [GeoCoordinates](https://schema.org/GeoCoordinates)
             - [MonetaryAmount](https://schema.org/MonetaryAmount)
+            - [OpeningHoursSpecification](https://schema.org/OpeningHoursSpecification)
             - [PropertyValue](https://schema.org/PropertyValue)
             - [QuantitativeValue](https://schema.org/QuantitativeValue)
 

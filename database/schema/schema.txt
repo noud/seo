@@ -51,8 +51,8 @@
                 "y": 712
             },
             "mure2o": {
-                "x": 306,
-                "y": 628
+                "x": 287,
+                "y": 659
             },
             "idoqfc": {
                 "x": 1053,
@@ -67,8 +67,8 @@
                 "y": 630
             },
             "oxwau": {
-                "x": 566,
-                "y": 808
+                "x": 563,
+                "y": 801
             },
             "3z0orn": {
                 "x": 830,
@@ -83,12 +83,12 @@
                 "y": 363
             },
             "3rd2qr": {
-                "x": 846,
-                "y": 1019
+                "x": 845,
+                "y": 974
             },
             "07jqi": {
-                "x": 584,
-                "y": 1106
+                "x": 561,
+                "y": 984
             },
             "31s271": {
                 "x": 293,
@@ -187,8 +187,12 @@
                 "y": 435
             },
             "ggrk8m": {
-                "x": 303,
-                "y": 428
+                "x": 285,
+                "y": 482
+            },
+            "ae9zp8": {
+                "x": 558,
+                "y": 1158
             }
         }
     },
@@ -441,6 +445,13 @@
         {
             "id": "ggrk8m",
             "name": "local_business",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
+        },
+        {
+            "id": "ae9zp8",
+            "name": "opening_hours_specification",
             "color": "table-header-green",
             "softDelete": false,
             "timeStamp": true
@@ -3416,6 +3427,123 @@
                     }
                 }
             }
+        ],
+        "ae9zp8": [
+            {
+                "id": "8hn43m",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "hpnro8",
+                "name": "closes",
+                "type": "time",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "5if2q",
+                "name": "day_of_week",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "e6ok2",
+                "name": "opens",
+                "type": "time",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "15awlh",
+                "name": "place_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "36ildg",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "07jqi",
+                        "name": "place"
+                    }
+                }
+            }
         ]
     },
     "relations": [
@@ -3807,6 +3935,16 @@
             "target": {
                 "columnId": "ull9k",
                 "tableId": "mure2o"
+            }
+        },
+        {
+            "source": {
+                "columnId": "15awlh",
+                "tableId": "ae9zp8"
+            },
+            "target": {
+                "columnId": "36ildg",
+                "tableId": "07jqi"
             }
         }
     ]
