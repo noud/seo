@@ -31,31 +31,31 @@
     "openingHoursSpecification": [
         {
             "@type": "OpeningHoursSpecification",
-            "closes": "17:00:00",
+            "closes": "17:30:00",
             "opens": "09:00:00",
             "dayOfWeek": "Monday"
         },
         {
             "@type": "OpeningHoursSpecification",
-            "closes": "17:00:00",
+            "closes": "17:30:00",
             "opens": "09:00:00",
             "dayOfWeek": "Tuesday"
         },
         {
             "@type": "OpeningHoursSpecification",
-            "closes": "17:00:00",
+            "closes": "17:30:00",
             "opens": "09:00:00",
             "dayOfWeek": "Wednesday"
         },
         {
             "@type": "OpeningHoursSpecification",
-            "closes": "17:00:00",
+            "closes": "17:30:00",
             "opens": "09:00:00",
             "dayOfWeek": "Thursday"
         },
         {
             "@type": "OpeningHoursSpecification",
-            "closes": "17:00:00",
+            "closes": "17:30:00",
             "opens": "09:00:00",
             "dayOfWeek": "Friday"
         }
