@@ -9,11 +9,6 @@
         "addressLocality": "Tilburg",
         "addressCountry": "NL"
     },
-    "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 51.5606,
-        "longitude": 5.091914299999985
-    },
     "email": "info@duodeka.nl",
     "legalName": "DUODEKA Co\u00f6peratie U.A.",
     "location": {
@@ -28,6 +23,43 @@
     },
     "logo": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png",
     "telephone": "+31 13 203 2264",
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.5606,
+        "longitude": 5.091914299999985
+    },
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "closes": "17:00:00",
+            "opens": "09:00:00",
+            "dayOfWeek": "Monday"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "closes": "17:00:00",
+            "opens": "09:00:00",
+            "dayOfWeek": "Tuesday"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "closes": "17:00:00",
+            "opens": "09:00:00",
+            "dayOfWeek": "Wednesday"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "closes": "17:00:00",
+            "opens": "09:00:00",
+            "dayOfWeek": "Thursday"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "closes": "17:00:00",
+            "opens": "09:00:00",
+            "dayOfWeek": "Friday"
+        }
+    ],
     "alternateName": "XII",
     "image": [
         "https://duodeka.nl/app/themes/duodeka/dist/images/photos/NweFaxxOkt2019forWeb_799cd585.png"

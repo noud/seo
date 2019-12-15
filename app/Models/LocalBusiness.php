@@ -30,6 +30,15 @@ class LocalBusiness extends \App\Models\Base\LocalBusiness
 		$geo = Schema::GeoCoordinates()
 			->latitude($this->organization->place->geo_coordinate->latitude)
 			->longitude($this->organization->place->geo_coordinate->longitude);
+		$openingHoursSpecification = [];
+		// dd($this->organization->place->opening_hours_specifications()->get());
+		foreach($this->organization->place->opening_hours_specifications()->get() as $opening_hours_specification) {
+// dd($opening_hours_specification->opens);
+			$openingHoursSpecification[] = Schema::OpeningHoursSpecification()
+				->closes($opening_hours_specification->closes)
+				->opens($opening_hours_specification->opens)
+				->dayOfWeek($opening_hours_specification->day_of_week);
+		}
 		// Thing
 		$alternate_name = $this->organization->thing && $this->organization->thing->alternate_name ? $this->organization->thing->alternate_name : null;
 
@@ -37,12 +46,14 @@ class LocalBusiness extends \App\Models\Base\LocalBusiness
 			->priceRange($this->price_range)
 			// Organization
 			->address($postalAddressSchema)
-			->geo($geo)	// optional
 			->email($email)
 			->legalName($legal_name)
 			->location($placeSchema)
 			->logo($logo)
 			->telephone($telephone)
+			// Place
+			->geo($geo)	// optional
+			->openingHoursSpecification($openingHoursSpecification)	// optional
 			// Thing
 			->setProperty('alternateName', $alternate_name)
 			->setProperty('image', $this->organization->thing->getSchemaOrgimage())
