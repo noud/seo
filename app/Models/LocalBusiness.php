@@ -31,13 +31,12 @@ class LocalBusiness extends \App\Models\Base\LocalBusiness
 			->latitude($this->organization->place->geo_coordinate->latitude)
 			->longitude($this->organization->place->geo_coordinate->longitude);
 		$openingHoursSpecification = [];
-		// dd($this->organization->place->opening_hours_specifications()->get());
 		foreach($this->organization->place->opening_hours_specifications()->get() as $opening_hours_specification) {
-// dd($opening_hours_specification->opens);
+			$dayOfWeek = strpos($opening_hours_specification->day_of_week,',') ? explode(',',$opening_hours_specification->day_of_week) : $opening_hours_specification->day_of_week;
 			$openingHoursSpecification[] = Schema::OpeningHoursSpecification()
 				->closes($opening_hours_specification->closes)
 				->opens($opening_hours_specification->opens)
-				->dayOfWeek($opening_hours_specification->day_of_week);
+				->dayOfWeek($dayOfWeek);
 		}
 		// Thing
 		$alternate_name = $this->organization->thing && $this->organization->thing->alternate_name ? $this->organization->thing->alternate_name : null;

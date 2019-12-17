@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Dec 15, 2019 at 08:01 PM
+-- Generation Time: Dec 17, 2019 at 07:01 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -309,11 +309,7 @@ INSERT INTO `monetary_amount` (`id`, `currency`, `value_id`, `created_at`, `upda
 --
 
 INSERT INTO `opening_hours_specification` (`id`, `closes`, `day_of_week`, `opens`, `place_id`, `created_at`, `updated_at`) VALUES
-(1, '17:30:00', 'Monday', '09:00:00', 1, NULL, NULL),
-(2, '17:30:00', 'Tuesday', '09:00:00', 1, NULL, NULL),
-(3, '17:30:00', 'Wednesday', '09:00:00', 1, NULL, NULL),
-(4, '17:30:00', 'Thursday', '09:00:00', 1, NULL, NULL),
-(5, '17:30:00', 'Friday', '09:00:00', 1, NULL, NULL);
+(1, '17:30:00', 'Monday,Tuesday,Wednesday,Thursday,Friday', '09:00:00', 1, NULL, NULL);
 
 --
 -- Dumping data for table `organization`
