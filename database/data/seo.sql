@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Dec 17, 2019 at 07:01 PM
+-- Generation Time: Dec 17, 2019 at 07:29 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -50,7 +50,8 @@ INSERT INTO `article` (`id`, `article_body`, `creative_work_id`, `created_at`, `
 (20, '<p>Jaarlijks vinden de <a href=\"https://ebtilburg.nl/\">Economic Business weeks Tilburg</a> plaats op de campus van <a href=\"https://www.tilburguniversity.edu/\">Tilburg University</a>. Om alles in goede banen te leiden, was de organisatie op zoek naar een partij die een <strong>roosterapplicatie</strong> kon ontwikkelen. De applicatie diende te functioneren als <strong>roostersysteem</strong>, waarin zowel de wensen van de studenten als de bedrijven verwerkt worden. De huidige applicatie voldeed niet meer aan de wensen van EBT en ontwikkelde zich niet snel genoeg. EBT kwam terecht bij DUODEKA. Wij hebben een gloednieuwe roosterapplicatie ontwikkeld die voldoet aan alle wensen van de organisatoren en bovendien de komende jaren volop doorontwikkeld kan worden.</p>\r\n<p><img class=\"size-full wp-image-3190 aligncenter\" src=\"https://duodeka.nl/app/uploads/2018/06/ebt.png\" alt=\"roosterapplicatie ebt\" width=\"450\" height=\"450\" srcset=\"https://duodeka.nl/app/uploads/2018/06/ebt.png 450w, https://duodeka.nl/app/uploads/2018/06/ebt-150x150.png 150w, https://duodeka.nl/app/uploads/2018/06/ebt-300x300.png 300w\" sizes=\"(max-width: 450px) 100vw, 450px\" /></p>\r\n<h3>Zoektocht naar snelheid en ontwikkeling</h3>\r\n<p>Jaarlijks organiseert het bestuur van de EBT in samenwerking met Asset en Tilburg University de Economic Business weeks Tilburg. Tijdens het evenement kunnen studenten zich oriënteren op de arbeidsmarkt. Vele presentaties, workshops en trainingen worden gedurende twee weken gegeven door meer dan tachtig verschillende bedrijven. Onder andere ABN AMRO, Albert Heijn, KLM en Shell waren aanwezig tijdens de afgelopen EBT. Om de Economic Business weeks Tilburg naar ieders wens te laten verlopen, had de organisatie een applicatie nodig die als roostersysteem gebruikt kan worden door de studenten, de aanwezige bedrijven en de organisatie. DUODEKA heeft voor de EBT een applicatie ontwikkeld waarvan de studenten, bedrijven en de organisatie gebruik maken.</p>\r\n<p><img class=\"alignnone size-large wp-image-3135\" src=\"https://duodeka.nl/app/uploads/2018/06/ebt-example-company-1024x1024.png\" alt=\"\" width=\"1024\" height=\"1024\" srcset=\"https://duodeka.nl/app/uploads/2018/06/ebt-example-company-1024x1024.png 1024w, https://duodeka.nl/app/uploads/2018/06/ebt-example-company-150x150.png 150w, https://duodeka.nl/app/uploads/2018/06/ebt-example-company-300x300.png 300w, https://duodeka.nl/app/uploads/2018/06/ebt-example-company-768x768.png 768w, https://duodeka.nl/app/uploads/2018/06/ebt-example-company-1080x1080.png 1080w, https://duodeka.nl/app/uploads/2018/06/ebt-example-company.png 1326w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></p>\r\n<h3>Automatiseren workflow</h3>\r\n<p>Bij de ontwikkeling van het systeem is vooral gelet op de functionaliteit die het belangrijkst is voor het roostersysteem: het inschrijven en het maken van het rooster. Studenten moesten zich via de applicatie gemakkelijk kunnen aanmelden en zich kunnen inschrijven voor de evenementen die plaatsvinden tijdens de EBT. De applicatie automatiseert de workflow zo veel mogelijk voor de studenten, bedrijven en het bestuur van de EBT. De automatisering zorgt voor veel tijdsbesparing en voorkomt fouten in het proces. Ook heeft DUODEKA de website voor de Economic Business weeks ontwikkeld. De kracht van de website zit hem in het feit dat hij hetzelfde oogt als de applicatie, ondanks dat het twee losse systemen zijn. Zo hoeven gebruikers van de applicatie niet te wennen aan de website, en andersom.</p>\r\n<h4>Automatisering carrière evenement<br />\r\nDe applicatie is de spil in de<br />\r\norganisatie van de EBT</h4>\r\n<ul>\r\n<li>Studenten kunnen zich inschrijven voor activiteiten</li>\r\n<li>Bedrijven kunnen studenten selecteren</li>\r\n<li>Roosters worden gegenereerd</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<p><img class=\"alignnone size-full wp-image-3136\" src=\"https://duodeka.nl/app/uploads/2018/06/ebt-screenshot.png\" alt=\"\" width=\"864\" height=\"864\" srcset=\"https://duodeka.nl/app/uploads/2018/06/ebt-screenshot.png 864w, https://duodeka.nl/app/uploads/2018/06/ebt-screenshot-150x150.png 150w, https://duodeka.nl/app/uploads/2018/06/ebt-screenshot-300x300.png 300w, https://duodeka.nl/app/uploads/2018/06/ebt-screenshot-768x768.png 768w\" sizes=\"(max-width: 864px) 100vw, 864px\" /></p>\r\n<blockquote>\r\n<p style=\"text-align: center;\">‘DUODEKA kon EBT wel de snelheid en ontwikkeling bieden waar het naar op zoek was. Dit komt mede door het goede begrip van DUODEKA van de workflow en de processen van EBT.’<br />\r\nRik van de Looi, DUODEKA</p>\r\n</blockquote>\r\n<h3>Samen doorontwikkelen</h3>\r\n<p>De gloednieuwe applicatie voldoet aan alle wensen van de organisatoren, maar biedt tevens de mogelijkheid deze nog volop door te ontwikkelen de komende jaren. De Economic Business weeks zijn een jaarlijks terugkerend evenement op de campus van de Universiteit van Tilburg. In aanloop naar de volgende Economic Business weeks zullen wij de organisatie blijven bijstaan met het vertalen van hun wensen naar de roosterapplicatie.</p>\r\n<h3>De resultaten voor EBT met de komst van de applicatie zijn:</h3>\r\n<ul>\r\n<li>Een applicatie die voldoet aan alle wensen</li>\r\n<li>Geautomatiseerde workflow</li>\r\n<li>Tijdsbesparing en minder fouten</li>\r\n<li>Bijpassende nieuwe website</li>\r\n<li>Mogelijkheid tot doorontwikkeling</li>\r\n</ul>', 20, NULL, NULL);
 INSERT INTO `article` (`id`, `article_body`, `creative_work_id`, `created_at`, `updated_at`) VALUES
 (21, '<p>Het internet staat vol met verschillende definities van startups. Het enige waar ze het allemaal over eens lijken te zijn, is dat een startup een startende onderneming is. Een overig kenmerk van startups is dat ze innovatief zijn. Een bijzondere startup is de <strong>Lean Startup</strong>. Een kenmerk van dit type startup is dat er eerst een prototype (<a href=\"https://duodeka.nl/minimum-viable-product/\"><strong>MVP</strong></a>) ontwikkeld wordt om de behoefte te toetsen. Meer weten over lean startups? In deze blog lees je alles over de Lean Startup Methode.</p>\r\n<blockquote>\r\n<p style=\"text-align: center;\"><em>“The only way to win is to learn faster than anyone else.” ~ Eric Ries</em></p>\r\n</blockquote>\r\n<h2><strong>Het verschil tussen een gewone startup en de lean startup</strong></h2>\r\n<p>Eric Ries is de grondlegger van de Lean Startup methode. Het kernconcept van de Lean Startup methode is <strong>testen</strong>. Startups die werken volgens de Lean methode gaan de markt op voordat hun daadwerkelijke product af is, dit doen ze met een zogeheten <strong><a href=\"https://duodeka.nl/minimum-viable-product/\">Minimum Viable Product</a>: </strong><em>een product met net genoeg kenmerken om waarde toe te voegen voor vroeg aansluitende klanten</em>¹<span style=\"font-size: 1rem;\">. Hiermee kan feedback vergaard worden bij de beoogde potentiële klant.</span><span style=\"font-size: 1rem;\"> Middels deze feedback kan getoetst worden of het idee achter de startup doorontwikkeld moet worden, of dat er vanuit de markt te weinig behoefte is (meten is weten).</span></p>\r\n<p><img class=\"size-full wp-image-3680 aligncenter\" src=\"https://duodeka.nl/app/uploads/2019/07/ondernemen_duodeka.png\" alt=\"\" width=\"720\" height=\"405\" srcset=\"https://duodeka.nl/app/uploads/2019/07/ondernemen_duodeka.png 720w, https://duodeka.nl/app/uploads/2019/07/ondernemen_duodeka-300x169.png 300w\" sizes=\"(max-width: 720px) 100vw, 720px\" /></p>\r\n<blockquote>\r\n<p style=\"text-align: center;\"><em>“As you consider building your own minimum viable product, let this simple rule suffice: remove any feature, process, or effort that does not contribute directly to the learning you seek” ~ Eric Ries</em></p>\r\n</blockquote>\r\n<p>Ook kan het idee op deze manier nog bijgeschaafd worden voordat er een uiteindelijk product op de markt wordt gebracht. Mogelijk blijkt het MVP al marktklaar te zijn, maar de kans is groot dat de feedback veel waardevolle inzichten oplevert met verbeterpunten. Kortom, de Lean Startup onderscheidt zich van een gewone startup doordat je eerst de markt op gaat met een prototype en dit blijft<strong> testen, testen en testen</strong>.</p>\r\n<p style=\"text-align: center;\">Bouw → Meet → Leer</p>\r\n<p><img class=\"size-full wp-image-3677 aligncenter\" src=\"https://duodeka.nl/app/uploads/2019/07/Lean-Startup-BMC.jpg\" alt=\"Lean Startup Methode in combinatie met het business model canvas\" width=\"800\" height=\"533\" srcset=\"https://duodeka.nl/app/uploads/2019/07/Lean-Startup-BMC.jpg 800w, https://duodeka.nl/app/uploads/2019/07/Lean-Startup-BMC-300x200.jpg 300w, https://duodeka.nl/app/uploads/2019/07/Lean-Startup-BMC-768x512.jpg 768w, https://duodeka.nl/app/uploads/2019/07/Lean-Startup-BMC-272x182.jpg 272w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\r\n<h2><strong>Case Study</strong></h2>\r\n<p><strong><a href=\"http://www.duodeka.nl\">DUODEKA</a> </strong>heeft samen met <strong><a href=\"https://gg4u.nl/\">GG4U</a> </strong>volgens de Lean Startup Methode het concept van een online gaming platform gevalideerd. Met een <strong>riskiest assumption test</strong> heeft DUODEKA  getoetst of er een markt is voor een dergelijk online gaming platform. Uit de test is gebleken dat het concept veel potentie heeft. Daarom is er besloten het mogelijk te maken voor geïnteresseerde gamers om zich nu op de website aan te melden. Geheel in lijn met de riskiest assumption test is het aantal aanmeldingen in de eerste weken overweldigend geweest.</p>\r\n<p>Lees meer over de<strong><a href=\"https://duodeka.nl/concept-validatie-platform/\"> riskiest assumption test die DUODEKA met GG4U heeft uitgevoerd</a></strong>.</p>\r\n<h2><strong>De combinatie met het Business Model Canvas</strong></h2>\r\n<p>Startende ondernemers gebruiken de Lean Canvas methode vaak in combinatie met het Business Model Canvas. <span style=\"color: #00ffff;\"><a style=\"color: #00ffff;\" href=\"https://duodeka.nl/business-model-canvas/\">Meer weten over het Business Model Canvas? Lees ons blog over het BMC!</a></span></p>\r\n<h3><strong>Het boek van Eric Ries</strong></h3>\r\n<p>Eric Ries heeft een boek geschreven over hoe de Lean Startup Methode tot een succesvolle business leidt door voortdurend te blijven innoveren. <span style=\"color: #00ffff;\"><a style=\"color: #00ffff;\" href=\"https://www.bol.com/nl/f/de-lean-startup/9200000017140097/\">Geïnteresseerd in het boek van Eric Ries? Je kunt het gewoon kopen bij Bol.com.</a></span></p>\r\n<p>Meer weten over onze visie op de Lean Startup Methode? <a href=\"https://duodeka.typeform.com/to/zmy1YE\">Neem gerust contact met ons op!</a></p>\r\n<p>Bronnen:</p>\r\n<ol>\r\n<li><a href=\"https://www.techopedia.com/definition/27809/minimum-viable-product-mvp\">https://www.techopedia.com/definition/27809/minimum-viable-product-mvp</a></li>\r\n</ol>', 21, NULL, NULL),
-(22, '<p><strong><a href=\"http://www.duodeka.nl\">DUODEKA</a> </strong>heeft samen met <strong><a href=\"https://gg4u.nl/\">GG4U</a> </strong>volgens de <strong><a href=\"http://www.duodeka.nl/lean-startup-methode\">Lean Startup Methode</a></strong> het concept van een online gaming platform gevalideerd. Met een <strong>riskiest assumption test</strong> heeft DUODEKA  getoetst of er een markt is voor een dergelijk online gaming platform. Uit de test is gebleken dat het concept veel potentie heeft. Daarom is er besloten het mogelijk te maken voor geïnteresseerde gamers om zich nu op de website aan te melden. Geheel in lijn met de riskiest assumption test is het aantal aanmeldingen in de eerste weken overweldigend geweest.</p>\r\n<p><img class=\"size-full wp-image-3699 aligncenter\" src=\"https://duodeka.nl/app/uploads/2019/08/create-match.png\" alt=\"\" width=\"375\" height=\"667\" srcset=\"https://duodeka.nl/app/uploads/2019/08/create-match.png 375w, https://duodeka.nl/app/uploads/2019/08/create-match-169x300.png 169w\" sizes=\"(max-width: 375px) 100vw, 375px\" /></p>\r\n<p>Heb jij hulp nodig met het toepassen van een riskiest assumption test? Neem dan contact op met DUODEKA!</p>', 22, NULL, NULL);
+(22, '<p><strong><a href=\"http://www.duodeka.nl\">DUODEKA</a> </strong>heeft samen met <strong><a href=\"https://gg4u.nl/\">GG4U</a> </strong>volgens de <strong><a href=\"http://www.duodeka.nl/lean-startup-methode\">Lean Startup Methode</a></strong> het concept van een online gaming platform gevalideerd. Met een <strong>riskiest assumption test</strong> heeft DUODEKA  getoetst of er een markt is voor een dergelijk online gaming platform. Uit de test is gebleken dat het concept veel potentie heeft. Daarom is er besloten het mogelijk te maken voor geïnteresseerde gamers om zich nu op de website aan te melden. Geheel in lijn met de riskiest assumption test is het aantal aanmeldingen in de eerste weken overweldigend geweest.</p>\r\n<p><img class=\"size-full wp-image-3699 aligncenter\" src=\"https://duodeka.nl/app/uploads/2019/08/create-match.png\" alt=\"\" width=\"375\" height=\"667\" srcset=\"https://duodeka.nl/app/uploads/2019/08/create-match.png 375w, https://duodeka.nl/app/uploads/2019/08/create-match-169x300.png 169w\" sizes=\"(max-width: 375px) 100vw, 375px\" /></p>\r\n<p>Heb jij hulp nodig met het toepassen van een riskiest assumption test? Neem dan contact op met DUODEKA!</p>', 22, NULL, NULL),
+(23, '<p>Afgelopen donderdag 12-12 hebben wij de 4e editie van ‘DUODEKA dag’ gevierd. Het cijfer 12 betekent voor ons heel veel, vandaar dat wij deze dag hebben gekroond tot onze feestdag!</p>\r\n<p>In de ochtend hebben de stagiaires, die momenteel werkzaam zijn, een presentatie gegeven over hun opdracht en wat ze in de afgelopen periode hebben gedaan, zeer leerzaam en leuk dat iedereen ervan op de hoogte is. Daarna werd er een leuke presentatie gegeven over de start van DUODEKA tot de dag van vandaag: doen, vallen en opstaan.</p>\r\n<p>Om 12:12 was er natuurlijk de gezamenlijke aftrap en hebben we een heerlijke lunch gehad van <a href=\"https://broodjepercentimeter.nl/\">Broodje per Centimeter</a>. Om 13:30 zijn we naar de <a href=\"https://schrobbeler.nl/\">Schrobbelèr fabriek</a> gegaan, waar we een leuke rondleiding hebben gehad, en de nodige drankjes hebben geconsumeerd. In de avond zijn we teruggekeerd naar het kantoor waar we hebben gezongen, gelachen en vooral genoten van elkaars gezelschap. Al met al was het een geslaagde DUODEKA dag en op naar de volgende editie!</p>\r\n<p><img class=\"alignnone wp-image-3958 size-large\" src=\"https://duodeka.nl/app/uploads/2019/12/Bier-en-demo-1024x576.jpeg\" alt=\"\" width=\"1024\" height=\"576\" srcset=\"https://duodeka.nl/app/uploads/2019/12/Bier-en-demo-1024x576.jpeg 1024w, https://duodeka.nl/app/uploads/2019/12/Bier-en-demo-300x169.jpeg 300w, https://duodeka.nl/app/uploads/2019/12/Bier-en-demo-768x432.jpeg 768w, https://duodeka.nl/app/uploads/2019/12/Bier-en-demo.jpeg 1600w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /> <img class=\"alignnone wp-image-3959 size-large\" src=\"https://duodeka.nl/app/uploads/2019/12/Groepsfoto-schrobbeler-1024x768.jpeg\" alt=\"\" width=\"1024\" height=\"768\" srcset=\"https://duodeka.nl/app/uploads/2019/12/Groepsfoto-schrobbeler-1024x768.jpeg 1024w, https://duodeka.nl/app/uploads/2019/12/Groepsfoto-schrobbeler-300x225.jpeg 300w, https://duodeka.nl/app/uploads/2019/12/Groepsfoto-schrobbeler-768x576.jpeg 768w, https://duodeka.nl/app/uploads/2019/12/Groepsfoto-schrobbeler.jpeg 1600w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /> <img class=\"alignnone wp-image-3960 size-large\" src=\"https://duodeka.nl/app/uploads/2019/12/Schrobbeler-1024x768.jpeg\" alt=\"\" width=\"1024\" height=\"768\" srcset=\"https://duodeka.nl/app/uploads/2019/12/Schrobbeler-1024x768.jpeg 1024w, https://duodeka.nl/app/uploads/2019/12/Schrobbeler-300x225.jpeg 300w, https://duodeka.nl/app/uploads/2019/12/Schrobbeler-768x576.jpeg 768w, https://duodeka.nl/app/uploads/2019/12/Schrobbeler.jpeg 1600w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></p>', 23, NULL, NULL);
 
 --
 -- Dumping data for table `blog_posting`
@@ -78,7 +79,8 @@ INSERT INTO `blog_posting` (`id`, `article_id`, `created_at`, `updated_at`) VALU
 (20, 19, NULL, NULL),
 (21, 20, NULL, NULL),
 (22, 21, NULL, NULL),
-(23, 22, NULL, NULL);
+(23, 22, NULL, NULL),
+(24, 23, NULL, NULL);
 
 --
 -- Dumping data for table `breadcrumb_list`
@@ -115,7 +117,8 @@ INSERT INTO `creative_work` (`id`, `author_id`, `publisher_id`, `date_modified`,
 (19, 5, 1, '2019-09-27 08:58:42', '2019-06-28 09:40:36', 'Case – Photo Booth software Red Panda', 35, NULL, NULL),
 (20, 5, 1, '2019-09-27 08:58:45', '2019-07-01 09:47:59', 'Case – Roosterapplicatie voor het EBT carrière evenement', 36, NULL, NULL),
 (21, 5, 1, '2019-10-02 14:37:42', '2019-07-22 10:49:08', 'De Lean Startup Methode', 37, NULL, NULL),
-(22, 5, 1, '2019-10-21 06:58:25', '2019-08-14 10:58:06', 'Case – Concept validatie online gaming platform', 38, NULL, NULL);
+(22, 5, 1, '2019-10-21 06:58:25', '2019-08-14 10:58:06', 'Case – Concept validatie online gaming platform', 38, NULL, NULL),
+(23, 5, 1, '2019-10-21 06:58:25', '2019-08-14 10:58:06', 'DUODEKA dag 2019', 40, NULL, NULL);
 
 --
 -- Dumping data for table `employee`
@@ -239,7 +242,11 @@ INSERT INTO `image` (`id`, `thing_id`, `image`, `created_at`, `updated_at`) VALU
 (61, 37, 'https://duodeka.nl/app/uploads/2019/07/Lean-Startup-BMC-768x512.jpg', NULL, NULL),
 (62, 38, 'https://duodeka.nl/app/uploads/2019/08/gg4u-web.jpg', NULL, NULL),
 (63, 38, 'https://duodeka.nl/app/uploads/2019/08/create-match.png', NULL, NULL),
-(64, 1, 'https://duodeka.nl/app/themes/duodeka/dist/images/photos/NweFaxxOkt2019forWeb_799cd585.png', NULL, NULL);
+(64, 1, 'https://duodeka.nl/app/themes/duodeka/dist/images/photos/NweFaxxOkt2019forWeb_799cd585.png', NULL, NULL),
+(65, 40, 'https://duodeka.nl/app/uploads/2019/12/Groepsfoto.jpeg', NULL, NULL),
+(66, 40, 'https://duodeka.nl/app/uploads/2019/12/Bier-en-demo-1024x576.jpeg', NULL, NULL),
+(67, 40, 'https://duodeka.nl/app/uploads/2019/12/Groepsfoto-schrobbeler-1024x768.jpeg', NULL, NULL),
+(68, 40, 'https://duodeka.nl/app/uploads/2019/12/Schrobbeler-1024x768.jpeg', NULL, NULL);
 
 --
 -- Dumping data for table `item_list`
@@ -261,34 +268,35 @@ INSERT INTO `job_posting` (`id`, `base_salary_id`, `date_posted`, `employment_ty
 --
 
 INSERT INTO `list_item` (`id`, `list_id`, `list_type`, `position`, `item_id`, `item_type`, `created_at`, `updated_at`) VALUES
-(5, 1, 'item_list', 1, 2, 'App\\Models\\BlogPosting', NULL, NULL),
-(6, 1, 'item_list', 2, 9, 'App\\Models\\BlogPosting', NULL, NULL),
-(7, 1, 'item_list', 3, 12, 'App\\Models\\BlogPosting', NULL, NULL),
-(8, 1, 'item_list', 4, 23, 'App\\Models\\BlogPosting', NULL, NULL),
-(9, 1, 'item_list', 5, 22, 'App\\Models\\BlogPosting', NULL, NULL),
-(10, 1, 'item_list', 6, 21, 'App\\Models\\BlogPosting', NULL, NULL),
-(11, 1, 'item_list', 7, 20, 'App\\Models\\BlogPosting', NULL, NULL),
-(12, 1, 'item_list', 8, 19, 'App\\Models\\BlogPosting', NULL, NULL),
-(13, 1, 'item_list', 9, 18, 'App\\Models\\BlogPosting', NULL, NULL),
-(14, 1, 'item_list', 10, 17, 'App\\Models\\BlogPosting', NULL, NULL),
-(15, 1, 'item_list', 12, 15, 'App\\Models\\BlogPosting', NULL, NULL),
-(16, 1, 'item_list', 13, 14, 'App\\Models\\BlogPosting', NULL, NULL),
-(17, 1, 'item_list', 14, 13, 'App\\Models\\BlogPosting', NULL, NULL),
-(18, 1, 'item_list', 11, 16, 'App\\Models\\BlogPosting', NULL, NULL),
-(19, 1, 'item_list', 16, 10, 'App\\Models\\BlogPosting', NULL, NULL),
-(20, 1, 'item_list', 15, 11, 'App\\Models\\BlogPosting', NULL, NULL),
-(21, 1, 'item_list', 17, 8, 'App\\Models\\BlogPosting', NULL, NULL),
-(22, 1, 'item_list', 18, 7, 'App\\Models\\BlogPosting', NULL, NULL),
-(23, 1, 'item_list', 19, 6, 'App\\Models\\BlogPosting', NULL, NULL),
-(24, 1, 'item_list', 20, 5, 'App\\Models\\BlogPosting', NULL, NULL),
-(25, 1, 'item_list', 21, 4, 'App\\Models\\BlogPosting', NULL, NULL),
-(26, 1, 'item_list', 22, 3, 'App\\Models\\BlogPosting', NULL, NULL),
+(5, 1, 'item_list', 2, 2, 'App\\Models\\BlogPosting', NULL, NULL),
+(6, 1, 'item_list', 3, 9, 'App\\Models\\BlogPosting', NULL, NULL),
+(7, 1, 'item_list', 4, 12, 'App\\Models\\BlogPosting', NULL, NULL),
+(8, 1, 'item_list', 5, 23, 'App\\Models\\BlogPosting', NULL, NULL),
+(9, 1, 'item_list', 6, 22, 'App\\Models\\BlogPosting', NULL, NULL),
+(10, 1, 'item_list', 7, 21, 'App\\Models\\BlogPosting', NULL, NULL),
+(11, 1, 'item_list', 8, 20, 'App\\Models\\BlogPosting', NULL, NULL),
+(12, 1, 'item_list', 9, 19, 'App\\Models\\BlogPosting', NULL, NULL),
+(13, 1, 'item_list', 10, 18, 'App\\Models\\BlogPosting', NULL, NULL),
+(14, 1, 'item_list', 11, 17, 'App\\Models\\BlogPosting', NULL, NULL),
+(15, 1, 'item_list', 13, 15, 'App\\Models\\BlogPosting', NULL, NULL),
+(16, 1, 'item_list', 14, 14, 'App\\Models\\BlogPosting', NULL, NULL),
+(17, 1, 'item_list', 15, 13, 'App\\Models\\BlogPosting', NULL, NULL),
+(18, 1, 'item_list', 12, 16, 'App\\Models\\BlogPosting', NULL, NULL),
+(19, 1, 'item_list', 17, 10, 'App\\Models\\BlogPosting', NULL, NULL),
+(20, 1, 'item_list', 16, 11, 'App\\Models\\BlogPosting', NULL, NULL),
+(21, 1, 'item_list', 18, 8, 'App\\Models\\BlogPosting', NULL, NULL),
+(22, 1, 'item_list', 19, 7, 'App\\Models\\BlogPosting', NULL, NULL),
+(23, 1, 'item_list', 20, 6, 'App\\Models\\BlogPosting', NULL, NULL),
+(24, 1, 'item_list', 21, 5, 'App\\Models\\BlogPosting', NULL, NULL),
+(25, 1, 'item_list', 22, 4, 'App\\Models\\BlogPosting', NULL, NULL),
+(26, 1, 'item_list', 23, 3, 'App\\Models\\BlogPosting', NULL, NULL),
 (27, 1, 'breadcrumb_list', 1, 1, 'App\\Models\\Thing', NULL, NULL),
 (28, 2, 'breadcrumb_list', 1, 1, 'App\\Models\\Thing', NULL, NULL),
 (29, 2, 'breadcrumb_list', 2, 39, 'App\\Models\\Thing', NULL, NULL),
 (30, 3, 'breadcrumb_list', 1, 1, 'App\\Models\\Thing', NULL, NULL),
 (31, 3, 'breadcrumb_list', 2, 39, 'App\\Models\\Thing', NULL, NULL),
-(32, 3, 'breadcrumb_list', 3, 37, 'App\\Models\\Thing', NULL, NULL);
+(32, 3, 'breadcrumb_list', 3, 37, 'App\\Models\\Thing', NULL, NULL),
+(33, 1, 'item_list', 1, 24, 'App\\Models\\BlogPosting', NULL, NULL);
 
 --
 -- Dumping data for table `local_business`
@@ -462,7 +470,8 @@ INSERT INTO `thing` (`id`, `alternate_name`, `description`, `name`, `url`, `iden
 (36, '', 'Jaarlijks vinden de Economic Business weeks Tilburg plaats op de campus van Tilburg University. Om alles in goede banen te &hellip;', '', 'https://duodeka.nl/blog/#case-roosterapplicatie-voor-het-ebt-carriere-evenement', NULL, 'https://duodeka.nl/case-roosterapplicatie-voor-het-ebt-carriere-evenement/', NULL, NULL),
 (37, '', 'De Lean Startup Methode is een methode van Eric Ries. Middels een MVP kun jij jouw bedrijfsidee testen voordat je daadwerkelijk de markt op gaat.', 'Artikel Lean Startup Methode', 'https://duodeka.nl/blog/#lean-startup-methode', NULL, 'https://duodeka.nl/venture-building-kennisbank/lean-startup-methode/', NULL, NULL),
 (38, '', 'Om de levensvatbaarheid van het concept voor een online gaming platform te toetsen hebben GG4U en DUODEKA een riskiest assumption test uitgevoerd.', '', 'https://duodeka.nl/blog/#concept-validatie-platform', NULL, 'https://duodeka.nl/concept-validatie-platform/', NULL, NULL),
-(39, '', '', 'Kennisbank', 'https://duodeka.nl/venture-building-kennisbank', NULL, '', NULL, NULL);
+(39, '', '', 'Kennisbank', 'https://duodeka.nl/venture-building-kennisbank', NULL, '', NULL, NULL),
+(40, '', 'Afgelopen donderdag 12-12 hebben wij de 4e editie van ‘DUODEKA dag’ gevierd. Het cijfer 12 betekent voor ons heel veel, &hellip;', '', 'https://duodeka.nl/blog/#duodeka-dag-2019', NULL, 'https://duodeka.nl/duodeka-dag-2019/', NULL, NULL);
 
 --
 -- Dumping data for table `web_site`
