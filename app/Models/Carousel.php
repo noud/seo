@@ -29,7 +29,7 @@ class Carousel extends ItemList
                         ->name($item->article->creative_work->author->name)
                         // ->givenName($item->article->creative_work->author->first_name)
                         ->familyName($item->article->creative_work->author->surname)
-                        ->email($item->article->creative_work->author->email)
+                        ->email(strlen($item->article->creative_work->author->email) != false ? $item->article->creative_work->author->email : null)
                         ->telephone($item->article->creative_work->author->tel)
                         // Thing
                         // ->setProperty('sameAs', $item->getSchemaOrgsameAs())

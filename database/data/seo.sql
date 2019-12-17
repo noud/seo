@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Dec 17, 2019 at 07:29 PM
+-- Generation Time: Dec 17, 2019 at 07:58 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -118,7 +118,7 @@ INSERT INTO `creative_work` (`id`, `author_id`, `publisher_id`, `date_modified`,
 (20, 5, 1, '2019-09-27 08:58:45', '2019-07-01 09:47:59', 'Case – Roosterapplicatie voor het EBT carrière evenement', 36, NULL, NULL),
 (21, 5, 1, '2019-10-02 14:37:42', '2019-07-22 10:49:08', 'De Lean Startup Methode', 37, NULL, NULL),
 (22, 5, 1, '2019-10-21 06:58:25', '2019-08-14 10:58:06', 'Case – Concept validatie online gaming platform', 38, NULL, NULL),
-(23, 5, 1, '2019-10-21 06:58:25', '2019-08-14 10:58:06', 'DUODEKA dag 2019', 40, NULL, NULL);
+(23, 11, 1, '2019-10-21 06:58:25', '2019-08-14 10:58:06', 'DUODEKA dag 2019', 40, NULL, NULL);
 
 --
 -- Dumping data for table `employee`
@@ -341,7 +341,8 @@ INSERT INTO `person` (`id`, `additional_name`, `address_id`, `email`, `family_na
 (7, '', 0, 'joey@duodeka.nl', 'Maas', 'Joey', '643720659', NULL, NULL, NULL),
 (8, '', 0, 'sven@duodeka.nl', 'Zahharov', 'Sven', '613782844', 8, NULL, NULL),
 (9, 'de', 0, 'thijs@mrwinston.nl', 'Jong', 'Thijs', '644870767', 9, NULL, NULL),
-(10, 'van', 0, 'wesley@mrwinston.nl', 'Bergen', 'Wesley', '642577524', 10, NULL, NULL);
+(10, 'van', 0, 'wesley@mrwinston.nl', 'Bergen', 'Wesley', '642577524', 10, NULL, NULL),
+(11, 'de', 1, '', 'Bont', 'Karlijn', '', NULL, NULL, NULL);
 
 --
 -- Dumping data for table `place`

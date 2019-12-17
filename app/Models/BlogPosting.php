@@ -23,7 +23,7 @@ class BlogPosting extends \App\Models\Base\BlogPosting
 				->name($this->article->creative_work->author->name)
 				// ->givenName($this->article->creative_work->author->first_name)
 				->familyName($this->article->creative_work->author->surname)
-				->email($this->article->creative_work->author->email)
+				->email(strlen($this->article->creative_work->author->email) != false ? $this->article->creative_work->author->email : null)
 				->telephone($this->article->creative_work->author->tel)
 				// Thing
 				// ->setProperty('sameAs', $this->getSchemaOrgsameAs())
