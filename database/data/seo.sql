@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Generation Time: Dec 17, 2019 at 07:58 PM
+-- Generation Time: Dec 23, 2019 at 07:50 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.19
 
@@ -92,33 +92,40 @@ INSERT INTO `breadcrumb_list` (`id`, `created_at`, `updated_at`) VALUES
 (3, NULL, NULL);
 
 --
+-- Dumping data for table `contact_point`
+--
+
+INSERT INTO `contact_point` (`id`, `contact_type`, `email`, `telephone`, `owner_id`, `owner_type`, `created_at`, `updated_at`) VALUES
+(1, 'Support', 'support@duodeka.nl', '', 1, 'App\\Models\\Organization', NULL, NULL);
+
+--
 -- Dumping data for table `creative_work`
 --
 
-INSERT INTO `creative_work` (`id`, `author_id`, `publisher_id`, `date_modified`, `date_published`, `headline`, `thing_id`, `created_at`, `updated_at`) VALUES
-(1, 4, 1, '2019-11-12 15:29:42', '2019-11-12 13:15:14', 'Hackathon Tilburg groot succes', 17, NULL, NULL),
-(2, 1, 1, '2019-05-24 14:28:25', '2016-10-12 12:12:56', 'DUODEKA partner van MeteorJS', 18, NULL, NULL),
-(3, 5, 1, '2019-10-18 14:14:08', '2017-01-21 13:56:00', 'Maak kennis met Joey', 19, NULL, NULL),
-(4, 1, 1, '2019-06-11 11:40:02', '2017-07-06 12:52:01', 'Ontvlechten met microservice-architectuur', 20, NULL, NULL),
-(5, 3, 1, '2019-10-18 14:08:52', '2017-07-20 14:20:26', 'Faces online interview met Daan Schoofs', 21, NULL, NULL),
-(6, 5, 1, '2019-10-18 14:10:37', '2018-03-19 12:18:21', 'Online urenregistratie & planning voor jouw bedrijf', 22, NULL, NULL),
-(7, 5, 1, '2019-10-18 14:08:05', '2018-03-20 15:52:42', 'Kennismaken met David', 23, NULL, NULL),
-(8, 5, 1, '2019-10-02 14:40:53', '2019-10-02 14:35:01', 'Minimum Viable Product', 24, NULL, NULL),
-(9, 5, 1, '2019-05-24 14:16:21', '2018-04-03 12:48:49', 'Software kwaliteitscontrole', 25, NULL, NULL),
-(10, 5, 1, '2019-05-24 14:16:15', '2018-06-01 12:45:45', 'Verlies van tijd en geld door IT problemen', 26, NULL, NULL),
-(11, 5, 1, '2019-09-27 08:58:52', '2019-09-26 09:07:42', 'Case – Personal Protein Webshop', 27, NULL, NULL),
-(12, 5, 1, '2019-06-13 11:46:19', '2018-06-20 09:49:19', 'Standaard of maatwerk software?', 28, NULL, NULL),
-(13, 5, 1, '2019-09-27 08:58:06', '2018-07-24 19:57:44', 'Onze redenen om te stoppen met Excel', 29, NULL, NULL),
-(14, 5, 1, '2019-05-28 06:19:27', '2018-09-21 12:07:30', 'DUODEKA Academy: De omscholing van Guido', 30, NULL, NULL),
-(15, 5, 1, '2019-10-18 22:25:10', '2018-10-03 18:58:51', 'Onze favoriete online tools', 31, NULL, NULL),
-(16, 5, 1, '2019-05-24 14:23:17', '2018-12-27 13:35:46', 'DUODEKA Fontys ICT Partner in Education', 32, NULL, NULL),
-(17, 5, 1, '2019-09-27 08:58:01', '2019-05-24 11:52:14', 'Business Model Canvas – Online concept validatie', 33, NULL, NULL),
-(18, 5, 1, '2019-09-27 08:57:57', '2019-05-24 12:20:38', 'Online verdienmodellen – Begin met online ondernemen', 34, NULL, NULL),
-(19, 5, 1, '2019-09-27 08:58:42', '2019-06-28 09:40:36', 'Case – Photo Booth software Red Panda', 35, NULL, NULL),
-(20, 5, 1, '2019-09-27 08:58:45', '2019-07-01 09:47:59', 'Case – Roosterapplicatie voor het EBT carrière evenement', 36, NULL, NULL),
-(21, 5, 1, '2019-10-02 14:37:42', '2019-07-22 10:49:08', 'De Lean Startup Methode', 37, NULL, NULL),
-(22, 5, 1, '2019-10-21 06:58:25', '2019-08-14 10:58:06', 'Case – Concept validatie online gaming platform', 38, NULL, NULL),
-(23, 11, 1, '2019-10-21 06:58:25', '2019-08-14 10:58:06', 'DUODEKA dag 2019', 40, NULL, NULL);
+INSERT INTO `creative_work` (`id`, `author_id`, `date_modified`, `date_published`, `headline`, `publisher_id`, `thing_id`, `created_at`, `updated_at`) VALUES
+(1, 4, '2019-11-12 15:29:42', '2019-11-12 13:15:14', 'Hackathon Tilburg groot succes', 1, 17, NULL, NULL),
+(2, 1, '2019-05-24 14:28:25', '2016-10-12 12:12:56', 'DUODEKA partner van MeteorJS', 1, 18, NULL, NULL),
+(3, 5, '2019-10-18 14:14:08', '2017-01-21 13:56:00', 'Maak kennis met Joey', 1, 19, NULL, NULL),
+(4, 1, '2019-06-11 11:40:02', '2017-07-06 12:52:01', 'Ontvlechten met microservice-architectuur', 1, 20, NULL, NULL),
+(5, 3, '2019-10-18 14:08:52', '2017-07-20 14:20:26', 'Faces online interview met Daan Schoofs', 1, 21, NULL, NULL),
+(6, 5, '2019-10-18 14:10:37', '2018-03-19 12:18:21', 'Online urenregistratie & planning voor jouw bedrijf', 1, 22, NULL, NULL),
+(7, 5, '2019-10-18 14:08:05', '2018-03-20 15:52:42', 'Kennismaken met David', 1, 23, NULL, NULL),
+(8, 5, '2019-10-02 14:40:53', '2019-10-02 14:35:01', 'Minimum Viable Product', 1, 24, NULL, NULL),
+(9, 5, '2019-05-24 14:16:21', '2018-04-03 12:48:49', 'Software kwaliteitscontrole', 1, 25, NULL, NULL),
+(10, 5, '2019-05-24 14:16:15', '2018-06-01 12:45:45', 'Verlies van tijd en geld door IT problemen', 1, 26, NULL, NULL),
+(11, 5, '2019-09-27 08:58:52', '2019-09-26 09:07:42', 'Case – Personal Protein Webshop', 1, 27, NULL, NULL),
+(12, 5, '2019-06-13 11:46:19', '2018-06-20 09:49:19', 'Standaard of maatwerk software?', 1, 28, NULL, NULL),
+(13, 5, '2019-09-27 08:58:06', '2018-07-24 19:57:44', 'Onze redenen om te stoppen met Excel', 1, 29, NULL, NULL),
+(14, 5, '2019-05-28 06:19:27', '2018-09-21 12:07:30', 'DUODEKA Academy: De omscholing van Guido', 1, 30, NULL, NULL),
+(15, 5, '2019-10-18 22:25:10', '2018-10-03 18:58:51', 'Onze favoriete online tools', 1, 31, NULL, NULL),
+(16, 5, '2019-05-24 14:23:17', '2018-12-27 13:35:46', 'DUODEKA Fontys ICT Partner in Education', 1, 32, NULL, NULL),
+(17, 5, '2019-09-27 08:58:01', '2019-05-24 11:52:14', 'Business Model Canvas – Online concept validatie', 1, 33, NULL, NULL),
+(18, 5, '2019-09-27 08:57:57', '2019-05-24 12:20:38', 'Online verdienmodellen – Begin met online ondernemen', 1, 34, NULL, NULL),
+(19, 5, '2019-09-27 08:58:42', '2019-06-28 09:40:36', 'Case – Photo Booth software Red Panda', 1, 35, NULL, NULL),
+(20, 5, '2019-09-27 08:58:45', '2019-07-01 09:47:59', 'Case – Roosterapplicatie voor het EBT carrière evenement', 1, 36, NULL, NULL),
+(21, 5, '2019-10-02 14:37:42', '2019-07-22 10:49:08', 'De Lean Startup Methode', 1, 37, NULL, NULL),
+(22, 5, '2019-10-21 06:58:25', '2019-08-14 10:58:06', 'Case – Concept validatie online gaming platform', 1, 38, NULL, NULL),
+(23, 11, '2019-10-21 06:58:25', '2019-08-14 10:58:06', 'DUODEKA dag 2019', 1, 40, NULL, NULL);
 
 --
 -- Dumping data for table `employee`
@@ -267,36 +274,36 @@ INSERT INTO `job_posting` (`id`, `base_salary_id`, `date_posted`, `employment_ty
 -- Dumping data for table `list_item`
 --
 
-INSERT INTO `list_item` (`id`, `list_id`, `list_type`, `position`, `item_id`, `item_type`, `created_at`, `updated_at`) VALUES
-(5, 1, 'item_list', 2, 2, 'App\\Models\\BlogPosting', NULL, NULL),
-(6, 1, 'item_list', 3, 9, 'App\\Models\\BlogPosting', NULL, NULL),
-(7, 1, 'item_list', 4, 12, 'App\\Models\\BlogPosting', NULL, NULL),
-(8, 1, 'item_list', 5, 23, 'App\\Models\\BlogPosting', NULL, NULL),
-(9, 1, 'item_list', 6, 22, 'App\\Models\\BlogPosting', NULL, NULL),
-(10, 1, 'item_list', 7, 21, 'App\\Models\\BlogPosting', NULL, NULL),
-(11, 1, 'item_list', 8, 20, 'App\\Models\\BlogPosting', NULL, NULL),
-(12, 1, 'item_list', 9, 19, 'App\\Models\\BlogPosting', NULL, NULL),
-(13, 1, 'item_list', 10, 18, 'App\\Models\\BlogPosting', NULL, NULL),
-(14, 1, 'item_list', 11, 17, 'App\\Models\\BlogPosting', NULL, NULL),
-(15, 1, 'item_list', 13, 15, 'App\\Models\\BlogPosting', NULL, NULL),
-(16, 1, 'item_list', 14, 14, 'App\\Models\\BlogPosting', NULL, NULL),
-(17, 1, 'item_list', 15, 13, 'App\\Models\\BlogPosting', NULL, NULL),
-(18, 1, 'item_list', 12, 16, 'App\\Models\\BlogPosting', NULL, NULL),
-(19, 1, 'item_list', 17, 10, 'App\\Models\\BlogPosting', NULL, NULL),
-(20, 1, 'item_list', 16, 11, 'App\\Models\\BlogPosting', NULL, NULL),
-(21, 1, 'item_list', 18, 8, 'App\\Models\\BlogPosting', NULL, NULL),
-(22, 1, 'item_list', 19, 7, 'App\\Models\\BlogPosting', NULL, NULL),
-(23, 1, 'item_list', 20, 6, 'App\\Models\\BlogPosting', NULL, NULL),
-(24, 1, 'item_list', 21, 5, 'App\\Models\\BlogPosting', NULL, NULL),
-(25, 1, 'item_list', 22, 4, 'App\\Models\\BlogPosting', NULL, NULL),
-(26, 1, 'item_list', 23, 3, 'App\\Models\\BlogPosting', NULL, NULL),
-(27, 1, 'breadcrumb_list', 1, 1, 'App\\Models\\Thing', NULL, NULL),
-(28, 2, 'breadcrumb_list', 1, 1, 'App\\Models\\Thing', NULL, NULL),
-(29, 2, 'breadcrumb_list', 2, 39, 'App\\Models\\Thing', NULL, NULL),
-(30, 3, 'breadcrumb_list', 1, 1, 'App\\Models\\Thing', NULL, NULL),
-(31, 3, 'breadcrumb_list', 2, 39, 'App\\Models\\Thing', NULL, NULL),
-(32, 3, 'breadcrumb_list', 3, 37, 'App\\Models\\Thing', NULL, NULL),
-(33, 1, 'item_list', 1, 24, 'App\\Models\\BlogPosting', NULL, NULL);
+INSERT INTO `list_item` (`id`, `list_id`, `list_type`, `item_id`, `item_type`, `position`, `created_at`, `updated_at`) VALUES
+(5, 1, 'item_list', 2, 'App\\Models\\BlogPosting', 2, NULL, NULL),
+(6, 1, 'item_list', 9, 'App\\Models\\BlogPosting', 3, NULL, NULL),
+(7, 1, 'item_list', 12, 'App\\Models\\BlogPosting', 4, NULL, NULL),
+(8, 1, 'item_list', 23, 'App\\Models\\BlogPosting', 5, NULL, NULL),
+(9, 1, 'item_list', 22, 'App\\Models\\BlogPosting', 6, NULL, NULL),
+(10, 1, 'item_list', 21, 'App\\Models\\BlogPosting', 7, NULL, NULL),
+(11, 1, 'item_list', 20, 'App\\Models\\BlogPosting', 8, NULL, NULL),
+(12, 1, 'item_list', 19, 'App\\Models\\BlogPosting', 9, NULL, NULL),
+(13, 1, 'item_list', 18, 'App\\Models\\BlogPosting', 10, NULL, NULL),
+(14, 1, 'item_list', 17, 'App\\Models\\BlogPosting', 11, NULL, NULL),
+(15, 1, 'item_list', 15, 'App\\Models\\BlogPosting', 13, NULL, NULL),
+(16, 1, 'item_list', 14, 'App\\Models\\BlogPosting', 14, NULL, NULL),
+(17, 1, 'item_list', 13, 'App\\Models\\BlogPosting', 15, NULL, NULL),
+(18, 1, 'item_list', 16, 'App\\Models\\BlogPosting', 12, NULL, NULL),
+(19, 1, 'item_list', 10, 'App\\Models\\BlogPosting', 17, NULL, NULL),
+(20, 1, 'item_list', 11, 'App\\Models\\BlogPosting', 16, NULL, NULL),
+(21, 1, 'item_list', 8, 'App\\Models\\BlogPosting', 18, NULL, NULL),
+(22, 1, 'item_list', 7, 'App\\Models\\BlogPosting', 19, NULL, NULL),
+(23, 1, 'item_list', 6, 'App\\Models\\BlogPosting', 20, NULL, NULL),
+(24, 1, 'item_list', 5, 'App\\Models\\BlogPosting', 21, NULL, NULL),
+(25, 1, 'item_list', 4, 'App\\Models\\BlogPosting', 22, NULL, NULL),
+(26, 1, 'item_list', 3, 'App\\Models\\BlogPosting', 23, NULL, NULL),
+(27, 1, 'breadcrumb_list', 1, 'App\\Models\\Thing', 1, NULL, NULL),
+(28, 2, 'breadcrumb_list', 1, 'App\\Models\\Thing', 1, NULL, NULL),
+(29, 2, 'breadcrumb_list', 39, 'App\\Models\\Thing', 2, NULL, NULL),
+(30, 3, 'breadcrumb_list', 1, 'App\\Models\\Thing', 1, NULL, NULL),
+(31, 3, 'breadcrumb_list', 39, 'App\\Models\\Thing', 2, NULL, NULL),
+(32, 3, 'breadcrumb_list', 37, 'App\\Models\\Thing', 3, NULL, NULL),
+(33, 1, 'item_list', 24, 'App\\Models\\BlogPosting', 1, NULL, NULL);
 
 --
 -- Dumping data for table `local_business`
@@ -331,18 +338,18 @@ INSERT INTO `organization` (`id`, `address_id`, `email`, `legal_name`, `location
 -- Dumping data for table `person`
 --
 
-INSERT INTO `person` (`id`, `additional_name`, `address_id`, `email`, `family_name`, `given_name`, `telephone`, `thing_id`, `created_at`, `updated_at`) VALUES
-(1, '', 0, 'koen@duodeka.nl', 'Lavrijssen', 'Koen', '622783833', 2, NULL, NULL),
-(2, 'van de', 0, 'rik@doodeka.nl', 'Looi', 'Rik', '620992844', 3, NULL, NULL),
-(3, '', 0, 'daan@duodeka.nl', 'Schoofs', 'Daan', '653586900', 4, NULL, NULL),
-(4, '', 0, 'dion@duodeka.nl', 'Duimel', 'Dion', '644810461', 5, NULL, NULL),
-(5, '', 0, 'david@duodeka.nl', 'Schulpen', 'David', '', 6, NULL, NULL),
-(6, '', 0, 'emiel@duodeka.nl', 'Popelier', 'Emiel', '651269639', 7, NULL, NULL),
-(7, '', 0, 'joey@duodeka.nl', 'Maas', 'Joey', '643720659', NULL, NULL, NULL),
-(8, '', 0, 'sven@duodeka.nl', 'Zahharov', 'Sven', '613782844', 8, NULL, NULL),
-(9, 'de', 0, 'thijs@mrwinston.nl', 'Jong', 'Thijs', '644870767', 9, NULL, NULL),
-(10, 'van', 0, 'wesley@mrwinston.nl', 'Bergen', 'Wesley', '642577524', 10, NULL, NULL),
-(11, 'de', 1, '', 'Bont', 'Karlijn', '', NULL, NULL, NULL);
+INSERT INTO `person` (`id`, `additional_name`, `address_id`, `birth_date`, `email`, `family_name`, `given_name`, `telephone`, `thing_id`, `created_at`, `updated_at`) VALUES
+(1, '', 0, NULL, 'koen@duodeka.nl', 'Lavrijssen', 'Koen', '622783833', 2, NULL, NULL),
+(2, 'van de', 0, NULL, 'rik@doodeka.nl', 'Looi', 'Rik', '620992844', 3, NULL, NULL),
+(3, '', 0, NULL, 'daan@duodeka.nl', 'Schoofs', 'Daan', '653586900', 4, NULL, NULL),
+(4, '', 0, NULL, 'dion@duodeka.nl', 'Duimel', 'Dion', '644810461', 5, NULL, NULL),
+(5, '', 0, NULL, 'david@duodeka.nl', 'Schulpen', 'David', '', 6, NULL, NULL),
+(6, '', 0, NULL, 'emiel@duodeka.nl', 'Popelier', 'Emiel', '651269639', 7, NULL, NULL),
+(7, '', 0, NULL, 'joey@duodeka.nl', 'Maas', 'Joey', '643720659', NULL, NULL, NULL),
+(8, '', 0, NULL, 'sven@duodeka.nl', 'Zahharov', 'Sven', '613782844', 8, NULL, NULL),
+(9, 'de', 0, NULL, 'thijs@mrwinston.nl', 'Jong', 'Thijs', '644870767', 9, NULL, NULL),
+(10, 'van', 0, NULL, 'wesley@mrwinston.nl', 'Bergen', 'Wesley', '642577524', 10, NULL, NULL),
+(11, 'de', 1, NULL, '', 'Bont', 'Karlijn', '', NULL, NULL, NULL);
 
 --
 -- Dumping data for table `place`
@@ -355,8 +362,8 @@ INSERT INTO `place` (`id`, `address_id`, `geo_id`, `created_at`, `updated_at`) V
 -- Dumping data for table `postal_address`
 --
 
-INSERT INTO `postal_address` (`id`, `address_country`, `address_locality`, `address_region`, `post_office_box_number`, `postal_code`, `street_address`, `created_at`, `updated_at`) VALUES
-(1, 'NL', 'Tilburg', 'NB', NULL, '5017HR', 'Tivolistraat 50-52', NULL, NULL);
+INSERT INTO `postal_address` (`id`, `address_country`, `address_locality`, `address_region`, `post_office_box_number`, `postal_code`, `street_address`, `contact_point_id`, `created_at`, `updated_at`) VALUES
+(1, 'NL', 'Tilburg', 'NB', NULL, '5017HR', 'Tivolistraat 50-52', NULL, NULL, NULL);
 
 --
 -- Dumping data for table `potential_action _google`

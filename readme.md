@@ -134,7 +134,7 @@ php artisan code:models
         - [PropertyValueSpecification](https://schema.org/PropertyValueSpecification)
         - [Role](https://schema.org/Role)
         - StructuredValue
-            - ContactPoint
+            - [ContactPoint](https://schema.org/ContactPoint)
                 - [PostalAddress](https://schema.org/PostalAddress)
             - [GeoCoordinates](https://schema.org/GeoCoordinates)
             - [MonetaryAmount](https://schema.org/MonetaryAmount)

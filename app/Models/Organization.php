@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Models\Traits\JsonLd;
 use App\Models\Traits\sameAs;
 use App\Models\Traits\telephone;
+use Spatie\SchemaOrg\Schema;
 
 class Organization extends \App\Models\Base\Organization
 {
@@ -22,6 +23,24 @@ class Organization extends \App\Models\Base\Organization
 
 	public function getSchemaOrgSchemaAttribute()
 	{
+		$contactPoint = [];
+		foreach($this->contact_points()->get() as $contact_point) {
+			$contactPoint[] = Schema::ContactPoint()
+				->contactType($contact_point->contact_type)
+				->email($contact_point->email)
+			;
+		}
+		$openingHoursSpecification = [];
+		if($this->place) {
+			foreach($this->place->opening_hours_specifications()->get() as $opening_hours_specification) {
+				$dayOfWeek = strpos($opening_hours_specification->day_of_week,',') ? explode(',',$opening_hours_specification->day_of_week) : $opening_hours_specification->day_of_week;
+				$openingHoursSpecification[] = Schema::OpeningHoursSpecification()
+					->closes($opening_hours_specification->closes)
+					->opens($opening_hours_specification->opens)
+					->dayOfWeek($dayOfWeek);
+			}
+		}
+
 		// employees and founders
 		$employeesSchemas = $this->getSchemaOrgPersonsHavingRole('employees', 'schema_org_schema');
 		// @todo should i call schema_org_schema schema_org_embedded ?
@@ -46,6 +65,7 @@ class Organization extends \App\Models\Base\Organization
 
 		return $this->getSchemaOrgNodeIdentifierSchemaAttribute('Organization', true)
 			->address($postalAddressSchema)
+			->contactPoint($contactPoint)	// optional
 			->email($email)
 			->employees($employeesSchemas)
 			->founders($foundersSchemas)
@@ -88,5 +108,10 @@ class Organization extends \App\Models\Base\Organization
 	public function founders()
 	{
 		return $this->hasMany(\App\Models\Founder::class);
+	}
+    
+    public function contact_points()
+	{
+        return $this->morphMany(\App\Models\ContactPoint::class, 'owner');
 	}
 }

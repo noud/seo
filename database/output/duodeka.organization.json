@@ -1,4 +1,3 @@
-
 {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -11,14 +10,38 @@
         "addressLocality": "Tilburg",
         "addressCountry": "NL"
     },
+    "contactPoint": [
+        {
+            "@type": "ContactPoint",
+            "contactType": "Support",
+            "email": "support@duodeka.nl"
+        }
+    ],
     "email": "info@duodeka.nl",
     "employees": [
+        {
+            "@type": "Person",
+            "@id": "https://www.linkedin.com/in/david-schulpen/#person",
+            "url": "https://www.linkedin.com/in/david-schulpen",
+            "email": "david@duodeka.nl",
+            "familyName": "Schulpen",
+            "givenName": "David"
+        },
         {
             "@type": "Person",
             "email": "joey@duodeka.nl",
             "familyName": "Maas",
             "givenName": "Joey",
             "telephone": "+31 6 4372 0659"
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.linkedin.com/in/sven-zahharov-a82507158/#person",
+            "url": "https://www.linkedin.com/in/sven-zahharov-a82507158",
+            "email": "sven@duodeka.nl",
+            "familyName": "Zahharov",
+            "givenName": "Sven",
+            "telephone": "+31 6 1378 2844"
         },
         {
             "@type": "Person",

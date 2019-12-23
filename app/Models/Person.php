@@ -25,6 +25,7 @@ class Person extends \App\Models\Base\Person
 
 		return $this->getSchemaOrgNodeIdentifierSchemaAttribute('Person', true)
 			->additionalName($additional_name)
+			->birthDate($this->birth_date)	// optional
 			->email($this->email)
 			->familyName($this->family_name)
 			->givenName($this->given_name)

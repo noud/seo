@@ -83,8 +83,8 @@
                 "y": 363
             },
             "3rd2qr": {
-                "x": 845,
-                "y": 974
+                "x": 836,
+                "y": 933
             },
             "07jqi": {
                 "x": 561,
@@ -193,6 +193,10 @@
             "ae9zp8": {
                 "x": 558,
                 "y": 1158
+            },
+            "4fem9": {
+                "x": 1103,
+                "y": 1085
             }
         }
     },
@@ -455,6 +459,13 @@
             "color": "table-header-green",
             "softDelete": false,
             "timeStamp": true
+        },
+        {
+            "id": "4fem9",
+            "name": "contact_point",
+            "color": "table-header-green",
+            "softDelete": false,
+            "timeStamp": true
         }
     ],
     "columns": {
@@ -525,6 +536,29 @@
                     "on": {
                         "id": "3rd2qr",
                         "name": "postal_address"
+                    }
+                }
+            },
+            {
+                "id": "rdenrb",
+                "name": "birth_date",
+                "type": "dateTime",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
                     }
                 }
             },
@@ -1509,6 +1543,29 @@
                     "on": {
                         "id": "",
                         "name": ""
+                    }
+                }
+            },
+            {
+                "id": "m49ee",
+                "name": "contact_point_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": true,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "fhpjzi",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "4fem9",
+                        "name": "contact_point"
                     }
                 }
             }
@@ -2981,29 +3038,6 @@
                 }
             },
             {
-                "id": "g799e",
-                "name": "publisher_id",
-                "type": "bigInteger",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": false,
-                "unique": false,
-                "index": true,
-                "unsigned": true,
-                "foreignKey": {
-                    "references": {
-                        "id": "ull9k",
-                        "name": "id"
-                    },
-                    "on": {
-                        "id": "mure2o",
-                        "name": "organization"
-                    }
-                }
-            },
-            {
                 "id": "be30dn",
                 "name": "date_modified",
                 "type": "dateTime",
@@ -3069,6 +3103,29 @@
                     "on": {
                         "id": "",
                         "name": ""
+                    }
+                }
+            },
+            {
+                "id": "g799e",
+                "name": "publisher_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "ull9k",
+                        "name": "id"
+                    },
+                    "on": {
+                        "id": "mure2o",
+                        "name": "organization"
                     }
                 }
             },
@@ -3263,29 +3320,6 @@
                 }
             },
             {
-                "id": "ebly1r",
-                "name": "position",
-                "type": "integer",
-                "length": "",
-                "defValue": "",
-                "comment": "",
-                "autoInc": false,
-                "nullable": false,
-                "unique": false,
-                "index": false,
-                "unsigned": false,
-                "foreignKey": {
-                    "references": {
-                        "id": "",
-                        "name": ""
-                    },
-                    "on": {
-                        "id": "",
-                        "name": ""
-                    }
-                }
-            },
-            {
                 "id": "nng6s8",
                 "name": "item_id",
                 "type": "bigInteger",
@@ -3317,6 +3351,29 @@
                 "comment": "",
                 "autoInc": false,
                 "nullable": true,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "ebly1r",
+                "name": "position",
+                "type": "integer",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
                 "unique": false,
                 "index": false,
                 "unsigned": false,
@@ -3541,6 +3598,146 @@
                     "on": {
                         "id": "07jqi",
                         "name": "place"
+                    }
+                }
+            }
+        ],
+        "4fem9": [
+            {
+                "id": "fhpjzi",
+                "name": "id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": true,
+                "nullable": false,
+                "unique": true,
+                "index": true,
+                "unsigned": true,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "2bmi8n",
+                "name": "contact_type",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "iowo0q",
+                "name": "email",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "4ypco7",
+                "name": "telephone",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "6aadc",
+                "name": "owner_id",
+                "type": "bigInteger",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
+                    }
+                }
+            },
+            {
+                "id": "puwksb",
+                "name": "owner_type",
+                "type": "string",
+                "length": "",
+                "defValue": "",
+                "comment": "",
+                "autoInc": false,
+                "nullable": false,
+                "unique": false,
+                "index": false,
+                "unsigned": false,
+                "foreignKey": {
+                    "references": {
+                        "id": "",
+                        "name": ""
+                    },
+                    "on": {
+                        "id": "",
+                        "name": ""
                     }
                 }
             }
@@ -3945,6 +4142,16 @@
             "target": {
                 "columnId": "36ildg",
                 "tableId": "07jqi"
+            }
+        },
+        {
+            "source": {
+                "columnId": "m49ee",
+                "tableId": "3rd2qr"
+            },
+            "target": {
+                "columnId": "fhpjzi",
+                "tableId": "4fem9"
             }
         }
     ]
