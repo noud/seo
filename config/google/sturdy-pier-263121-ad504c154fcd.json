@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sturdy-pier-263121",
+  "private_key_id": "ad504c154fcdc2292e3ab942ac559e4a6bb9d93f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDW2cg9beN4o4xD\ntNyRtCYhuSu8xDoJt6yUC4+FatQmVsGR8W9ZNgX+8vS4U7ItTUWrLk0i7FfRgtvQ\n8NNzW/nZXEjIS5uF3/eFjorwF0b5goislujnTBwlAOpaGvv6m37JXPm7aGqG9ktP\n+2H+wCSHJYAoKiCRJeUzMPzBZH7lXLHi6HFZGrEmvRNRf8tKTYFlq9HaZ+CbXc2w\n248ZzjfzAzIP4WZVxm+kIZEMon1W0brrns5MDCbHGNiHEqZbh5EOmPEBAXeCySgV\nvE3ji0k8ZELDO54+uSzmwuIpBj9zVUSpz/7+iqgdLt88WvPeEWgv+zGbPERGzxZq\nMjlF2KT5AgMBAAECggEANFiwZGMjMm/qi06EFQ3m4n2Krf3DRD3XkuR0LeX21XZ6\nyBOidQJoGJNaU5S0yzvR9yCbU6Bwzw+KfhBG/IrSx4YoB4EAXfBRDt3JdTC+rqkC\nosZL7ZrKGqvr7VM4xHjhPa9k+ye4GLTmaZDOcfKfk7vryx1kfOjWPJA5bOcO0dO/\nC9Y5PhLQunf2L7MWqKTybivmCagm5ViHZ4/kVp6eOhbLHQRsmtFAbtAmUM9wTvvE\n69XNntOMM9BTkXFagXSm0Ogih1nGE9kGUif2lw6srDrWKnLn4TJIk5JcykhgUN+y\nFrdtES7L7pJNWr2kLAN+PH1kZ/Rl2cY4RUxNYivKhwKBgQDtEfoEt7c0KJILqnHo\n8zYTsG5CtxCi9xC946onw6lV9JUwexyd8j1R18IFNKFLibP6z8dc9JewKMIdXjxq\n3bQjYrXLsMZtdEWGuI6PxlfHAIsiHVXKpsxj44UgjCHyOfvaywqT6wHJKVn/g+Ax\nxg/nMF3EUTT/5L0B1PfCFdosBwKBgQDoAZwiy7KYmrkZmTKb58iiozj8ixvIfeuW\ndSU4cvabdIygCLUkG3SbUwNt2PRbyrGtKiOXEnrqfwCvqvl07mVicI8/lT736fVS\nk7mVLr6envgm9+McnLVCkusFv7pXxPoJUtCMX8u1dllR87QyPTTwvNx+IDXosrab\nGpgXxSRm/wKBgQDX1S/8r435zJ36RPlkDllDX7Nixew9khYJ64X0oew/N2fENbF+\nExbEtlwMBTh73yiexiBJft3DIbhoqGz1Fld0h9/fTFe7Oso5tzkDqJ4trU7+hhqf\nX3Bh2LhRQ4N8VlH3hjdhJ+n+TMmFGXk5l4rO/ne/zfckqglx64SNjPuObQKBgQCp\n1dvdYO4JZmIPyiTRGji2TfP+czrQZtVZ28F2dDnwjL4QvK8Vkn+m4HsHI6WluFie\nodVR1vZhyLzQ28EnBwjyqeFDM1bYFs0+OOPGwGRMK6UOqbH4lQLfjDs9hx+69nfu\n8U+3Ir01xkAWjOchS8sAW9CxB5VPFdw06J/j7q36MwKBgQCt+wbKQKwMZHQNfl5z\n7y3KnUyTId7WxXPOwvgiOYrbEZRZnvE7mQupexKRuMPN+XqkwdsIYnUqBxgGPLW1\nKzMLbnA8JTppltT84HOFgn1uVqXHL3EJPez91xo8JNxdxpvuGqbN1OZzNF4OqRzt\nPp+xdieg9ajuUL386DJXEex1XA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "seo-jobpostings@sturdy-pier-263121.iam.gserviceaccount.com",
+  "client_id": "104280483525511698031",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/seo-jobpostings%40sturdy-pier-263121.iam.gserviceaccount.com"
+}
