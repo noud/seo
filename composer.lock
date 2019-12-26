@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b0785b13b7b91f07ae1b1a100e70afa",
+    "content-hash": "631cb5ec9b07d3a70befcca2e699e269",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1346,6 +1346,35 @@
                 "php"
             ],
             "time": "2019-11-08T13:50:10+00:00"
+        },
+        {
+            "name": "noud/laravel-google-indexing-api",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../laravel-google-indexing-api",
+                "reference": "a7c611f71bccf75b5613e715cb85b84e722ec968"
+            },
+            "require": {
+                "php": ">=7.2.0",
+                "pulkitjalan/google-apiclient": "^4.0@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GoogleIndexing\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Noud de Brouwer",
+                    "email": "noud4@home.nl"
+                }
+            ],
+            "description": "Laravel Google Indexing API"
         },
         {
             "name": "opis/closure",
@@ -5994,6 +6023,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "noud/laravel-google-indexing-api": 20,
         "noud/schema": 20,
         "noud/schema-builder": 20
     },

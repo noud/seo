@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\JobPosting;
-use App\Services\Google\IndexingService;
+use GoogleIndexing\Services\IndexingService;
 
 class GoogleIndexingController extends Controller
 {
