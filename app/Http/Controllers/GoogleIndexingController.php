@@ -25,10 +25,15 @@ class GoogleIndexingController extends Controller
         $this->publish($jobPosting->thing->url, "URL_DELETED");
     }
 
-    public function status(JobPosting $jobPosting)
+    public function statusURL(JobPosting $jobPosting)
+    {
+        $this->status($jobPosting->thing->url);
+    }
+
+    private function status(string $jobPostingURL)
     {
         $responce = $this->indexing->urlNotifications->getMetadata([
-            "url" => urlencode($jobPosting->thing->url)
+            "url" => urlencode($jobPostingURL)
         ]);
 
         dd($responce);

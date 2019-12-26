@@ -17,7 +17,7 @@ Route::prefix('google')->as('google.')->group(function () {
     Route::prefix('indexing')->as('indexing.')->group(function () {
         Route::get('update/{jobPosting}', 'GoogleIndexingController@updateURL')->name('update');
         Route::get('remove/{jobPosting}', 'GoogleIndexingController@removeURL')->name('remove');
-        Route::get('status/{jobPosting}', 'GoogleIndexingController@status')->name('status');
+        Route::get('status/{jobPosting}', 'GoogleIndexingController@statusURL')->name('status');
     });
 });
 
