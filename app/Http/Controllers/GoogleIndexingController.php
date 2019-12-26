@@ -14,7 +14,7 @@ class GoogleIndexingController extends Controller
     {
         $this->indexing = Google::make('indexing');
     }
-    
+
     public function updateURL(JobPosting $jobPosting)
     {
         $this->publish($jobPosting->thing->url, "URL_UPDATED");
@@ -44,7 +44,7 @@ class GoogleIndexingController extends Controller
         $urlNotification = new Google_Service_Indexing_UrlNotification();
         $urlNotification->setUrl($jobPostingURL);
         $urlNotification->setType($action);
-        
+
         $responce = $this->indexing->urlNotifications->publish($urlNotification);
 
         dd($responce);
