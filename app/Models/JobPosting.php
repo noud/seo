@@ -118,6 +118,11 @@ class JobPosting extends \App\Models\Base\JobPosting
 		;
 	}
 	
+	public function getUrlAttribute()
+	{
+		return $this->thing->url;
+	}
+	
 	public function base_salary()
 	{
 		return $this->monetary_amount();
