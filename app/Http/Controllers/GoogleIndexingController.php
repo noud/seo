@@ -31,8 +31,7 @@ class GoogleIndexingController extends Controller
             "url" => urlencode($jobPosting->thing->url)
         ]);
 
-        dump($responce);
-        dd($indexing);
+        dd($responce);
     }
 
     private function publish(string $jobPostingURL, string $action)
@@ -43,7 +42,6 @@ class GoogleIndexingController extends Controller
         
         $responce = $this->indexing->urlNotifications->publish($urlNotification);
 
-        dump($responce);
-        dd($indexing);
+        dd($responce);
     }
 }
