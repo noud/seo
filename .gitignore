@@ -1,3 +1,5 @@
+config/google/*
+
 # generated
 /app/Models/Base/*
 /database/migrations/*
