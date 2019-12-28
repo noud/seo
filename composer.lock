@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbe57cf6d7648c2d35fcd759bfc19d62",
+    "content-hash": "234403a5ab64caef7a981ad7422c776f",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1349,16 +1349,16 @@
         },
         {
             "name": "noud/laravel-google-indexing-api",
-            "version": "v1.0.1",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/noud/laravel-google-indexing-api.git",
-                "reference": "8833398c5c750a96b22fb7108de86a53605cdd76"
+                "reference": "b8505a29e12ed5cb4e9824d18c9f0b57fee7d163"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/noud/laravel-google-indexing-api/zipball/8833398c5c750a96b22fb7108de86a53605cdd76",
-                "reference": "8833398c5c750a96b22fb7108de86a53605cdd76",
+                "url": "https://api.github.com/repos/noud/laravel-google-indexing-api/zipball/b8505a29e12ed5cb4e9824d18c9f0b57fee7d163",
+                "reference": "b8505a29e12ed5cb4e9824d18c9f0b57fee7d163",
                 "shasum": ""
             },
             "require": {
@@ -1366,6 +1366,13 @@
                 "pulkitjalan/google-apiclient": "^4.0@dev"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "GoogleIndexing\\Providers\\IndexingServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "GoogleIndexing\\": "src/"
@@ -1382,7 +1389,7 @@
                 }
             ],
             "description": "Laravel Google Search Indexing API",
-            "time": "2019-12-26T18:11:30+00:00"
+            "time": "2019-12-28T16:49:13+00:00"
         },
         {
             "name": "opis/closure",

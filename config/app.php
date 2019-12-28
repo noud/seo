@@ -169,7 +169,6 @@ return [
         Dfba\Schema\Laravel\SchemaServiceProvider::class,
         Reliese\Coders\CodersServiceProvider::class,
         Stolz\SchemaSpy\ServiceProvider::class,
-        PulkitJalan\Google\GoogleServiceProvider::class,
    
         /*
          * Application Service Providers...
@@ -211,7 +210,6 @@ return [
         'Event' => Illuminate\Support\Facades\Event::class,
         'File' => Illuminate\Support\Facades\File::class,
         'Gate' => Illuminate\Support\Facades\Gate::class,
-        'Google' => PulkitJalan\Google\Facades\Google::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
