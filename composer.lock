@@ -1064,16 +1064,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.62",
+            "version": "1.0.63",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0"
+                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0",
-                "reference": "14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8132daec326565036bc8e8d1876f77ec183a7bd6",
+                "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6",
                 "shasum": ""
             },
             "require": {
@@ -1144,7 +1144,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-12-29T14:46:55+00:00"
+            "time": "2020-01-04T16:30:31+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1392,16 +1392,16 @@
         },
         {
             "name": "noud/laravel-slug",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/noud/laravel-slug.git",
-                "reference": "d20eab5543e8944675a75b29b9d5d1c67d7604e3"
+                "reference": "475fe60b43057fde5d6f10b61f248855b57086e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/noud/laravel-slug/zipball/d20eab5543e8944675a75b29b9d5d1c67d7604e3",
-                "reference": "d20eab5543e8944675a75b29b9d5d1c67d7604e3",
+                "url": "https://api.github.com/repos/noud/laravel-slug/zipball/475fe60b43057fde5d6f10b61f248855b57086e9",
+                "reference": "475fe60b43057fde5d6f10b61f248855b57086e9",
                 "shasum": ""
             },
             "require": {
@@ -1432,7 +1432,7 @@
                 }
             ],
             "description": "Laravel SEO Slug",
-            "time": "2020-01-04T16:01:25+00:00"
+            "time": "2020-01-04T18:42:25+00:00"
         },
         {
             "name": "opis/closure",

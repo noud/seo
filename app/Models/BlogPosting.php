@@ -16,7 +16,7 @@ class BlogPosting extends \App\Models\Base\BlogPosting
     protected $fillable = [
         'article_id'
     ];
-	
+
 	public function generateSlug() {
 		$urlParts = explode('/', $this->url);
 		end($urlParts);
