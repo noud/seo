@@ -4,7 +4,7 @@ namespace App\Models;
 
 use App\Models\Traits\JsonLd;
 use App\Models\Traits\sameAs;
-use App\Models\Traits\Slug;
+use SEO\Models\Traits\Slug;
 use Spatie\SchemaOrg\Schema;
 
 class JobPosting extends \App\Models\Base\JobPosting
