@@ -1,0 +1,43 @@
+{
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "@id": {
+        "@type": "PropertyValue",
+        "value": "http://duodeka.nl/?post_type=job_listing&\r\np=3713",
+        "name": "DUODEKA"
+    },
+    "url": "https://duodeka.nl/vacature/english-full-stack-developer-in-tilburg/",
+    "baseSalary": {
+        "@type": "MonetaryAmount",
+        "currency": "EUR",
+        "value": {
+            "@type": "QuantitativeValue",
+            "unitText": "MONTH",
+            "value": 3250
+        }
+    },
+    "datePosted": "2019-10-01T00:00:00+00:00",
+    "employmentType": "FULL_TIME",
+    "hiringOrganization": {
+        "@type": "Organization",
+        "logo": "http://duodeka.nl/app/uploads/2018/11/duodeka-logo-blue.png",
+        "telephone": "+31 13 203 2264",
+        "url": "https://duodeka.nl",
+        "name": "DUODEKA"
+    },
+    "jobLocation": {
+        "@type": "Place",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Tivolistraat 50-52",
+            "addressLocality": "Tilburg",
+            "addressRegion": "NB",
+            "postalCode": "5017 HR",
+            "addressCountry": "NL"
+        }
+    },
+    "jobLocationType": "TELECOMMUTE",
+    "title": "Full-stack developer",
+    "description": "&lt;p&gt;DUODEKA is a Venture Builder started by IT entrepreneurs from Tilburg. We specialize in devising, validating and developing digital products, apps and platforms.&lt;\\/p&gt;\\n&lt;p&gt;Together with entrepreneurs, we develop digital products that are marketed as a separate company.&lt;\\/p&gt;\\n&lt;p&gt;On the one hand, we devise, develop and market our own digital concepts. On the other hand, we develop digital products for SME that digitally transform a business model.&lt;\\/p&gt;\\n&lt;p&gt;To strengthen our current team, we are looking for a (English) full-stack developer in Tilburg.&lt;\\/p&gt;\\n&lt;p&gt;&lt;strong&gt;Job description&lt;\\/strong&gt;&lt;br \\/&gt;\\nAs a (English) full-stack developer in Tilburg at DUODEKA you directly participate in a wide range of projects, including both customized assignments and our own SaaS products. You develop functionality based on the defined requirements and you are a valuable part of the development team. We mainly develop in Laravel or Meteor (backend) and React or Vue.js (frontend).&lt;\\/p&gt;\\n&lt;p&gt;In addition, we offer the opportunity to quickly grow into a management position (team lead, project manager) or to grow as a business analyst (intake, database design, requirements). In short, a lot of room for (software) development!&lt;\\/p&gt;\\n&lt;p&gt;&lt;em&gt;Do you like all\\u00a0 of this? Then read on!&lt;\\/em&gt;&lt;\\/p&gt;\\n&lt;p&gt;&lt;strong&gt;Our MoSCoW list (job requirements)&lt;\\/strong&gt;&lt;br \\/&gt;\\n&lt;em&gt;Must haves&lt;\\/em&gt;&lt;\\/p&gt;\\n&lt;ul&gt;\\n&lt;li&gt;Good command of the Dutch and English language&lt;\\/li&gt;\\n&lt;li&gt;A strong understanding of OOP within a modern MVC framework&lt;\\/li&gt;\\n&lt;li&gt;Experience with SQL (MySQL) or NoSQL (MongoDB) databases&lt;\\/li&gt;\\n&lt;li&gt;Experience with front-end JavaScript frameworks (React, Vue.js)&lt;\\/li&gt;\\n&lt;li&gt;Being able to solve problems independently&lt;\\/li&gt;\\n&lt;\\/ul&gt;\\n&lt;p&gt;&lt;em&gt;Should haves&lt;\\/em&gt;&lt;\\/p&gt;\\n&lt;ul&gt;\\n&lt;li&gt;Experience with GIT (or other VCS)&lt;\\/li&gt;\\n&lt;li&gt;Experience with API interfacing (GraphQL or REST)&lt;\\/li&gt;\\n&lt;li&gt;Understanding of commercial and business processes&lt;\\/li&gt;\\n&lt;\\/ul&gt;\\n&lt;p&gt;&lt;em&gt;(very) Nice to have&lt;\\/em&gt;&lt;br \\/&gt;\\nExperience with:&lt;\\/p&gt;\\n&lt;ul&gt;\\n&lt;li&gt;Laravel, MeteorJS&lt;\\/li&gt;\\n&lt;li&gt;Project management (tools such as JIRA)&lt;\\/li&gt;\\n&lt;li&gt;Database design, application structures and design patterns&lt;\\/li&gt;\\n&lt;li&gt;Translate customer wishes into concrete developments&lt;\\/li&gt;\\n&lt;\\/ul&gt;\\n&lt;p&gt;&lt;strong&gt;We offer&lt;\\/strong&gt;&lt;\\/p&gt;\\n&lt;ul&gt;\\n&lt;li&gt;Working in a young company consisting of digital entrepreneurs and programmers&lt;\\/li&gt;\\n&lt;li&gt;Working on custom projects and own SaaS products in the latest technologies&lt;\\/li&gt;\\n&lt;li&gt;A continuous focus on software development that supports (new) revenue models&lt;\\/li&gt;\\n&lt;li&gt;Working with ambitious colleagues who always want to learn new things&lt;\\/li&gt;\\n&lt;li&gt;Fast career opportunities as a project manager, team lead, business analyst and \\/ or product owner&lt;\\/li&gt;\\n&lt;li&gt;Lots of room for innovation, research and personal contribution&lt;\\/li&gt;\\n&lt;li&gt;Business laptop&lt;\\/li&gt;\\n&lt;li&gt;Every Friday: Vrijmibo&lt;\\/li&gt;\\n&lt;li&gt;LAN party events&lt;\\/li&gt;\\n&lt;\\/ul&gt;\\n&lt;p&gt;&lt;strong&gt;Job application&lt;\\/strong&gt;&lt;br \\/&gt;\\nAre you interested in this vacancy and does the profile of (English) full-stack developer in Tilburg suit you? Then we would love to hear from you. For more information you can contact Daan Schoofs via the telephone number &lt;strong&gt;06 535 869 00&lt;\\/strong&gt; or via email at &lt;strong&gt;daan@duodeka.nl&lt;\\/strong&gt;.&lt;\\/p&gt;\\n&lt;p&gt;&lt;strong&gt;About DUODEKA&lt;\\/strong&gt;&lt;br \\/&gt;\\nOur team has years of experience with web development (Laravel, Meteor, React, Vue.js) and entrepreneurship. Our team also has expertise in UX \\/ UI, sales and marketing.&lt;\\/p&gt;\\n&lt;p&gt;Do you find it cool to help companies take the next step in digital transformation and develop a new business? Then you have come to the right place. Our commercial software team mainly develops in PHP (Laravel) and Javascript (Meteor). For this we use frontend frameworks such as ReactJS and Vue.JS. Furthermore, we naturally work with programs such as JIRA, Git, Adobe XD, InVision and Visual Studio Code.&lt;\\/p&gt;\\n&lt;p&gt;If you want to know more about the projects in which you are going to work, have a look at &lt;a href=\\\"https:\\/\\/duodeka.nl\\\"&gt;https:\\/\\/duodeka.nl&lt;\\/a&gt;.&lt;\\/p&gt;\\n",
+    "name": "Full-stack developer in Tilburg"
+}

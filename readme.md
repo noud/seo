@@ -27,16 +27,16 @@ See the output
 
 ```chrome view-source: http://seo.localhost/```
 - [Article](https://developers.google.com/search/docs/data-types/article)
-    - [blog_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.blog_posting.2.json)
-    - [blog_posting/3/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.blog_posting.3.json)
+    - [blog_posting/hackathon-tilburg-groot-succes/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/hackathon-tilburg-groot-succes.json)
+    - [blog_posting/duodeka-official-meteor-partner/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka-official-meteor-partner.json)
 - [Breadcrumb](https://developers.google.com/search/docs/data-types/breadcrumb)
     - [breadcrumb/3/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.breadcrumb.3.json)
 - [Carousel](https://developers.google.com/search/docs/data-types/carousel)
     - [carousel/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.carousel.blog_posting.json)
     - [carousel_summary/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/blog_posting/duodeka.carousel.summary.blog_posting.json)
 - [Job Posting](https://developers.google.com/search/docs/data-types/job-posting)
-    - [job_posting/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.1.json)
-    - [job_posting/2/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.job_posting.2.json)
+    - [job_posting/english-frontend-developer-in-tilburg/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/job_posting/english-frontend-developer-in-tilburg.json)
+    - [job_posting/english-full-stack-developer-in-tilburg/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/job_posting/english-full-stack-developer-in-tilburg.json)
 - [Local Business Listing](https://developers.google.com/search/docs/data-types/local-business)
     - [local_business/1/schema_org](https://raw.githubusercontent.com/noud/seo/master/database/output/duodeka.local_business.json)
     - organization/2/schema_org
