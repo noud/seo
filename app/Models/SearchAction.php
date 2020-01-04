@@ -2,6 +2,9 @@
 
 namespace App\Models;
 
+use App\Models\Traits\JsonLd;
+use App\Models\Traits\sameAs;
+
 class SearchAction extends \App\Models\Base\SearchAction
 {
 	use JsonLd;

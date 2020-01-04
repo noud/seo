@@ -2,6 +2,7 @@ config/google/*
 
 # generated
 /app/Models/Base/*
+/app/Models/PasswordReset.php
 /database/migrations/*
 !/database/migrations/2019_12_31_175217_create_data_base_table_table.php
 !/database/migrations/2020_01_04_175217_sluged_tables.php

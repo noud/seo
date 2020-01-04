@@ -1392,16 +1392,16 @@
         },
         {
             "name": "noud/laravel-slug",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/noud/laravel-slug.git",
-                "reference": "475fe60b43057fde5d6f10b61f248855b57086e9"
+                "reference": "ca2321e760c6e9be2ad8c9e6b29c160ae23aff29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/noud/laravel-slug/zipball/475fe60b43057fde5d6f10b61f248855b57086e9",
-                "reference": "475fe60b43057fde5d6f10b61f248855b57086e9",
+                "url": "https://api.github.com/repos/noud/laravel-slug/zipball/ca2321e760c6e9be2ad8c9e6b29c160ae23aff29",
+                "reference": "ca2321e760c6e9be2ad8c9e6b29c160ae23aff29",
                 "shasum": ""
             },
             "require": {
@@ -1432,7 +1432,7 @@
                 }
             ],
             "description": "Laravel SEO Slug",
-            "time": "2020-01-04T18:42:25+00:00"
+            "time": "2020-01-04T21:12:18+00:00"
         },
         {
             "name": "opis/closure",
