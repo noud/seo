@@ -1,23 +1,23 @@
 config/google/*
 
 # generated
-/app/Models/Base/*
-/app/Models/PasswordReset.php
-/database/migrations/*
-!/database/migrations/2019_12_31_175217_create_data_base_table_table.php
-!/database/migrations/2020_01_04_175217_sluged_tables.php
-/public/schema-spy/*
+app/Models/Base/*
+app/Models/PasswordReset.php
+database/migrations/*
+!database/migrations/2019_12_31_175217_create_data_base_table_table.php
+!database/migrations/2020_01_04_175217_sluged_tables.php
+public/schema-spy/*
 
 # webpack
-/public/css/*
-/public/js/*
-/public/mix-manifest.json
+public/css/*
+public/js/*
+public/mix-manifest.json
 
-/node_modules
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
+node_modules
+public/hot
+public/storage
+storage/*.key
+vendor
 .env
 .env.backup
 .phpunit.result.cache
