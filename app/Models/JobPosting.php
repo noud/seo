@@ -4,20 +4,24 @@ namespace App\Models;
 
 use App\Models\Traits\JsonLd;
 use App\Models\Traits\sameAs;
+use App\Models\Traits\Slug;
 use Spatie\SchemaOrg\Schema;
 
 class JobPosting extends \App\Models\Base\JobPosting
 {
 	use JsonLd;
 	use sameAs;
+    use Slug;
 	
 	protected $fillable = [
-		'email',
-		'name',
-		'logo',
-		'telephone',
-		'url',
+		'title',
 	];
+	
+	public function generateSlug() {
+		$urlParts = explode('/', $this->url);
+		end($urlParts);
+		return prev($urlParts);
+	}
 
 	public function getSchemaOrgSchemaAttribute()
 	{

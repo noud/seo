@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "articleBody": "<p>DUODEKa is nu 1 van de 4 offici\u00eble Meteor partners in Nederland! Met Meteor bouwen we Javascript webapplicaties die zowel op computer als op mobiele apparaten werken (Android, iOS, Windows Phone). Lees hieronder meer over de werking van MeteorJS.</p>\r\n<h2>MeteorJS framework</h2>\r\n<p>Onze webapplicaties worden boven op het Meteor framework gebouwd. Met de bleeding-edge technologie van het framework zijn onze ontwikkelaars in staat om in een rap tempo applicaties te maken die op elk mobiel apparaat, en de browser, geopend kunnen worden. Uw prototype app kan in zelfs in enkele dagen al klaar zijn voor gebruik.</p>\r\n<p>Dankzij de flexibiliteit van Meteor is het ook mogelijk om na de oplevering van het prototype extra functionaliteiten in te bouwen. Met Meteor is het mogelijk om notificaties te sturen naar de gebruiker en data te synchroniseren tussen apparaten. Bovendien is de performance van Meteor tegenwoordig nog nauwelijks te onderscheiden van Native mobile apps.</p>",
-    "datePublished": "2016-10-12 12:12:56",
+    "datePublished": "2016-10-12T12:12:56+00:00",
     "dateModified": "2019-05-24T14:28:25+00:00",
     "headline": "DUODEKA partner van MeteorJS",
     "author": {
