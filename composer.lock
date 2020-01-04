@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a9667c380441f32ab39b15f81b594a9",
+    "content-hash": "1a850ac45c2a818ad0f9b9b8c23946c4",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1392,11 +1392,17 @@
         },
         {
             "name": "noud/laravel-slug",
-            "version": "dev-master",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noud/laravel-slug.git",
+                "reference": "d20eab5543e8944675a75b29b9d5d1c67d7604e3"
+            },
             "dist": {
-                "type": "path",
-                "url": "../laravel-slug",
-                "reference": "4c3cb801f1ffcae2641dff2b8461e2c58606bee3"
+                "type": "zip",
+                "url": "https://api.github.com/repos/noud/laravel-slug/zipball/d20eab5543e8944675a75b29b9d5d1c67d7604e3",
+                "reference": "d20eab5543e8944675a75b29b9d5d1c67d7604e3",
+                "shasum": ""
             },
             "require": {
                 "php": ">=7.2.0",
@@ -1415,6 +1421,7 @@
                     "SEO\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1424,7 +1431,8 @@
                     "email": "noud4@home.nl"
                 }
             ],
-            "description": "Laravel SEO Slug"
+            "description": "Laravel SEO Slug",
+            "time": "2020-01-04T16:01:25+00:00"
         },
         {
             "name": "opis/closure",
