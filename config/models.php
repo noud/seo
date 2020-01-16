@@ -26,6 +26,8 @@ return [
         */
 
         'path' => app_path('Models'),
+        // 'path' => app_path('Models-schema-org'),
+        // 'path' => app_path('Models-google-structured-data'),
 
         /*
         |--------------------------------------------------------------------------
@@ -39,6 +41,8 @@ return [
         */
 
         'namespace' => 'App\Models',
+        // 'namespace' => 'SEO\SchemaOrg\Models',
+        // 'namespace' => 'SEO\Google\Structured\data\Models',
 
         /*
         |--------------------------------------------------------------------------

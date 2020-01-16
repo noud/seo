@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a850ac45c2a818ad0f9b9b8c23946c4",
+    "content-hash": "299bb888c3e423af2da4a5428bfb6451",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -224,16 +224,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.13",
+            "version": "2.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "834593d5900615639208417760ba6a17299e2497"
+                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/834593d5900615639208417760ba6a17299e2497",
-                "reference": "834593d5900615639208417760ba6a17299e2497",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c4b8d12921999d8a561004371701dbc2e05b5ece",
+                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece",
                 "shasum": ""
             },
             "require": {
@@ -277,7 +277,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-12-30T08:14:25+00:00"
+            "time": "2020-01-05T14:11:20+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -1347,16 +1347,53 @@
             "time": "2019-11-08T13:50:10+00:00"
         },
         {
-            "name": "noud/laravel-google-indexing-api",
+            "name": "noud/laravel-seo",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../laravel-seo",
+                "reference": "ca2321e760c6e9be2ad8c9e6b29c160ae23aff29"
+            },
+            "require": {
+                "noud/laravel-seo-google-structured-data": "^1.0",
+                "noud/laravel-seo-slug": "^1.0",
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SEO\\Providers\\SEOServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SEO\\": "src/app/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Noud de Brouwer",
+                    "email": "noud4@home.nl"
+                }
+            ],
+            "description": "Laravel SEO"
+        },
+        {
+            "name": "noud/laravel-seo-google-indexing-api",
             "version": "v1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/noud/laravel-google-indexing-api.git",
+                "url": "https://github.com/noud/laravel-seo-google-indexing-api.git",
                 "reference": "b8505a29e12ed5cb4e9824d18c9f0b57fee7d163"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/noud/laravel-google-indexing-api/zipball/b8505a29e12ed5cb4e9824d18c9f0b57fee7d163",
+                "url": "https://api.github.com/repos/noud/laravel-seo-google-indexing-api/zipball/b8505a29e12ed5cb4e9824d18c9f0b57fee7d163",
                 "reference": "b8505a29e12ed5cb4e9824d18c9f0b57fee7d163",
                 "shasum": ""
             },
@@ -1391,16 +1428,113 @@
             "time": "2019-12-28T16:49:13+00:00"
         },
         {
-            "name": "noud/laravel-slug",
+            "name": "noud/laravel-seo-google-structured-data",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noud/laravel-seo-google-structured-data.git",
+                "reference": "a2a68e8c8c4f839428fbdef0e0c38fb288415a88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/noud/laravel-seo-google-structured-data/zipball/a2a68e8c8c4f839428fbdef0e0c38fb288415a88",
+                "reference": "a2a68e8c8c4f839428fbdef0e0c38fb288415a88",
+                "shasum": ""
+            },
+            "require": {
+                "noud/laravel-seo-google-indexing-api": "^1.0",
+                "noud/laravel-seo-schema-org": "^1.0",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "noud/schema": "dev-master",
+                "noud/schema-builder": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SEO\\Google\\Structured\\data\\Providers\\GoogleStructureddataServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SEO\\Google\\Structured\\data\\": "src/app/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Noud de Brouwer",
+                    "email": "noud4@home.nl"
+                }
+            ],
+            "description": "Laravel SEO Google Structured data",
+            "time": "2020-01-11T21:10:33+00:00"
+        },
+        {
+            "name": "noud/laravel-seo-schema-org",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noud/laravel-seo-schema-org.git",
+                "reference": "eb8f19fbaf72ec2bb5f0f8c044c8197a646a5824"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/noud/laravel-seo-schema-org/zipball/eb8f19fbaf72ec2bb5f0f8c044c8197a646a5824",
+                "reference": "eb8f19fbaf72ec2bb5f0f8c044c8197a646a5824",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0",
+                "spatie/schema-org": "^2.3"
+            },
+            "require-dev": {
+                "noud/schema": "dev-master",
+                "noud/schema-builder": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SEO\\SchemaOrg\\Providers\\SchemaOrgServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SEO\\SchemaOrg\\": "src/app/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Noud de Brouwer",
+                    "email": "noud4@home.nl"
+                }
+            ],
+            "description": "Laravel SEO Schema.org",
+            "time": "2020-01-11T20:41:43+00:00"
+        },
+        {
+            "name": "noud/laravel-seo-slug",
             "version": "v1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/noud/laravel-slug.git",
+                "url": "https://github.com/noud/laravel-seo-slug.git",
                 "reference": "ca2321e760c6e9be2ad8c9e6b29c160ae23aff29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/noud/laravel-slug/zipball/ca2321e760c6e9be2ad8c9e6b29c160ae23aff29",
+                "url": "https://api.github.com/repos/noud/laravel-seo-slug/zipball/ca2321e760c6e9be2ad8c9e6b29c160ae23aff29",
                 "reference": "ca2321e760c6e9be2ad8c9e6b29c160ae23aff29",
                 "shasum": ""
             },
@@ -5244,16 +5378,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.18",
+            "version": "7.5.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "fcf6c4bfafaadc07785528b06385cce88935474d"
+                "reference": "9467db479d1b0487c99733bb1e7944d32deded2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fcf6c4bfafaadc07785528b06385cce88935474d",
-                "reference": "fcf6c4bfafaadc07785528b06385cce88935474d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9467db479d1b0487c99733bb1e7944d32deded2c",
+                "reference": "9467db479d1b0487c99733bb1e7944d32deded2c",
                 "shasum": ""
             },
             "require": {
@@ -5324,7 +5458,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-12-06T05:14:37+00:00"
+            "time": "2020-01-08T08:45:45+00:00"
         },
         {
             "name": "reliese/laravel",

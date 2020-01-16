@@ -88,64 +88,6 @@ php artisan db:spy
 php artisan code:models
 ```
 
-## Structured data and Types used
-
-### [Google Search](https://developers.google.com/search) [Structured data](https://developers.google.com/search/docs/data-types/article)
-
-- [Sitelinks Searchbox](https://developers.google.com/search/docs/data-types/sitelinks-searchbox)
-
-### [Google Search](https://developers.google.com/search) [Structured data](https://developers.google.com/search/docs/data-types/article) conform [Schema.org](https://schema.org)
-
-- [Article](https://developers.google.com/search/docs/data-types/article) can be
-    - [Article](https://schema.org/Article)
-    - [NewsArticle](https://schema.org/NewsArticle)
-    - [BlogPosting](https://schema.org/BlogPosting)
-- [Breadcrumb](https://developers.google.com/search/docs/data-types/breadcrumb) consists of
-    - [BreadcrumbList](https://schema.org/BreadcrumbList)
-    - [ListItem](https://schema.org/ListItem)
-- [Carousel](https://developers.google.com/search/docs/data-types/carousel) consists of
-    - [ItemList](https://schema.org/ItemList)
-    - [ListItem](https://schema.org/ListItem)
-- [Job Posting](https://developers.google.com/search/docs/data-types/job-posting) is
-    - [JobPosting](https://schema.org/JobPosting)
-- [Local Business Listing](https://developers.google.com/search/docs/data-types/local-business) is
-    - [LocalBusiness](https://schema.org/LocalBusiness)
-
-### [Schema.org](https://schema.org) [Types](https://schema.org/docs/full.html)
-
-- [Thing](https://schema.org/Thing)
-    - Action
-        - [SearchAction](https://schema.org/SearchAction)
-    - [CreativeWork](https://schema.org/CreativeWork)
-        - [Article](https://schema.org/Article)
-            - SocialMediaPosting
-                - [BlogPosting](https://schema.org/BlogPosting)
-        - [WebSite](https://schema.org/WebSite)
-    - [Organization](https://schema.org/Organization)
-        - [LocalBusiness](https://schema.org/LocalBusiness)
-    - [Person](https://schema.org/Person)
-    - [Place](https://schema.org/Place)
-        - [LocalBusiness](https://schema.org/LocalBusiness)
-    - Intangible
-        - [ItemList](http://schema.org/ItemList)
-            - [BreadcrumbList](https://schema.org/BreadcrumbList)
-        - [JobPosting](https://schema.org/JobPosting)
-        - [ListItem](http://schema.org/ListItem)
-        - [PropertyValueSpecification](https://schema.org/PropertyValueSpecification)
-        - [Role](https://schema.org/Role)
-        - StructuredValue
-            - [ContactPoint](https://schema.org/ContactPoint)
-                - [PostalAddress](https://schema.org/PostalAddress)
-            - [GeoCoordinates](https://schema.org/GeoCoordinates)
-            - [MonetaryAmount](https://schema.org/MonetaryAmount)
-            - [OpeningHoursSpecification](https://schema.org/OpeningHoursSpecification)
-            - [PropertyValue](https://schema.org/PropertyValue)
-            - [QuantitativeValue](https://schema.org/QuantitativeValue)
-
-## [Entity-Relationship Diagram](https://en.wikipedia.org/wiki/Entity–relationship_model)
-
-![Schema.org Entity-Relationship Diagram](./docs/erd.png?raw=true "Schema.org Entity-Relationship Diagram")
-
 ## Build with
 
 # [React](https://reactjs.org/) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/react) [![CircleCI Status](https://circleci.com/gh/facebook/react.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/facebook/react) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
