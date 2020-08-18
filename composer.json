@@ -12,8 +12,8 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
-        "noud/laravel-google-indexing-api": "^1.0",
-        "noud/laravel-slug": "^1.0",
+        "noud/laravel-seo-google-indexing-api": "^1.0",
+        "noud/laravel-seo-slug": "^1.0",
         "spatie/schema-org": "^2.3"
     },
     "require-dev": {
